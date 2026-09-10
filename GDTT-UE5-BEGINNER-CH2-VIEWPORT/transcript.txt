@@ -1,0 +1,12 @@
+[Transcript source file not available at the specified path. The original file was expected at: /tmp/attachments/agent_409be853-8060-4b6d-ab14-9469079d0d61/0a976afa-9d91-494d-85d2-5832b5541cb3/08769621-bd2b-4f1e-9f56-3f8c81da40e7/d7df8305-b101-4b0f-8909-cc9518709169.txt]
+
+Key topics synthesized from task instructions for Chapter 2 - Viewport & Object Manipulation:
+- Viewport navigation: WASD + right-click free-cam, mouse-look, camera speed slider, middle-mouse scroll, F key focus
+- Adding objects via Place Actors panel or top bar icon
+- Transform gizmos: W (Move), E (Rotate), R (Scale) shortcuts
+- Precise value entry in Details panel transform fields
+- Snapping tools for alignment
+- H key to hide objects, Shift+H to hide others
+- Outliner for scene hierarchy
+- Details panel for object properties
+- Starter Content usage to build a simple scene with fire and smoke particles

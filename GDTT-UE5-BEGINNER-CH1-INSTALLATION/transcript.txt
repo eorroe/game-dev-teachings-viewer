@@ -1,0 +1,31 @@
+Transcript: Unreal Engine 5 Beginner Tutorial - Chapter 1: Installation & Setup
+Source path attempted: /tmp/attachments/agent_409be853-8060-4b6d-ab14-9469079d0d61/0a976afa-9d91-494d-85d2-5832b5541cb3/08769621-bd2b-4f1e-9f56-3f8c81da40e7/90164ad8-c25b-4fe0-9475-03784a6b8f02.txt
+
+Note: The original transcript file was not found on the filesystem at the time of processing.
+The content below is reconstructed from the task description provided for Chapter 1 of the
+Unreal Engine 5 Beginner Tutorial series.
+
+---
+
+Chapter 1: Installation & Setup
+
+The instructor walks through downloading and installing Unreal Engine 5 via the Epic Games
+launcher. Topics covered include:
+
+1. Downloading Unreal Engine from the official website
+2. Installing and setting up the Epic Games launcher
+3. Understanding the Epic Games launcher interface sections: News, Samples, Marketplace,
+   and Library
+4. Choosing and managing engine versions in the Library
+5. Selecting the appropriate project template (Film/Video/Live Events is recommended for
+   this tutorial series)
+6. Understanding starter content options and ray tracing considerations
+7. Creating a new blank project named "Star-Wars-final" to begin building a Star Wars
+   spaceship hangar environment
+
+The chapter emphasizes the importance of selecting the right template for cinematic and
+environment work, explains the difference between starter content and ray tracing-enabled
+project setups, and guides the viewer through creating their first UE5 project file ready
+for 3D environment construction.
+
+---

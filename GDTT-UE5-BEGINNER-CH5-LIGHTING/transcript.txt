@@ -1,0 +1,23 @@
+Chapter 5: Lighting Fundamentals in Unreal Engine 5
+
+In this chapter, we're going to cover lighting fundamentals in Unreal Engine 5. Lighting is one of the most important aspects of creating immersive game environments, and UE5 gives us powerful tools to work with.
+
+First, let's talk about the Environment Light Mixer. The Environment Light Mixer is a fantastic tool for quickly adding sky, sun, and atmospheric lights to your scene. It's designed to help you set up a basic outdoor lighting environment in just a few clicks. You can find it in the Window menu. Once open, you'll see options for Sky Light, Directional Light, Sky Atmosphere, and Exponential Height Fog all grouped together.
+
+Let's start with the Directional Light, which represents the sun in your scene. There are several important settings you need to know about. First is Intensity, which controls how bright the light is. For a sunny outdoor scene, you'll typically want a higher intensity value. Next is Light Color, which lets you tint the sunlight. You can make it warmer or cooler depending on the time of day you're simulating.
+
+Source Angle is another crucial setting. This controls the softness of the shadows. A smaller source angle gives you sharper shadows, while a larger source angle creates softer, more realistic shadows. Indirect Lighting Intensity determines how much the light contributes to bounced light in your scene. Increasing this can help brighten shadowed areas. Volumetric Scattering is what creates those beautiful light rays, or god rays, when light passes through fog or dust particles.
+
+Now let's move on to Point Lights. Point lights emit light in all directions from a single point, like a light bulb. The key settings here are Intensity, which works the same way as with directional lights, Attenuation Radius, which controls how far the light reaches before fading out, and Source Radius, which affects the softness of shadows cast by this light.
+
+Spotlights are next. Spotlights emit light in a cone shape. The two most important settings are Inner Cone Angle and Outer Cone Angle. The Inner Cone Angle defines the area of full brightness, while the Outer Cone Angle defines where the light completely fades out. The area between the two creates a soft falloff. You can also enable Volumetric on spotlights to get those nice cone-shaped light rays.
+
+Rectangular Lights, also known as Area Lights, emit light from a rectangular surface rather than a point. These are great for simulating light panels, windows, or any flat light source. They produce very soft, realistic shadows but are more computationally expensive.
+
+Now let's talk about fog. Exponential Height Fog is essential for creating atmospheric depth. It simulates how fog gets denser as you go higher or lower depending on your settings. You can control the fog density, height falloff, and start distance.
+
+For more cinematic results, you'll want to use Volumetric Fog. Volumetric Fog creates actual 3D fog particles in your scene that light can interact with. This is what enables those stunning light rays or god rays when light passes through the fog. To enable it, you'll need to turn on Volumetric Fog in your Exponential Height Fog settings, and make sure your lights have Volumetric Scattering enabled.
+
+One last quick tip: you can press the G key to toggle overlays on and off. This is really useful when you want to see your scene without the helper widgets and gizmos cluttering the view.
+
+That wraps up Chapter 5 on lighting fundamentals. In the next chapter, we'll build on these concepts and start creating more complex lighting setups for different times of day and weather conditions.

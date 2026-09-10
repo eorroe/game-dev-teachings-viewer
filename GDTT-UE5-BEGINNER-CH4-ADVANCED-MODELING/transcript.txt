@@ -1,0 +1,45 @@
+Chapter 4 - Advanced Modeling Techniques
+Unreal Engine 5 Beginner Tutorial Series
+
+This chapter covers advanced modeling techniques for building a Star Wars-style spaceship hangar in Unreal Engine 5.
+
+Key topics covered in this chapter:
+
+1. Polygroup Edit Mode
+   - How to enter and use polygroup edit mode for organizing mesh geometry
+   - Grouping faces for easier selection and manipulation
+   - Applying polygroups to complex geometry like spaceship hangar structures
+
+2. Selection Filters
+   - Faces selection mode: selecting individual faces of a mesh
+   - Edges selection mode: selecting edges for loop cuts and edge refinement
+   - Vertices selection mode: selecting individual vertex points
+   - Switching between selection modes for targeted geometry editing
+
+3. Disabling "Hit Back Faces"
+   - Understanding back faces in 3D modeling
+   - Disabling hit back faces to prevent accidental selection of internal geometry
+   - Why this matters when modeling enclosed or interior structures like a hangar
+
+4. Insert Edge Loops Tool
+   - Using the insert edge loops tool with even spacing
+   - Adding geometry detail precisely along existing edges
+   - Maintaining clean topology when inserting edge loops
+
+5. Extruding Faces
+   - Extruding faces with a fixed distance for consistent depth
+   - Extruding along selected triangle normals direction
+   - Using normal direction extrusion for outward/inward face projection
+   - Creating structural pillars by extruding faces from the hangar base
+
+6. Creating Pillars for the Spaceship Hangar
+   - Modeling support pillars using the extrude and insert edge loop tools
+   - Arranging pillars to form the hangar structure
+   - Scaling and positioning pillars appropriately
+
+7. Scaling the Spaceship
+   - Scaling the spaceship model to approximately 180m length x 30-40m height
+   - Using reference scale to maintain realism within the hangar environment
+   - Ensuring the spaceship fits proportionally inside the completed hangar structure
+
+This chapter is part of a 20-episode free tutorial series that teaches modeling, materials, lighting, animation, and rendering in Unreal Engine 5.
