@@ -1,0 +1,533 @@
+by the end of this video you will be
+able to import any 3D assets from
+outside Unreal Engine into unreal and
+then populate your scene with it so that
+we can get a scene with this cool Lambda
+fighter and these cool tiie Fighters
+what is up beautiful people welcome to
+chapter 12 we are going to talk about
+importing asset to your scene from
+online sources from sources like sketch
+fap what are we importing for us well
+we're going to be bringing our giant
+spaceship the uh Lambda fighter am I
+saying it right Lambda I think should be
+lamb Lambda right I hope I'm not
+murdering it Star Wars fans are going to
+kill be in the comments yeah yeah and
+the Tie fighters that are going to be
+right here right instead of these guys
+and the most beautiful thing about this
+is that we're teaching you the real
+reason why you're using Unreal Engine 5
+which is bring in assets that you
+created in blender Cinema 40 Maya 3ds
+Max and then drop them here and build
+massive worlds or you can just get all
+these assets online because if you're
+new to the world of 3D there are
+Millions okay not maybe Millions I don't
+know how many assets do you think there
+are 3D assets did did sketch P mention
+how many assets they have but sketch is
+just one resource I mean one of the best
+right one of the best actually it's my
+favorite and the reason why I love
+sketch faap is mainly because of how
+clean the website is and how many great
+uploads from the community exist on the
+website so there are other 3D resources
+online like turbo squid and more often
+or not a lot of artists that I've talked
+to they prefer turbo squid or some other
+websites for me sketchfab is the
+cleanest one is it free it well there is
+a very good mix of free and paid assets
+you just I recommend you guys go Ahad
+and search for whatever you want to look
+for and then see if they are available
+or not now sometimes you'll find assets
+that are not even available to buy or
+even download for free they're just
+there for you to view which is like why
+cuz the artist is showing up probably
+probably yes no maybe it's for a paid
+project and they can't share it with
+anybody else so I understand but it's
+just like they look so good and I want
+to download them so there are 3D
+resources online and there are so many
+assets so you can always go ahead and
+build out your scenes without ever
+having to model anything that is the
+beauty of creating worlds in Unreal
+Engine 5 now I'm not saying you should
+do it or not it really depends on you
+but the option is there so we are on
+sketch fab right now and fud I already
+have the two spaceships that we are
+going to download but I just want to
+show people in case they've never done
+this before how they can go ahead and
+download a model so what we're looking
+for for instance is you can you just
+name it fighter like a TI fighter okay
+just look for it wow so many and at the
+top you usually see the ones that are
+paid right you're looking at eight bucks
+18 bucks 15 bucks usually the models
+that you have to pay for are very
+wellmade they're clean in terms of their
+topology and their materials are very
+well done so they're Exquisite they're
+your fine dining plates at the top right
+but usually if you are running short on
+cash you want to go look down here and
+the ones with this download Mark on the
+top right are the ones that are
+available for free so some really cool
+people made these and made them
+available to all of us shout out and
+shout out to all of you and then there's
+ones without anything these are not
+available to download or buy and then
+the ones with the dollar sign you can
+buy right okay this is not a sketch P
+course we're just teaching you guys how
+you can goe and download models if
+you've never done this before so I went
+ahead with far hood and looked at all of
+these models see uh and and saw which
+ones worked well inside onal engine and
+was compatible and the ones we found
+were these two so I'll just show them to
+you right now I'm going to put the link
+in the description so you guys can
+download the same TI Fighters and the
+Lambda Jet and then have it in your
+scene that's right so starting with a TI
+fighter this one's by Christian no lope
+sh shout out to Christian and shout out
+to CRA for making these two models and
+making it available for free absolutely
+and castra is the guy who made this
+beautiful Lambda ta shuttle plus it has
+animation so the reason why we went for
+this one and not just the static one is
+because we wanted to teach you guys is
+how to bring in a static mesh which is
+the ti fighter which has no animation
+and also a model that has animation and
+has armatures and this is exactly that
+so if you want to follow along exactly
+in this tutorial we recommend you go
+Ahad and check out the links in the
+description we cannot give you guys
+these models because we don't own them
+but they are available here
+alternatively you can go ah outad and
+explore and look for other models if
+you're feeling adventurous and download
+them instead and still follow along when
+it comes to importing the assets how do
+we download them so it's very simple
+you'll just go to this download button
+right here uh underneath their profile
+and then you'll see some details like
+how large the model is in terms of its
+polygons and then you can hit download
+it'll give you a bunch of different
+formats so just like when you're editing
+movies you know you've got your mov and
+MP4 and depending on the 3D software and
+your preference you can choose which one
+you want to download which one should we
+take so honestly our favorite is usually
+either fbx which is at the top here or
+glb which is down here and you get two
+different texture sizes the reason why
+is because fbx is I would say the most
+commonly used if you ask me and there
+are some issues with it though because
+when it comes to packing materials
+sometimes you'll download the fbx model
+and you load it in and the materials are
+not there you have to manually create
+the materials but the reason why we love
+glb models is because whenever you
+download glb the materials come PCT with
+it so all you have to do is just drag it
+and drop it in your content drawer and
+boom it is available for you to use okay
+so just to answer your question I went
+with glb so all you have to do is just
+hit download right we're going to go
+with 2K textures now if you download a
+GB the best part is that it is going to
+come as a glb file because it a single
+file absolutely it comes packed with the
+textures that's all you get if you
+download the fpx it's going to come with
+a zip file because it has to bring in
+the textures separately so that's right
+here if you can check it out so we've
+already downloaded this go ahead and do
+the same thing for the ta shuttle we're
+going to go for glb as well 4K textures
+here perfect and now we're going to go
+out of here we're going to go out of
+here as well so right now we're in our
+Unreal Engine project file far shall we
+do this let's go open up your content
+drawer create a new folder absolutely
+what do we call it Lambda fighter Lambda
+fighter all right and create another
+folder call it TIE fighter TIE fighter
+beautiful so let's go to our fighter
+we're going to open up the file that has
+the folder that has the folder that has
+the file of the glb and then we're going
+to drag and drop this into the content
+drawer now we're going to be prompted
+with this menu right here and this menu
+is basically the menu you're going to
+get when you bring in a glb file this
+will look different if you have an fbx
+or an obj because they work differently
+right again mov MP4 different
+compressions different file formats
+different ways to import so these
+options are going to look different now
+more often than not you are not going to
+have to change any of these but in case
+you import a model and there's something
+wrong with it then you want to go ahead
+and look at them and see what might be
+causing that issue for you and sometimes
+just do a Google Search and you find out
+exactly why in our case because we've
+already done this before we know we do
+not have to make any changes here so we
+can just go ahead and hit
+import we'll just wait for a few seconds
+and this should be taking just a few
+more seconds because it has animation
+could could you bring a photogrametry
+asset inside absolutely yeah absolutely
+of course the thing is photogrametry
+assets just work like any other 3D asset
+right and we can try it out maybe one
+time yeah okay so we hit control space
+and we look into our content drawer and
+now we're seeing all of these new assets
+let's quickly go over what they are so
+far what are these first ones at the
+bottom I see some materials I see lots
+of textures I see four different file
+type skeletal mesh animation sequence
+what is it physics and skeleton
+absolutely so materials we already know
+what it is and there's just multiple
+materials because a spaceship has
+different parts textures of course we're
+looking at normal Maps we're seeing some
+color maps and all of these are
+basically in the materials and they're
+creating the look of our spaceship we do
+not have to touch them again because
+this came as a glb which means it comes
+packed with DET tectors which is just
+amazing but this time around if you
+notice we have four different icons to
+deal with we got skeletal mesh animation
+sequence physics asset and skeleton
+anytime you bring in an asset with an
+Armature an Armature is basically bones
+in 3D software that you use to attach to
+different meshes to control them so if
+you have a human that has animation it
+probably has an Armature right it has
+the hip bone it has the arm bone it has
+the finger bones and those bones help
+control the movement for a TIE fighter
+or a shuttle that might have animation
+of the parts moving we're going to also
+use bones right so this guy castra who
+created this model used bones in another
+software created the animation for the
+flaps and the door and so that's why
+when it comes in it has these four
+different icons so if you bring in any
+item with an animation it comes with
+four different icons so just going to
+open up skeletal mesh and show you what
+you'll see okay don't panic I understand
+that the first thing you want to do is
+look at this window and be like oh my
+God another window with so many buttons
+so many things that I do not know
+anything about but you're not going to
+be talking about this right now we're
+not going to be going over this in
+detail when we talk about the
+Stormtroopers though we can talk about
+this so don't worry when it comes to the
+skeletal mesh that is basically talking
+about the bones and the bone structures
+of what the item holds right which are
+list it on the right side right here so
+we have the wing right wing left wing we
+have the doors those can be opened and
+adjusted right absolutely so I can even
+show you right now so if I hold the
+right wing I hope this works there you
+go I have the right wing and I can see
+the bone right here okay and I can
+basically just go ahead and rotate the
+bone and this is basically how castra
+animated this in the first place right
+so this is where I can see these bones
+and the I want to load this up again
+this is our skeletal mesh but if you
+want to goe and open these guys you can
+actually access the same ones right here
+if you look to the top and if you look
+at the text you'll see it says skeleton
+right that is precisely this guy right
+here so I'm going to tap this it's going
+to open another tab for me and that is
+my skeleton if I were to double click
+this see nothing happens because I
+already have it open so I'm going to
+close it go to skeleton I have the same
+one if I go to this one what does it say
+it says skeletal mesh right so that is
+like as if I click this one this guy
+right here is an sequence animation
+sequence and we're going to go to that
+in a moment I'm just showing you this
+that these four are the same for at the
+top here because when you're animating
+characters you're going to be accessing
+all of these and trying to change some
+properties so that's why you have access
+to all of them right here and we're
+going to explain to you what each of
+them do so skeleton is also showing you
+guys the bones but there are different
+options here this is I would I would
+like to call this like the very base of
+looking at the bones and seeing what you
+can do with the scale and rotation of
+the bones the skeletal mesh is where we
+go ahead and connect things to these
+bones for instance if you were to
+connect weapons that follow some of
+these bones you will create those
+connections here they call sockets and
+you can connect them here the next one
+is our animation sequence far what do
+you think this does this is the
+animation that has been pre baked into
+this object absolutely you're right and
+you can see the animation at the bottom
+right here in the asset browser you only
+have one animation but if you had
+multiple different looking animations
+for this so if it was a character it had
+a running animation a walking animation
+a shooting animation you will see all of
+them if you imported them and you can
+access them you can edit them you can
+for example change the speed right here
+not that we have to do it but you're
+just looking at all the properties of
+the animation hence why the name
+animation sequence at the very right we
+have physics asset so Farah what do you
+think this one does this is the
+Collision of the asset yes so the moment
+you bring in an asset with skeleton with
+armatures engine automatically creates a
+physics asset based on those bones and
+they're represented with these little
+balloon shapes that you can go ahead and
+change the size of and create your own
+versions and the reason that these exist
+far do you know why because the thing
+the objects won't go through together so
+there's Collision so let's say if you
+had a cape on Superman you want to go
+ahead and make sure the cape doesn't go
+through his legs so you have the physics
+asset so that when you simulate the cape
+with wind it just sticks to his back but
+it doesn't go through so that's the
+whole point of physics asset so of
+course we don't need it right now for
+this but it's good for you guys to
+know and understand what these four are
+and not panic that you have four
+different versions in your content
+drawer so which one of them I should
+bring it to my scene if I want to bring
+the jet to the scene so honestly if you
+bring any of them the jet will come into
+the scene but what we usually like to do
+is bring in the skeletal mesh that's the
+base and then you can go ahead and do
+anything you want to the skeletal mesh
+you can add animation but the quickest
+way to bring in a skeletal mesh with the
+animation already there available to use
+is to bring in the animation sequence
+absolutely so let's go ahead and delete
+this guy because we don't need it
+anymore we have our asset we're going to
+go ahead and bring in the animation
+sequence because it's already baked in
+there right so we bring in the animation
+sequence and just like that we have this
+beautiful spaceship placed into our
+scene now fireart this is not looking
+right is it no how can we change the
+animation and make sure we use the right
+snapshot so you are asking the right
+question because technically if you want
+to go ahead and change animation we have
+to use the timeline right if you ever
+played with any sort of video editing
+software you have a timeline and you can
+say okay at frame one I want this thing
+to be here and at frame 30 I want it to
+move to the right side we don't have any
+timeline so clearly it's hard to animate
+things right now that is for another
+chapter but you can control the
+animation still in the details panel
+right so if you're looking at the
+animation right here while we have this
+selected we'll be able to see the
+animation that is going to be playing
+which is this one defined by the creator
+of this anim uh of this mesh and then we
+have an initial position so right now
+it's at zero we can go ahead and use the
+slider to control oh the animation okay
+this is what we want the open door yes
+exactly and it's looking sick dude okay
+amazing this is looking sick so far I'm
+going to quickly delete this just to
+show you guys the difference of bringing
+a skeletal mesh and not the animation
+sequence right the only difference is
+that right now we have the base but here
+in the animation mode there's no
+animation selected so we have to go
+ahead and change this animation
+blueprint to an animation asset and then
+Define which animation asset we want to
+use there's only one the one that it was
+imported with Okay click it and then do
+the same thing eight do the same thing
+boom and boom I just skipped over it but
+yeah it worked eight and boom okay so
+just like that you guys now know how to
+import assets that are glb files that
+come with animation and you know exactly
+how to bring them to your scenes wait a
+second we're teaching you guys all of
+these techniques like modeling and
+texturing but frankly there are faster
+Alternatives like photogrametry that's
+when you use your phone to take a bunch
+of photos of a real life object and then
+turn that object into 3D within minutes
+and then bring it into Unreal Engine so
+we use polyam for our photogrametry and
+they actually sponsored this course so
+that you guys get 30% off their Pro Plan
+we have all of the details and the promo
+code in the description back to the
+course can we bring in the ti Fighters
+too you want to do it now yeah okay
+let's go so should we delete these guys
+we don't need them anymore right okay
+delete delete delete delete so do you
+think it'll be the same thing for the ti
+Fighters yes we should just import it
+right absolutely so we're going to go
+ahead and bring up the Tie Fighter right
+here all right we have it located
+located in your computer and go ahead
+and drag and drop the glb file now
+there's only one difference that we'd
+like to make this time around let's go
+ahead and try to import this as is and
+see what
+happens import it quickly oh
+no what do you see that we have thousand
+meshes every single bolt and pin is
+separated yeah this is not cool so I
+don't want that I don't want that either
+I mean yes we can go ahead and look at
+what we've got we got a material we got
+three textures and all of these static
+meshes we can go ahead and select all of
+them drag it to the scene and it works
+but then look at the top here object
+four object six no I want a single mesh
+no yes far how do you think we do that
+uh was it that the dialog box initially
+yes so let's go and delete this control
+Z or okay I'm just going to delete it
+and then we're going to go back this is
+where we talked about how depending on
+your scenario you might have to change
+some of these import sets things so for
+GB files there's this specific setting
+that says combine static meshes yes
+please we need to do that right we just
+want one mesh we just want one and then
+we're going to hit import and see what
+happens boom nice one clean yes static
+mesh bring that in bring this bad boy in
+there to the scene yes boom wow okay now
+it's a single mesh I'm going to turn on
+snapping make it easier okay boom boom
+boom boom boom nice wow I never
+understood where is the head where is
+the front or back of the T this is wait
+this is this is the head this is like
+the front this is the front this is the
+glass right this is go all the way back
+yeah so
+180 and we can move this guy back here
+wow I think this is a little bit too big
+right compared to this guy so we're
+going to make it maybe 0 a little
+smaller lock this guy up so they're
+scaling on the same sides same rotation
+0.7 I think that's really
+good and now I got to turn off snapping
+going to come
+up boom and pull this forward hold alt
+duplicate pull it back this too alt go
+all the way to the right and then mirror
+mirror mirrror on what axis do you think
+why make a guess why why yes you did it
+nice nice and we are done bro look at
+that it's getting slowly starting to
+look really really good and like a real
+hanger perfect dude I'm loving this bro
+okay so first of all again a big shout
+out to the creators of the ti fighter
+and the Lambda fighter we hope that you
+guys manage to also take in your assets
+into andreal engine and make your scene
+look something like this and then in the
+next chapter we are going to show you
+how you can bring characters with
+animation we are going to populate the
+scene with all the Stormtroopers so stay
+tuned
