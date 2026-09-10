@@ -1,0 +1,1342 @@
+00:00,160 --> 00:00:04,720
+by the end of this video you'll know
+00:02,399 --> 00:00:06,759
+everything you need about cameras in
+00:04,720 --> 00:00:08,840
+Unreal Engine 5 and then you'll also be
+00:06,759 --> 00:00:11,400
+able to learn how to move your cameras
+00:08,840 --> 00:00:13,719
+around how to track your cameras to an
+00:11,400 --> 00:00:16,600
+object and have a shot like this like
+00:13,719 --> 00:00:18,199
+check this out wait boom look at that
+00:16,600 --> 00:00:20,800
+look at how sweet this is you'll be able
+00:18,199 --> 00:00:22,840
+to do this right after this video so
+00:20,800 --> 00:00:25,119
+let's get to it what is up beautiful
+00:22,840 --> 00:00:27,560
+people we are here at chapter 16 and
+00:25,119 --> 00:00:30,080
+we're going to talk about
+00:27,560 --> 00:00:31,960
+cameras yes this is one of the most
+00:30,080 --> 00:00:33,840
+important chapters of our tutorial
+00:31,960 --> 00:00:35,440
+series because we are going to cover
+00:33,840 --> 00:00:37,120
+exactly what camera settings we are
+00:35,440 --> 00:00:39,600
+going to use we are going to talk about
+00:37,120 --> 00:00:41,480
+cranes rig rails F why do you like
+00:39,600 --> 00:00:43,480
+cameras so much well because this is the
+00:41,480 --> 00:00:46,360
+first part of this tutorial Series where
+00:43,480 --> 00:00:49,039
+you technically can bring in all of your
+00:46,360 --> 00:00:51,840
+skills from The Real World into 3D you
+00:49,039 --> 00:00:53,480
+do not need to know anything extra about
+00:51,840 --> 00:00:55,280
+these settings if you already know your
+00:53,480 --> 00:00:58,160
+way around cameras in real life and come
+00:55,280 --> 00:01:00,640
+on it's 2024 you use iPhones you know
+00:58,160 --> 00:01:02,280
+what aperture is right or FOC length no
+01:00,640 --> 00:01:03,399
+I don't you don't okay well I guess
+01:02,280 --> 00:01:05,600
+we're going to go through it all
+01:03,399 --> 00:01:08,000
+together well one more thing I'd like to
+01:05,600 --> 00:01:10,400
+say before we begin is that just like
+01:08,000 --> 00:01:12,759
+the post-process volume just like
+01:10,400 --> 00:01:14,799
+lighting cameras also have to be one of
+01:12,759 --> 00:01:16,280
+the first things you set up if you're
+01:14,799 --> 00:01:17,320
+creating a cinematic if you're creating
+01:16,280 --> 00:01:18,799
+a game it doesn't matter you have to
+01:17,320 --> 00:01:20,680
+make the entire world but if you're
+01:18,799 --> 00:01:22,920
+creating a cinematic and I'll just use
+01:20,680 --> 00:01:25,479
+an example right here and let's say you
+01:22,920 --> 00:01:27,880
+only need two shots one which is this
+01:25,479 --> 00:01:29,320
+and another one which is this angle then
+01:27,880 --> 00:01:30,720
+why the hell would you want to go Ahad
+01:29,320 --> 00:01:32,640
+and create all the this at the back you
+01:30,720 --> 00:01:34,759
+don't need all this detail so all of
+01:32,640 --> 00:01:37,479
+that time is wasted this is the most
+01:34,759 --> 00:01:39,799
+important tip always set your cameras
+01:37,479 --> 00:01:42,280
+your postprocess volume early on you
+01:39,799 --> 00:01:44,399
+know your shots then if you know your
+01:42,280 --> 00:01:46,680
+shots then you are only going to create
+01:44,399 --> 00:01:48,640
+what you need for that final result and
+01:46,680 --> 00:01:50,399
+not waste time creating everything else
+01:48,640 --> 00:01:51,960
+that might not end up in the final shot
+01:50,399 --> 00:01:53,439
+now I'll tell you one more thing there's
+01:51,960 --> 00:01:55,280
+a very high chance we won't be even
+01:53,439 --> 00:01:57,840
+looking at this guy right here or these
+01:55,280 --> 00:01:59,320
+guys right here because our shots are
+01:57,840 --> 00:02:01,479
+going to be somewhere here but for the
+01:59,320 --> 00:02:04,079
+sake of this course we've created all of
+02:01,479 --> 00:02:06,920
+this so that you understand how World
+02:04,079 --> 00:02:08,679
+Creation in Unreal Engine 5 works so how
+02:06,920 --> 00:02:10,840
+do we add a camera to a scene very good
+02:08,679 --> 00:02:13,920
+question so just like everything else we
+02:10,840 --> 00:02:15,840
+have to go to the top left side this
+02:13,920 --> 00:02:17,680
+right here and we can either bring the
+02:15,840 --> 00:02:18,879
+place actors panel to the left side and
+02:17,680 --> 00:02:21,080
+then bring the cameras from there or
+02:18,879 --> 00:02:24,920
+just go to cinematic and then look for
+02:21,080 --> 00:02:26,280
+cine camera actor so this is basically
+02:24,920 --> 00:02:28,360
+the camera you're going to use every
+02:26,280 --> 00:02:31,239
+single time when you want to bring in a
+02:28,360 --> 00:02:32,879
+new shot into your scene C camera actor
+02:31,239 --> 00:02:35,120
+now there's also another one which is
+02:32,879 --> 00:02:36,800
+camera actor I believe but don't don't
+02:35,120 --> 00:02:38,360
+get mistaken there's different kinds of
+02:36,800 --> 00:02:40,760
+cameras in onreal engine 5 I believe
+02:38,360 --> 00:02:42,280
+they were used for other purposes the
+02:40,760 --> 00:02:44,680
+one we're going to use for cinematics is
+02:42,280 --> 00:02:46,239
+C camera actor drag it drop it into your
+02:44,680 --> 00:02:47,959
+scene I can't see anything right now
+02:46,239 --> 00:02:51,080
+because I have my overlays disabled the
+02:47,959 --> 00:02:53,640
+shortcut for that was G so G and now I
+02:51,080 --> 00:02:55,720
+can see my camera hit F to go closer to
+02:53,640 --> 00:02:58,080
+it and this is beautiful it comes in
+02:55,720 --> 00:03:00,640
+real handy because Unreal Engine always
+02:58,080 --> 00:03:02,920
+has this mesh like a c in a camera that
+03:00,640 --> 00:03:05,280
+you can use to see where your camera is
+03:02,920 --> 00:03:06,840
+pointing and where it is in the scene so
+03:05,280 --> 00:03:08,319
+once you have your camera selected fire
+03:06,840 --> 00:03:09,959
+what is this at the bottom right this is
+03:08,319 --> 00:03:11,760
+what your camera will see yes this is
+03:09,959 --> 00:03:14,480
+the preview of your camera so if I were
+03:11,760 --> 00:03:16,319
+to drag my camera up I'm actually
+03:14,480 --> 00:03:17,959
+looking at what the camera is seeing I'm
+03:16,319 --> 00:03:20,239
+going to go ahead and hit e rotate my
+03:17,959 --> 00:03:22,640
+camera and see oh oh I can see
+03:20,239 --> 00:03:24,720
+everything now absolutely so I can go
+03:22,640 --> 00:03:26,799
+ahead and control my camera without
+03:24,720 --> 00:03:28,799
+actually being inside the camera so
+03:26,799 --> 00:03:31,480
+there are two ways you technically want
+03:28,799 --> 00:03:33,680
+to go ahead and control your camera one
+03:31,480 --> 00:03:35,480
+is by looking from the outside and
+03:33,680 --> 00:03:37,280
+having the preview on the bottom right
+03:35,480 --> 00:03:39,959
+and then trying to see where your camera
+03:37,280 --> 00:03:42,519
+should go and then like hit F maybe go
+03:39,959 --> 00:03:44,360
+closer maybe rotate it if you're trying
+03:42,519 --> 00:03:46,799
+to look at one of these Storm Troopers
+03:44,360 --> 00:03:49,680
+another way to do it is to actually go
+03:46,799 --> 00:03:51,120
+ahead inside the view of the camera now
+03:49,680 --> 00:03:52,640
+there are many ways you can do that far
+03:51,120 --> 00:03:55,120
+do you remember one of those ways one of
+03:52,640 --> 00:03:57,920
+them is right click pilot absolutely so
+03:55,120 --> 00:04:00,319
+I can go right click so click my camera
+03:57,920 --> 00:04:02,319
+or even here in the outline both of them
+04:00,319 --> 00:04:05,000
+work right click and then there's an
+04:02,319 --> 00:04:06,720
+option that says pilot C camera actor
+04:05,000 --> 00:04:08,640
+and then you'll go inside the camera now
+04:06,720 --> 00:04:09,920
+you have these black bars at the top
+04:08,640 --> 00:04:12,000
+right because depending on the camera
+04:09,920 --> 00:04:14,079
+settings the width and height of your
+04:12,000 --> 00:04:16,479
+sensor is different so right now I can
+04:14,079 --> 00:04:18,720
+just navigate exactly the same way as I
+04:16,479 --> 00:04:20,600
+did before and I can go around but this
+04:18,720 --> 00:04:22,120
+time around I actually have my camera
+04:20,600 --> 00:04:23,880
+and you know that this is your camera
+04:22,120 --> 00:04:26,479
+for two reasons number one notice the
+04:23,880 --> 00:04:27,840
+depth of field we didn't have blurriness
+04:26,479 --> 00:04:29,759
+when we were building our scene but
+04:27,840 --> 00:04:31,560
+right now we do so we are in our camera
+04:29,759 --> 00:04:33,320
+view another way you can tell this that
+04:31,560 --> 00:04:35,600
+this is your camera view is looking at
+04:33,320 --> 00:04:37,600
+the top left under your perspective you
+04:35,600 --> 00:04:40,039
+have this airplane icon which says your
+04:37,600 --> 00:04:41,960
+piloting your camera now two important
+04:40,039 --> 00:04:44,360
+buttons on the right side one of which
+04:41,960 --> 00:04:46,919
+is to eject so you're getting out of the
+04:44,360 --> 00:04:48,800
+pilot mode so now I have the camera here
+04:46,919 --> 00:04:50,160
+again I'm back into the normal
+04:48,800 --> 00:04:52,800
+navigation mode and I can see the
+04:50,160 --> 00:04:55,840
+preview or if I go back into to the
+04:52,800 --> 00:04:57,320
+pilot another one is here so technically
+04:55,840 --> 00:05:00,280
+this one is going to toggle showing the
+04:57,320 --> 00:05:02,759
+exact camera view if you toggle this off
+05:00,280 --> 00:05:04,440
+and if you move and then eject look at
+05:02,759 --> 00:05:06,520
+what happens you've actually moved but
+05:04,440 --> 00:05:08,759
+then you're piloting the camera but you
+05:06,520 --> 00:05:11,280
+don't have that black bar the camera
+05:08,759 --> 00:05:13,360
+settings if you will sometimes it's
+05:11,280 --> 00:05:15,759
+confusing but I always like to just keep
+05:13,360 --> 00:05:17,880
+it on so that I'm not confused and then
+05:15,759 --> 00:05:19,800
+I just either eject so there was another
+05:17,880 --> 00:05:21,479
+method faros just did that was a second
+05:19,800 --> 00:05:23,160
+method beside the pilot which is going
+05:21,479 --> 00:05:25,039
+through the perspective and then you can
+05:23,160 --> 00:05:27,039
+select the camera that's actually my
+05:25,039 --> 00:05:28,400
+favorite way of piloting the camera I
+05:27,039 --> 00:05:31,080
+don't like to go ahead and hit right
+05:28,400 --> 00:05:33,600
+click I like to just go perspective and
+05:31,080 --> 00:05:35,199
+then go down to place cameras go to C
+05:33,600 --> 00:05:37,000
+camera actors so we know about
+05:35,199 --> 00:05:39,720
+perspective far we know about these
+05:37,000 --> 00:05:41,880
+orthographic views but once you add a
+05:39,720 --> 00:05:44,560
+cine camera actor to your scene you'll
+05:41,880 --> 00:05:47,560
+have this extra option down here so if I
+05:44,560 --> 00:05:50,720
+were to go ahead and hit alt duplicate
+05:47,560 --> 00:05:52,880
+this two times one more time duplicate
+05:50,720 --> 00:05:54,880
+so I have three camera actors look at
+05:52,880 --> 00:05:56,880
+what happens here you can go inside each
+05:54,880 --> 00:05:59,120
+and every one of them absolutely so I
+05:56,880 --> 00:06:01,600
+can go to C camera actor 3 and then
+05:59,120 --> 00:06:05,400
+right click click move it eject I can go
+06:01,600 --> 00:06:07,599
+to C camera 2 move it here eject and now
+06:05,400 --> 00:06:10,479
+I have three cameras placing three
+06:07,599 --> 00:06:12,120
+different positions right so there's
+06:10,479 --> 00:06:15,680
+again multiple ways you can control your
+06:12,120 --> 00:06:17,759
+cameras so as long as you work enough
+06:15,680 --> 00:06:19,120
+times with the cameras you'll get really
+06:17,759 --> 00:06:20,599
+buttery smooth when it comes to
+06:19,120 --> 00:06:22,479
+navigating with the cameras it's
+06:20,599 --> 00:06:23,919
+honestly really really easy now I'm
+06:22,479 --> 00:06:26,440
+going to go ahead and delete our two
+06:23,919 --> 00:06:28,599
+extra cameras let's just stick to one
+06:26,440 --> 00:06:29,759
+let's now talk about one more option on
+06:28,599 --> 00:06:31,160
+our viewport and then we're going to
+06:29,759 --> 00:06:33,160
+head to the details panel and change
+06:31,160 --> 00:06:35,639
+some of our camera settings one thing
+06:33,160 --> 00:06:38,680
+that you can do is let's say I have my
+06:35,639 --> 00:06:40,680
+camera here and then I want to see what
+06:38,680 --> 00:06:42,720
+my Stormtroopers are doing go ahead and
+06:40,680 --> 00:06:44,680
+move them but still be able to have the
+06:42,720 --> 00:06:46,280
+preview the problem is right now I can
+06:44,680 --> 00:06:48,000
+see my camera but then if I go ahead and
+06:46,280 --> 00:06:49,440
+click on something else I lose the
+06:48,000 --> 00:06:51,199
+preview far do you know what we can do
+06:49,440 --> 00:06:53,759
+here there is a pin button where you can
+06:51,199 --> 00:06:55,800
+pin your preview here right here bottom
+06:53,759 --> 00:06:58,039
+left if I pin it then I can move around
+06:55,800 --> 00:07:00,120
+the scene go all the way back here and
+06:58,039 --> 00:07:02,759
+let's say I want to bring the ti fight
+07:00,120 --> 00:07:04,520
+I still clicked on this TV fighter but I
+07:02,759 --> 00:07:06,599
+haven't lost my preview so now I can
+07:04,520 --> 00:07:08,800
+bring this guy here and exactly see
+07:06,599 --> 00:07:10,120
+what's happening in my scene super duper
+07:08,800 --> 00:07:12,080
+handy you can actually go ahead and
+07:10,120 --> 00:07:13,720
+preview multiple cameras but just
+07:12,080 --> 00:07:15,360
+understand one thing when you have an
+07:13,720 --> 00:07:17,759
+extra screen technically you're
+07:15,360 --> 00:07:20,919
+rendering another scene with a different
+07:17,759 --> 00:07:22,759
+angle so that's why our FPS is getting a
+07:20,919 --> 00:07:25,400
+hit so make sure your computer can
+07:22,759 --> 00:07:27,960
+handle having previews now we're going
+07:25,400 --> 00:07:29,639
+to unable this pin and now it's time to
+07:27,960 --> 00:07:31,520
+look at some of the camera settings at
+07:29,639 --> 00:07:33,199
+the details panel okay so we have the
+07:31,520 --> 00:07:35,319
+camera we're going to go inside the
+07:33,199 --> 00:07:37,120
+camera and I'm going to go all the way
+07:35,319 --> 00:07:38,720
+to one of these guys right here okay
+07:37,120 --> 00:07:40,240
+cool so this is a really cool view
+07:38,720 --> 00:07:41,919
+there's already a couple of problems I
+07:40,240 --> 00:07:43,879
+want the Stormtroopers to be in Focus
+07:41,919 --> 00:07:46,840
+but they're not so again this is where
+07:43,879 --> 00:07:49,240
+camera details come in handy so let's
+07:46,840 --> 00:07:50,680
+pull this up and let's take a closer
+07:49,240 --> 00:07:52,000
+look at what we have there's a lot of
+07:50,680 --> 00:07:53,960
+settings we're only going to cover the
+07:52,000 --> 00:07:55,800
+ones that you're going to use the most
+07:53,960 --> 00:07:57,800
+right look at track settings basically
+07:55,800 --> 00:07:59,440
+talks about tracking so object tracking
+07:57,800 --> 00:08:01,039
+with your camera if an object is is
+07:59,440 --> 00:08:02,800
+moving we're going to talk about that
+08:01,039 --> 00:08:04,879
+when our object is actually moving so
+08:02,800 --> 00:08:07,599
+not now let's go to filmb back filmb
+08:04,879 --> 00:08:09,720
+back is literally your camera sensor
+08:07,599 --> 00:08:11,599
+settings you have some defaults here the
+08:09,720 --> 00:08:13,960
+sensor width and height is already
+08:11,599 --> 00:08:15,360
+chosen based on the lens and sorry the
+08:13,960 --> 00:08:17,720
+camera that you're choosing so if you
+08:15,360 --> 00:08:19,560
+want to go for an IMAX 70 it is going to
+08:17,720 --> 00:08:22,199
+give the exact width and height for an
+08:19,560 --> 00:08:23,879
+IMAX 70 M now can we adjust the height
+08:22,199 --> 00:08:25,319
+and width absolutely so if I were to
+08:23,879 --> 00:08:27,720
+create my own version I can just go
+08:25,319 --> 00:08:29,680
+ahead and do that now mind you Unreal
+08:27,720 --> 00:08:31,599
+Engine 5 is used for virtual production
+08:29,680 --> 00:08:33,519
+in far we talked to Felix on our podcast
+08:31,599 --> 00:08:35,200
+yes and Felix worked on the Mandalorian
+08:33,519 --> 00:08:36,640
+yes all the Star Wars series on Disney
+08:35,200 --> 00:08:38,640
+basically do remember what he said about
+08:36,640 --> 00:08:40,599
+cameras he mentioned that the cameras
+08:38,640 --> 00:08:42,279
+exactly replicate the real cameras in
+08:40,599 --> 00:08:44,360
+life there you go so that means
+08:42,279 --> 00:08:46,240
+everything here is according to real
+08:44,360 --> 00:08:48,600
+life so you can emulate real cameras
+08:46,240 --> 00:08:51,760
+which is so sweet so we're just going to
+08:48,600 --> 00:08:53,399
+go back to the default which is 16x9
+08:51,760 --> 00:08:55,000
+digital film this is the one we're going
+08:53,399 --> 00:08:56,519
+to go for you can even make this wide
+08:55,000 --> 00:08:59,720
+screen by going I'm just going to go for
+08:56,519 --> 00:09:01,600
+random R like 34 now it's even more wide
+08:59,720 --> 00:09:03,480
+if you want to do that by all means go
+09:01,600 --> 00:09:06,200
+ahead and then you have lens settings so
+09:03,480 --> 00:09:08,320
+lens settings pretty self-explanatory if
+09:06,200 --> 00:09:10,640
+you have Universal Zoom okay I'm going
+09:08,320 --> 00:09:13,079
+to bring your attention to down here
+09:10,640 --> 00:09:15,360
+where we have focal length focal length
+09:13,079 --> 00:09:17,240
+this is the most common setting that you
+09:15,360 --> 00:09:18,600
+probably have even on your iPhone the
+09:17,240 --> 00:09:20,320
+remember the wide angle lens the
+09:18,600 --> 00:09:22,600
+telephoto lens all of these have to do
+09:20,320 --> 00:09:24,120
+with your focal length and the depth of
+09:22,600 --> 00:09:25,440
+field has to do with your aperture so
+09:24,120 --> 00:09:27,720
+these two settings right here so focal
+09:25,440 --> 00:09:29,360
+length is now on 35 which is pretty
+09:27,720 --> 00:09:32,079
+standard you want to go wider you're
+09:29,360 --> 00:09:34,079
+going to slide this down right this is
+09:32,079 --> 00:09:36,920
+now a wide angle lens and then you can
+09:34,079 --> 00:09:39,920
+go all the way in to have that really
+09:36,920 --> 00:09:42,000
+nice flat image which usually is used
+09:39,920 --> 00:09:44,680
+for portrait shots right but this is
+09:42,000 --> 00:09:46,279
+like way too close right 130 focal
+09:44,680 --> 00:09:48,120
+length is like too much but I'm going to
+09:46,279 --> 00:09:51,000
+pull this back to something like
+09:48,120 --> 00:09:53,160
+50 and the reason why we talked about
+09:51,000 --> 00:09:55,079
+Universal Zoom is because on default you
+09:53,160 --> 00:09:56,920
+can control the focal length and
+09:55,079 --> 00:09:59,800
+aperture but you can go for some of
+09:56,920 --> 00:10:03,079
+these settings let's say a 30 m prime
+09:59,800 --> 00:10:05,279
+lens 1.4 aperture if you choose this
+10:03,079 --> 00:10:06,760
+prime lens means you cannot change the
+10:05,279 --> 00:10:08,959
+focal length so right now the focal
+10:06,760 --> 00:10:10,760
+length is locked I cannot change it
+10:08,959 --> 00:10:13,240
+because by default it's a prime lens
+10:10,760 --> 00:10:15,600
+right and the aperture is at 2.8 right
+10:13,240 --> 00:10:18,360
+now supposed to be 1.4 sorry my bad it's
+10:15,600 --> 00:10:20,040
+at 2.8 but you get the point right it
+10:18,360 --> 00:10:22,200
+changes some of your settings based on
+10:20,040 --> 00:10:23,880
+that we usually like to go for Universal
+10:22,200 --> 00:10:26,120
+Zoom so that we have full control
+10:23,880 --> 00:10:28,320
+ourself so right now you know that focal
+10:26,120 --> 00:10:29,519
+length is going to be controlling this
+10:28,320 --> 00:10:32,720
+exact setting we're going to change it
+10:29,519 --> 00:10:34,880
+to 50 and F aperture controls our depth
+10:32,720 --> 00:10:36,720
+of field so the lower that number the
+10:34,880 --> 00:10:38,440
+more blurriness we can get in our shot
+10:36,720 --> 00:10:40,720
+and the more Focus we can have on a
+10:38,440 --> 00:10:44,079
+specific object so let's bring this down
+10:40,720 --> 00:10:47,000
+to the lowest number which should be 1.2
+10:44,079 --> 00:10:49,079
+cuz that's our minimum F stop so 1.2
+10:47,000 --> 00:10:51,800
+let's bring it all the way down and see
+10:49,079 --> 00:10:52,800
+it's even more blurred now now F what is
+10:51,800 --> 00:10:55,000
+the next thing that we got to do with
+10:52,800 --> 00:10:57,279
+this Focus setting yes right we got to
+10:55,000 --> 00:10:59,200
+change where our focus is and that's
+10:57,279 --> 00:11:00,880
+under Focus settings so right now it's
+10:59,200 --> 00:11:02,720
+on manual which is perfect cuz we want
+11:00,880 --> 00:11:05,279
+to manually change it and we can change
+11:02,720 --> 00:11:07,000
+our Focus settings with these numbers
+11:05,279 --> 00:11:09,399
+with this number right here and in order
+11:07,000 --> 00:11:12,120
+to see where it is at we can use the
+11:09,399 --> 00:11:14,120
+debug Focus plane by hitting this check
+11:12,120 --> 00:11:16,440
+mark it's not visible right now cuz it's
+11:14,120 --> 00:11:18,639
+way too far but it spawns a plane with
+11:16,440 --> 00:11:19,959
+this exact color and tells you exactly
+11:18,639 --> 00:11:22,120
+where your focus is so we're going to go
+11:19,959 --> 00:11:24,040
+ahead and drag this all the way down
+11:22,120 --> 00:11:26,160
+until we see that plane there you go
+11:24,040 --> 00:11:30,560
+it's visible now and pay close attention
+11:26,160 --> 00:11:32,880
+to what happens to our Focus
+11:30,560 --> 00:11:36,480
+boom you see that I'm going to disable
+11:32,880 --> 00:11:37,720
+the debug and look at how beautiful this
+11:36,480 --> 00:11:40,120
+okay honestly we're done with the
+11:37,720 --> 00:11:42,680
+tutorial series like look at how cool
+11:40,120 --> 00:11:45,120
+this is guys if you're doing exactly the
+11:42,680 --> 00:11:47,279
+same thing you're probably just like wow
+11:45,120 --> 00:11:49,360
+this looks beautiful and it's real time
+11:47,279 --> 00:11:50,880
+at the same time right now far there's
+11:49,360 --> 00:11:53,720
+another way we can change the Focus
+11:50,880 --> 00:11:55,519
+right here we can select by the eye
+11:53,720 --> 00:11:57,040
+dropper there there you go so you don't
+11:55,519 --> 00:11:58,360
+have to manually go ahead and change the
+11:57,040 --> 00:12:00,320
+slider I'm going to select the eye
+11:58,360 --> 00:12:02,040
+dropper tool and just select maybe this
+12:00,320 --> 00:12:04,320
+Stormtrooper right here and look at the
+12:02,040 --> 00:12:06,560
+Focus changing look at how cool that is
+12:04,320 --> 00:12:09,720
+I'm going to move my camera to the right
+12:06,560 --> 00:12:11,880
+and this guys is exactly the reason why
+12:09,720 --> 00:12:13,440
+you started this Unreal Engine tutorial
+12:11,880 --> 00:12:16,079
+series because if you were to do this in
+12:13,440 --> 00:12:17,519
+any other software well I don't want to
+12:16,079 --> 00:12:19,040
+discriminate against all the other
+12:17,519 --> 00:12:20,680
+softwares but pretty much a lot of the
+12:19,040 --> 00:12:22,680
+other softwares and you wanted to go
+12:20,680 --> 00:12:25,000
+ahead and navigate around the scene like
+12:22,680 --> 00:12:27,560
+this with hundreds of Stormtroopers with
+12:25,000 --> 00:12:29,199
+all of these lights parro it wouldn't be
+12:27,560 --> 00:12:30,800
+possible it would be very noisy and it
+12:29,199 --> 00:12:33,360
+would take a lot of time so right now
+12:30,800 --> 00:12:35,279
+we're doing this and one more thing I
+12:33,360 --> 00:12:38,199
+wanted to cover really quickly Farah do
+12:35,279 --> 00:12:39,480
+you see the bokeh at the back yes do you
+12:38,199 --> 00:12:42,040
+remember the reason why we told
+12:39,480 --> 00:12:44,160
+everybody please listen to us yes those
+12:42,040 --> 00:12:46,360
+emissive lights that we created with JS
+12:44,160 --> 00:12:48,079
+placement might not look super great
+12:46,360 --> 00:12:50,199
+right now but but look at them now look
+12:48,079 --> 00:12:51,760
+at them now do you see the boka that
+12:50,199 --> 00:12:55,279
+we're getting from those emissive lights
+12:51,760 --> 00:12:57,959
+looks so good okay so what is the next
+12:55,279 --> 00:12:59,440
+thing we have to cover okay I think
+12:57,959 --> 00:13:01,760
+aperture we already cover covered right
+12:59,440 --> 00:13:04,199
+we we did say that if we change let's
+13:01,760 --> 00:13:06,240
+say our Focus here of course if we go
+13:04,199 --> 00:13:09,440
+ahead and bring up our aperture
+13:06,240 --> 00:13:11,880
+basically we'll have more we have less
+13:09,440 --> 00:13:14,399
+focus on the subject everything else is
+13:11,880 --> 00:13:15,839
+going to be less blurry right and the
+13:14,399 --> 00:13:17,000
+depth of field is going to change so
+13:15,839 --> 00:13:19,320
+we're going to increase this number and
+13:17,000 --> 00:13:22,040
+look at what happens to the background
+13:19,320 --> 00:13:23,720
+you see that F what is a squeeze Factor
+13:22,040 --> 00:13:25,320
+very good question so if you hover over
+13:23,720 --> 00:13:27,079
+squeeze Factor it says squeeze factor
+13:25,320 --> 00:13:28,920
+for anamorphic lenses now if you're a
+13:27,079 --> 00:13:30,680
+film Maniac you would probably already
+13:28,920 --> 00:13:32,079
+know about anamorphic lenses a lot of
+13:30,680 --> 00:13:33,480
+people are crazy about them we need to
+13:32,079 --> 00:13:35,320
+get one we don't have an anamorphic lens
+13:33,480 --> 00:13:36,959
+we don't have used in the latest Batman
+13:35,320 --> 00:13:39,120
+right yes it was used in the Batman
+13:36,959 --> 00:13:41,519
+series it used in a lot of movies but
+13:39,120 --> 00:13:43,760
+very specifically I believe Batman used
+13:41,519 --> 00:13:45,800
+it and the shots were so nice with
+13:43,760 --> 00:13:50,199
+anamorphic lenses you get this really
+13:45,800 --> 00:13:51,839
+cool sort of blurry edges to your screen
+13:50,199 --> 00:13:54,440
+and then the focus is sort of right in
+13:51,839 --> 00:13:56,560
+the middle and then your bokeh effects
+13:54,440 --> 00:13:58,160
+of the spherical shapes that you see at
+13:56,560 --> 00:14:00,959
+the back because of our emissive lights
+13:58,160 --> 00:14:03,040
+turn into a an oval shape right and so
+14:00,959 --> 00:14:05,839
+we can actually sort of emulate an
+14:03,040 --> 00:14:07,680
+anamorphic lens not exactly to the dot
+14:05,839 --> 00:14:08,759
+here but the squeeze factor helps so
+14:07,680 --> 00:14:10,279
+let's go ahead and increase the number
+14:08,759 --> 00:14:12,880
+to Two and let's see what happens to the
+14:10,279 --> 00:14:15,600
+book you see it's now spherical do you
+14:12,880 --> 00:14:19,000
+see that do you see the the shape so if
+14:15,600 --> 00:14:20,880
+I were to go ahead and change my my lens
+14:19,000 --> 00:14:23,399
+and just bump this up to something like
+14:20,880 --> 00:14:25,759
+24 okay just temporarily I'm not saying
+14:23,399 --> 00:14:27,320
+this is the lens uh sensor width and
+14:25,759 --> 00:14:31,120
+height that you should go for but if you
+14:27,320 --> 00:14:34,040
+look closely now our shot does emulate
+14:31,120 --> 00:14:36,000
+sort of an anamorphic lens Plus in post
+14:34,040 --> 00:14:38,199
+in Da Vinci you can go ahead and add
+14:36,000 --> 00:14:40,160
+some of those blurs in the edges maybe
+14:38,199 --> 00:14:41,519
+some chromatic aberration whatever you
+14:40,160 --> 00:14:43,880
+think would be right for you to get that
+14:41,519 --> 00:14:45,600
+anamorphic effect but the squeeze Factor
+14:43,880 --> 00:14:48,240
+actually gets you one step closer to
+14:45,600 --> 00:14:50,839
+that anamorphic look so far as what if I
+14:48,240 --> 00:14:53,560
+need help moving my camera I want to use
+14:50,839 --> 00:14:55,680
+Crane I want to use rig rig rail or I
+14:53,560 --> 00:14:57,880
+came from the real V film making
+14:55,680 --> 00:14:59,279
+industry and I'm so used to these tools
+14:57,880 --> 00:15:01,399
+how can I use them in
+14:59,279 --> 00:15:02,839
+absolutely so we haven't talked about
+15:01,399 --> 00:15:05,120
+animation yet cuz we don't have
+15:02,839 --> 00:15:07,959
+timelines but we do have to cover all
+15:05,120 --> 00:15:09,079
+the animations with cameras because then
+15:07,959 --> 00:15:11,399
+how would you know how to move your
+15:09,079 --> 00:15:13,360
+cameras the basic way of course is just
+15:11,399 --> 00:15:15,560
+like anything else we'll hold the camera
+15:13,360 --> 00:15:17,079
+and then just move it like so but if you
+15:15,560 --> 00:15:18,800
+want to be more precise as farad
+15:17,079 --> 00:15:21,000
+mentioned there are tools in on your
+15:18,800 --> 00:15:22,920
+Ling that help you to do that wait a
+15:21,000 --> 00:15:24,360
+second we're teaching you guys all of
+15:22,920 --> 00:15:26,759
+these techniques like modeling and
+15:24,360 --> 00:15:28,880
+texturing but frankly there are faster
+15:26,759 --> 00:15:30,800
+Alternatives like photogrametry that's
+15:28,880 --> 00:15:33,079
+when you use your phone to take a bunch
+15:30,800 --> 00:15:35,560
+of photos of a real life object and then
+15:33,079 --> 00:15:37,680
+turn that object into 3D within minutes
+15:35,560 --> 00:15:40,560
+and then bring it into Unreal Engine so
+15:37,680 --> 00:15:43,279
+we use polyam for our photo gometry and
+15:40,560 --> 00:15:45,759
+they actually sponsored this course so
+15:43,279 --> 00:15:47,319
+that you guys get 30% off their Pro Plan
+15:45,759 --> 00:15:49,120
+we have all of the details and the promo
+15:47,319 --> 00:15:50,759
+code in the description back to the
+15:49,120 --> 00:15:52,639
+course so in order to do that we're
+15:50,759 --> 00:15:54,440
+going to go to our add button right here
+15:52,639 --> 00:15:56,480
+go to cinematic and the first one that
+15:54,440 --> 00:15:59,079
+we're going to use is the camera rig
+15:56,480 --> 00:16:00,560
+rail now this might be conf infusing in
+15:59,079 --> 00:16:03,240
+the very beginning if you've never done
+16:00,560 --> 00:16:05,480
+3D but a camera reg rail works like a
+16:03,240 --> 00:16:08,480
+basier curve if you come from a 3D
+16:05,480 --> 00:16:10,199
+software and the first time me and fart
+16:08,480 --> 00:16:11,839
+saw it and heard about it we tried it
+16:10,199 --> 00:16:14,440
+and we forgot after a while how it
+16:11,839 --> 00:16:16,000
+worked so even if you do don't worry
+16:14,440 --> 00:16:17,120
+whenever the need for it comes you're
+16:16,000 --> 00:16:18,920
+going to probably search for this
+16:17,120 --> 00:16:20,560
+tutorial again and find out how to use
+16:18,920 --> 00:16:22,120
+it but right now we've memorized how
+16:20,560 --> 00:16:24,079
+it's done so when you have a camera
+16:22,120 --> 00:16:26,600
+regail first of all let's try to create
+16:24,079 --> 00:16:28,240
+the path for our camera I want to go
+16:26,600 --> 00:16:31,000
+ahead and start my camera here and I'm
+16:28,240 --> 00:16:33,319
+going to go in a u shape and come back
+16:31,000 --> 00:16:35,560
+here and in order to do that I'm going
+16:33,319 --> 00:16:37,079
+to place my rig rail in the origin point
+16:35,560 --> 00:16:39,360
+that I want to begin with and then I'm
+16:37,079 --> 00:16:41,639
+going to hit this little white dot to
+16:39,360 --> 00:16:43,759
+start my shape so I'm going to hit it
+16:41,639 --> 00:16:47,000
+once it's selected I will see my Gizmo I
+16:43,759 --> 00:16:49,920
+can then goad and pull my shape and now
+16:47,000 --> 00:16:51,680
+this is a curve but in order to enable
+16:49,920 --> 00:16:53,440
+the curve I need to go ahead and add
+16:51,680 --> 00:16:55,480
+more points to my curve right now it's
+16:53,440 --> 00:16:57,600
+just one point right from the beginning
+16:55,480 --> 00:17:00,360
+to the end I'm going to go ahead and use
+16:57,600 --> 00:17:02,199
+duplicate so holding alt I'm going to
+17:00,360 --> 00:17:04,520
+pull on this arrow to the direction that
+17:02,199 --> 00:17:08,079
+I want and I'm going to go ahead and
+17:04,520 --> 00:17:11,280
+extend this Rick Rail and then I'll do
+17:08,079 --> 00:17:12,880
+another pull this is my custom shape
+17:11,280 --> 00:17:15,319
+down here because I want it to be a u-
+17:12,880 --> 00:17:16,919
+shape so I'm going to hold alt pull it
+17:15,319 --> 00:17:18,760
+again to extend it as you can see it's
+17:16,919 --> 00:17:21,120
+creating new points and it's already
+17:18,760 --> 00:17:22,880
+created but far what's really cool about
+17:21,120 --> 00:17:26,480
+basier curves is that now you have
+17:22,880 --> 00:17:28,240
+control full control using handles so
+17:26,480 --> 00:17:29,360
+I'm just going to go ahead and click
+17:28,240 --> 00:17:31,039
+this this point right here this is one
+17:29,360 --> 00:17:33,360
+of my points and I have these two extra
+17:31,039 --> 00:17:35,280
+handles so I can let's say bring this
+17:33,360 --> 00:17:37,679
+higher so right now it's like a roller
+17:35,280 --> 00:17:41,120
+coaster and then I can hit this handle
+17:37,679 --> 00:17:43,679
+and I can move this to control my shape
+17:41,120 --> 00:17:45,480
+I can even rotate on on some of the axis
+17:43,679 --> 00:17:48,480
+so not actually sorry not this one I can
+17:45,480 --> 00:17:52,440
+rotate this guy right here yes and I can
+17:48,480 --> 00:17:54,440
+move these handles to create a unique
+17:52,440 --> 00:17:56,400
+shape for my camera now this guy just
+17:54,440 --> 00:17:58,559
+went below the ground which is not good
+17:56,400 --> 00:18:01,200
+going to bring this guy up and just just
+17:58,559 --> 00:18:03,200
+like that we have created our rig rail
+18:01,200 --> 00:18:05,080
+so far how do we go ahead and actually
+18:03,200 --> 00:18:07,120
+attach our camera so that it follows the
+18:05,080 --> 00:18:09,440
+rig rail we need to make the camera a
+18:07,120 --> 00:18:11,039
+child of a rig rail so in order to make
+18:09,440 --> 00:18:12,799
+the camera a child of the rig rail we
+18:11,039 --> 00:18:14,520
+have to go to our outliner right here so
+18:12,799 --> 00:18:16,200
+let's close all of these drop downs
+18:14,520 --> 00:18:18,240
+there's too many we're going to find our
+18:16,200 --> 00:18:21,880
+camera and then we're going to drag it
+18:18,240 --> 00:18:24,280
+and drop it under the rig rail so right
+18:21,880 --> 00:18:26,200
+now it is connected but it's not
+18:24,280 --> 00:18:28,720
+following the exact origin you need to
+18:26,200 --> 00:18:31,559
+reset the location yes just like the gun
+18:28,720 --> 00:18:34,240
+to the Storm Trooper to reset location
+18:31,559 --> 00:18:35,919
+dependent on the r rail so go to the
+18:34,240 --> 00:18:38,559
+camera make sure the camera selected
+18:35,919 --> 00:18:40,320
+here there's some values reset both of
+18:38,559 --> 00:18:42,840
+these values and you can see it comes to
+18:40,320 --> 00:18:44,360
+the origin Point as long as it's a child
+18:42,840 --> 00:18:45,720
+of the rig rail now I'm going to raise
+18:44,360 --> 00:18:48,720
+this guy up I'm going to point it
+18:45,720 --> 00:18:51,240
+towards the right direction and then if
+18:48,720 --> 00:18:53,679
+I go to my rig rail select it in the
+18:51,240 --> 00:18:55,919
+details panel there's a current position
+18:53,679 --> 00:18:58,000
+on rail which is at zero so if you go
+18:55,919 --> 00:19:00,600
+ahead and slide it you will see that our
+18:58,000 --> 00:19:03,200
+camera is now following the path of the
+19:00,600 --> 00:19:04,760
+rig rail perfectly faras what if I want
+19:03,200 --> 00:19:06,840
+the camera to track a single
+19:04,760 --> 00:19:08,240
+Stormtrooper along the way through this
+19:06,840 --> 00:19:09,520
+rail that's a very good question cuz
+19:08,240 --> 00:19:11,159
+right now it looks weird right it's
+19:09,520 --> 00:19:14,080
+following the path but it's not
+19:11,159 --> 00:19:15,360
+controlling its tracking so in order to
+19:14,080 --> 00:19:16,799
+do that we're going to go back to the
+19:15,360 --> 00:19:19,280
+original setting that we didn't talk
+19:16,799 --> 00:19:21,280
+about in our camera so hit our camera
+19:19,280 --> 00:19:24,120
+and at look at track settings at the
+19:21,280 --> 00:19:25,679
+very top we have an option which says
+19:24,120 --> 00:19:27,400
+enable look at tracking that's just to
+19:25,679 --> 00:19:29,679
+enable it so let's go ahead and enable
+19:27,400 --> 00:19:32,400
+that and now it's facing forward because
+19:29,679 --> 00:19:34,559
+it doesn't have an object to track so
+19:32,400 --> 00:19:37,159
+the option we're looking for is actor to
+19:34,559 --> 00:19:39,320
+track and we need to define the object
+19:37,159 --> 00:19:42,000
+it need to track so far who should we
+19:39,320 --> 00:19:43,679
+track the Stormtrooper we can but
+19:42,000 --> 00:19:45,120
+there's just one issue if you go and
+19:43,679 --> 00:19:47,320
+track the Storm Trooper because if you
+19:45,120 --> 00:19:48,760
+select them there's so many of them I
+19:47,320 --> 00:19:49,960
+don't even know where the origin point
+19:48,760 --> 00:19:52,280
+is I think the camera is going to be
+19:49,960 --> 00:19:54,520
+confused as to which one to look at so
+19:52,280 --> 00:19:57,280
+we're going to fake one of our objects
+19:54,520 --> 00:19:59,240
+by just bringing something just any
+19:57,280 --> 00:20:00,600
+shape like a sphere spere right this is
+19:59,240 --> 00:20:02,960
+going to be the object that we're going
+20:00,600 --> 00:20:04,600
+to track we're going to raise it up
+20:02,960 --> 00:20:08,159
+right here okay and we're going to make
+20:04,600 --> 00:20:10,000
+it super small just like that like tiny
+20:08,159 --> 00:20:11,480
+okay we can go ahead and even hide this
+20:10,000 --> 00:20:13,120
+later on but I'm just going to keep it
+20:11,480 --> 00:20:14,840
+here so that we know what we're tracking
+20:13,120 --> 00:20:16,919
+but later on we can even hide this so
+20:14,840 --> 00:20:18,320
+this is going to be our fake tracker
+20:16,919 --> 00:20:21,360
+we're going to rename the sphere to
+20:18,320 --> 00:20:23,480
+tracker and then on top of the camera if
+20:21,360 --> 00:20:25,039
+you go to the look at track settings we
+20:23,480 --> 00:20:26,640
+can either use the eye dropper tool or
+20:25,039 --> 00:20:29,200
+just search
+20:26,640 --> 00:20:31,960
+tracker once we have you can see that
+20:29,200 --> 00:20:33,640
+it's tracking the object so let's go
+20:31,960 --> 00:20:35,360
+ahead can we track the focus too
+20:33,640 --> 00:20:36,520
+absolutely let me just show you what the
+20:35,360 --> 00:20:38,400
+tracking looks like and then we're going
+20:36,520 --> 00:20:40,440
+to do the focus as well so I'm going to
+20:38,400 --> 00:20:42,000
+go to my rig and then I'm going to use
+20:40,440 --> 00:20:45,280
+the current position on Rail and look at
+20:42,000 --> 00:20:46,880
+what happens o that looks beautiful that
+20:45,280 --> 00:20:48,520
+looks really cool looks amazing all
+20:46,880 --> 00:20:49,919
+right this is not cinematic at all this
+20:48,520 --> 00:20:51,480
+is not the perfect camera motion we're
+20:49,919 --> 00:20:55,159
+just teaching you the ways to use the
+20:51,480 --> 00:20:56,640
+software so farad asked for Focus right
+20:55,159 --> 00:20:58,880
+yes so we're going to go cuz right now
+20:56,640 --> 00:21:00,480
+the ball is out of focus let's first go
+20:58,880 --> 00:21:02,679
+ahead and really zoom into this so let's
+21:00,480 --> 00:21:05,280
+go increase a focal length first and
+21:02,679 --> 00:21:07,080
+really notice that our focus is off and
+21:05,280 --> 00:21:09,280
+for our Focus yes we can go ahead and
+21:07,080 --> 00:21:12,480
+set this to manual right but the problem
+21:09,280 --> 00:21:15,000
+is as we move on our track we're going
+21:12,480 --> 00:21:17,200
+to change the focus the focus because
+21:15,000 --> 00:21:18,480
+the focus is stuck in one position so
+21:17,200 --> 00:21:21,480
+we're going to track it how do we do
+21:18,480 --> 00:21:23,360
+that far the eye drop her absolutely so
+21:21,480 --> 00:21:26,520
+first we need to change our Focus method
+21:23,360 --> 00:21:28,240
+from manual to tracking and then open
+21:26,520 --> 00:21:29,480
+the drop down of tracking focus and as
+21:28,240 --> 00:21:31,880
+farat said this time around we'll
+21:29,480 --> 00:21:34,520
+actually use the eye dropper tool and
+21:31,880 --> 00:21:36,279
+select the sphere the tracker and just
+21:34,520 --> 00:21:38,120
+like that it's done now that the focus
+21:36,279 --> 00:21:39,880
+is tracking we can go ahead and click
+21:38,120 --> 00:21:41,440
+our camera rig Rail and pay close
+21:39,880 --> 00:21:44,720
+attention to what happens here we're
+21:41,440 --> 00:21:47,400
+going to go all the way to one o and
+21:44,720 --> 00:21:50,320
+look at that focused and tracked focused
+21:47,400 --> 00:21:52,559
+and tracked now we can go here and this
+21:50,320 --> 00:21:53,679
+looks perfect so if you want to go ahead
+21:52,559 --> 00:21:54,760
+and hide the tracker you can just go
+21:53,679 --> 00:21:56,120
+ahead and do it it's still going to
+21:54,760 --> 00:21:58,440
+track
+21:56,120 --> 00:22:01,120
+nonetheless beautiful how can can we use
+21:58,440 --> 00:22:02,880
+the crane tool okay so we use the camera
+22:01,120 --> 00:22:04,960
+regil there's another tool that you can
+22:02,880 --> 00:22:06,600
+use and just like in real life it works
+22:04,960 --> 00:22:08,679
+exactly the same way we're going to go
+22:06,600 --> 00:22:12,120
+to cinematics we're going to bring the
+22:08,679 --> 00:22:14,200
+camera rig crane oh and fart remind me
+22:12,120 --> 00:22:16,360
+how do I attach my camera to this makate
+22:14,200 --> 00:22:18,400
+the child of crane so I'm going to drag
+22:16,360 --> 00:22:20,200
+it and take it out of the camera reg
+22:18,400 --> 00:22:22,760
+Grail I'm going to take it to my crane
+22:20,200 --> 00:22:25,960
+instead reset location and rotation
+22:22,760 --> 00:22:27,480
+reset location and rotation boom boom
+22:25,960 --> 00:22:28,559
+okay and guess what it's already
+22:27,480 --> 00:22:30,600
+tracking
+22:28,559 --> 00:22:33,440
+the sphere right from the beginning so
+22:30,600 --> 00:22:35,559
+all I have to do is now go ahead to my
+22:33,440 --> 00:22:38,159
+camera R range settings and then now I
+22:35,559 --> 00:22:40,159
+have to play with these values the pitch
+22:38,159 --> 00:22:43,840
+the yaw and the arm length let's see
+22:40,159 --> 00:22:46,200
+what they do so the pitch does this wow
+22:43,840 --> 00:22:49,919
+look at that shot do you see it yeah the
+22:46,200 --> 00:22:52,760
+ya doeses the rotation wow and then the
+22:49,919 --> 00:22:54,520
+arm length which is even cooler I mean
+22:52,760 --> 00:22:56,840
+dude look at the shots we're creating
+22:54,520 --> 00:23:00,400
+here is going to take it higher wow so
+22:56,840 --> 00:23:02,799
+we can go above and beyond and there are
+23:00,400 --> 00:23:06,440
+no limits within the engine oh look at
+23:02,799 --> 00:23:07,960
+No Limits look at this Wow Wow in the
+23:06,440 --> 00:23:10,120
+next chapter we are going to animate all
+23:07,960 --> 00:23:12,880
+of this using sequencer and it's going
+23:10,120 --> 00:23:14,880
+to be smooth oh my God I just I'm sorry
+23:12,880 --> 00:23:17,360
+I I like I really like to play around
+23:14,880 --> 00:23:19,760
+with this so guys you learned now how to
+23:17,360 --> 00:23:21,200
+use the camera the rig Rail and the
+23:19,760 --> 00:23:22,960
+crane and we showed you all the
+23:21,200 --> 00:23:25,400
+parameters but the most important part
+23:22,960 --> 00:23:27,080
+is how we animate this and use it in our
+23:25,400 --> 00:23:28,960
+timeline so the next chapter we are
+23:27,080 --> 00:23:30,840
+going to talk about sequencer and we're
+23:28,960 --> 00:23:32,919
+going to show you how to animate cameras
+23:30,840 --> 00:23:34,760
+how to animate objects this is going to
+23:32,919 --> 00:23:36,360
+be an amazing chapter S check this out
+23:34,760 --> 00:23:37,480
+look at how cool this looks oh my God
+23:36,360 --> 00:23:39,559
+you're going to animate it in the next
+23:37,480 --> 00:23:41,960
+chapter dude look at this shot dude you
+23:39,559 --> 00:23:44,480
+guys can do this now congratulations for
+23:41,960 --> 00:23:46,919
+making it thus far guys we cannot wait
+23:44,480 --> 00:23:49,400
+to see you in the next video until then
+23:46,919 --> 00:23:49,400
+chiao

@@ -1,0 +1,1502 @@
+00:00,120 --> 00:00:03,719
+by the end of this video you will have
+00:01,920 --> 00:00:06,839
+learned how to use the rendering
+00:03,719 --> 00:00:09,200
+settings in onne engine 5 Master it so
+00:06,839 --> 00:00:11,040
+that you can render both in Lumen and
+00:09,200 --> 00:00:15,400
+path racing so that you can come up with
+00:11,040 --> 00:00:19,240
+images that look like this
+00:15,400 --> 00:00:21,920
+or this and also that was just Lumen you
+00:19,240 --> 00:00:24,720
+can even do path tracing so let's get
+00:21,920 --> 00:00:27,119
+started what is up beautiful people you
+00:24,720 --> 00:00:29,320
+guys did it this is the final episode of
+00:27,119 --> 00:00:31,279
+Unreal Engine tutorial series Paras
+00:29,320 --> 00:00:33,360
+great job great job to you guys who made
+00:31,279 --> 00:00:35,320
+it all the way till here we are going to
+00:33,360 --> 00:00:37,600
+talk about render settings this is like
+00:35,320 --> 00:00:39,520
+going to war imagine if you were in war
+00:37,600 --> 00:00:41,239
+you would have your comrades everyone's
+00:39,520 --> 00:00:44,160
+happy in the beginning and then by the
+00:41,239 --> 00:00:46,640
+end of the war half of them are dead and
+00:44,160 --> 00:00:48,600
+you have only a few buddies left and
+00:46,640 --> 00:00:50,600
+that is the viewers watching right now
+00:48,600 --> 00:00:52,600
+literally the guys who have survived
+00:50,600 --> 00:00:53,960
+have survived the war but seriously the
+00:52,600 --> 00:00:55,800
+fact that you guys are here means you
+00:53,960 --> 00:00:57,520
+guys are serious about this and that
+00:55,800 --> 00:00:59,199
+means a lot to us so thank you for
+00:57,520 --> 00:01:01,039
+watching and supporting the tutorial
+00:59,199 --> 00:01:02,879
+series up until this moment just want to
+01:01,039 --> 00:01:04,640
+ask you guys for one favor please if you
+01:02,879 --> 00:01:06,439
+liked it so far make sure you subscribe
+01:04,640 --> 00:01:08,159
+if you haven't already and also share it
+01:06,439 --> 00:01:09,720
+with your friends yes this is the only
+01:08,159 --> 00:01:11,360
+way to support us because we provide
+01:09,720 --> 00:01:13,119
+this for you guys for free absolutely
+01:11,360 --> 00:01:15,040
+free so what are we going to do right
+01:13,119 --> 00:01:17,600
+now let's go render the two scenes that
+01:15,040 --> 00:01:19,280
+we just created absolutely so in order
+01:17,600 --> 00:01:21,640
+to render there's a couple of things
+01:19,280 --> 00:01:24,840
+that we'd like to do before we go ahead
+01:21,640 --> 00:01:26,360
+and do the final stage of rendering and
+01:24,840 --> 00:01:28,759
+I want to show you guys all of that so
+01:26,360 --> 00:01:30,439
+that you guys have learned every single
+01:28,759 --> 00:01:32,880
+thing that we do in in order to get our
+01:30,439 --> 00:01:34,880
+renders to look beautiful so the very
+01:32,880 --> 00:01:37,000
+first thing is if you remember we have
+01:34,880 --> 00:01:39,640
+used two console commands during the
+01:37,000 --> 00:01:42,040
+entire project right and those two were
+01:39,640 --> 00:01:44,280
+used for the ugly Shadows that were
+01:42,040 --> 00:01:46,280
+caused by the nanite fallback mesh and
+01:44,280 --> 00:01:48,479
+also the fact that we had Ray tracing
+01:46,280 --> 00:01:51,479
+culling when we went too far away from
+01:48,479 --> 00:01:53,360
+the characters right now these are fixed
+01:51,479 --> 00:01:55,640
+but every single time you open up your
+01:53,360 --> 00:01:57,960
+project you have to reset them and fix
+01:55,640 --> 00:01:59,240
+them again there's a way to fix that and
+01:57,960 --> 00:02:01,200
+we want to show you guys that so it's
+01:59,240 --> 00:02:03,360
+easier for you across the board in order
+02:01,200 --> 00:02:05,680
+to do that we're going to go to window
+02:03,360 --> 00:02:08,039
+and then there's this option called
+02:05,680 --> 00:02:10,319
+console variables if you click that you
+02:08,039 --> 00:02:13,040
+can see the two console variables that
+02:10,319 --> 00:02:15,440
+we have changed and adjusted right and
+02:13,040 --> 00:02:19,160
+their values are updated you can go
+02:15,440 --> 00:02:20,480
+ahead and save these as a preset so
+02:19,160 --> 00:02:23,200
+we're going to do that right now save
+02:20,480 --> 00:02:26,760
+preset as maybe you can open up a new
+02:23,200 --> 00:02:30,239
+folder for them call them console
+02:26,760 --> 00:02:32,800
+variables and then call it stars yes
+02:30,239 --> 00:02:34,720
+Star Wars whatever and then now I'm
+02:32,800 --> 00:02:36,480
+going to close this every single time I
+02:34,720 --> 00:02:38,440
+open the project again I don't have to
+02:36,480 --> 00:02:41,319
+go Ahad and manually place them in the
+02:38,440 --> 00:02:43,159
+console command section at the bottom I
+02:41,319 --> 00:02:45,640
+can just go ahead to my console
+02:43,159 --> 00:02:48,360
+variables and load this up and it is
+02:45,640 --> 00:02:50,959
+going to be available for me to use and
+02:48,360 --> 00:02:52,440
+it's just going to work like that right
+02:50,959 --> 00:02:55,120
+simple all of them are going to be
+02:52,440 --> 00:02:58,000
+enabled at one go so this is just a way
+02:55,120 --> 00:03:00,360
+to make your scene building much quicker
+02:58,000 --> 00:03:02,280
+before you go ahead and finalize
+03:00,360 --> 00:03:04,400
+everything usually we like to do this in
+03:02,280 --> 00:03:06,799
+the beginning of the project as well now
+03:04,400 --> 00:03:08,720
+the next tip I want to give you guys it
+03:06,799 --> 00:03:10,480
+has to do with lighting we didn't talk
+03:08,720 --> 00:03:11,840
+about this earlier on and we probably
+03:10,480 --> 00:03:13,440
+won't see the difference right now but
+03:11,840 --> 00:03:16,480
+it comes really handy in a lot of
+03:13,440 --> 00:03:19,760
+different projects lighting itself like
+03:16,480 --> 00:03:21,920
+each light itself has a quality and we
+03:19,760 --> 00:03:24,080
+can see the quality by hitting on any of
+03:21,920 --> 00:03:27,000
+our light sources and then searching in
+03:24,080 --> 00:03:29,120
+a details panel for samples so samples
+03:27,000 --> 00:03:31,120
+per pixel is what we're looking for
+03:29,120 --> 00:03:32,640
+currently it's at one by default it's at
+03:31,120 --> 00:03:35,000
+one but then you can go ahead and
+03:32,640 --> 00:03:37,480
+increase the samples per pixel for each
+03:35,000 --> 00:03:40,080
+light now mind you this is going to hit
+03:37,480 --> 00:03:42,040
+your performance is this the setup for
+03:40,080 --> 00:03:44,480
+when the light is f flickering during a
+03:42,040 --> 00:03:46,480
+render yes so one time when we were
+03:44,480 --> 00:03:49,319
+working on a project with metahumans the
+03:46,480 --> 00:03:51,080
+digital avatars the Shadows were not
+03:49,319 --> 00:03:52,680
+perfect and also we had some light
+03:51,080 --> 00:03:55,200
+flickering in the background we can't
+03:52,680 --> 00:03:57,079
+say the word flickering for some today
+03:55,200 --> 00:03:59,159
+but in order to fix that all we had to
+03:57,079 --> 00:04:00,959
+do was increase the samples of the
+03:59,159 --> 00:04:03,319
+lights and if you actually go to some of
+04:00,959 --> 00:04:04,680
+the epic games own sample projects which
+04:03,319 --> 00:04:06,480
+is what we told you guys in the very
+04:04,680 --> 00:04:07,760
+beginning of this tutorial series and
+04:06,480 --> 00:04:09,799
+you go ahead and click on some of the
+04:07,760 --> 00:04:11,159
+lights in the scene you'll realize that
+04:09,799 --> 00:04:13,519
+they've changed some of the samples to
+04:11,159 --> 00:04:15,920
+three sometimes to four sometimes to
+04:13,519 --> 00:04:17,919
+five and that helps increase the quality
+04:15,920 --> 00:04:20,440
+of the light and the Shadows this comes
+04:17,919 --> 00:04:22,079
+in very handy so make sure you play with
+04:20,440 --> 00:04:23,800
+these values you might not see the
+04:22,079 --> 00:04:26,160
+difference here but in some other scenes
+04:23,800 --> 00:04:29,039
+you might see a drastic change so that's
+04:26,160 --> 00:04:30,639
+another tip for you now the final tip
+04:29,039 --> 00:04:32,600
+before we go ahead and actually start
+04:30,639 --> 00:04:35,560
+rendering is we told you guys in the
+04:32,600 --> 00:04:37,880
+last chapter but per shot we recommend
+04:35,560 --> 00:04:39,400
+you to go ahead and change your lighting
+04:37,880 --> 00:04:42,120
+so that you can create really cool
+04:39,400 --> 00:04:46,120
+effects for instance let's go to our
+04:42,120 --> 00:04:48,520
+second camera okay we can go here and as
+04:46,120 --> 00:04:50,320
+you see everything is really white right
+04:48,520 --> 00:04:53,000
+so we can go ahead and say okay you know
+04:50,320 --> 00:04:54,360
+what for this shot specifically okay I
+04:53,000 --> 00:04:57,039
+want to go ahead and drop in a
+04:54,360 --> 00:05:00,000
+rectangular light in the front and I
+04:57,039 --> 00:05:02,440
+want to turn this to the color red all
+05:00,000 --> 00:05:04,840
+right so that I have some nice red
+05:02,440 --> 00:05:06,120
+shining towards my Stormtroopers now
+05:04,840 --> 00:05:07,680
+this might look really bad right now
+05:06,120 --> 00:05:09,360
+because I'm really not spending a lot of
+05:07,680 --> 00:05:12,240
+time on this I'm going to make this a
+05:09,360 --> 00:05:14,960
+bit wider okay let's just go into our
+05:12,240 --> 00:05:16,280
+cameras and see what this looks like
+05:14,960 --> 00:05:19,520
+okay all right I'm going to increase
+05:16,280 --> 00:05:21,000
+this value you see that so it's just a
+05:19,520 --> 00:05:24,319
+little change right I'm going to make
+05:21,000 --> 00:05:26,560
+this maybe 500 it might be because when
+05:24,319 --> 00:05:28,080
+the door of the spaceship is opening
+05:26,560 --> 00:05:30,199
+right there are red lights there that
+05:28,080 --> 00:05:32,400
+you want to place later so now
+05:30,199 --> 00:05:34,520
+when this shot happens you'll see the
+05:32,400 --> 00:05:36,680
+red light shine on them and that could
+05:34,520 --> 00:05:38,680
+be accompanied by the sound effect of
+05:36,680 --> 00:05:40,720
+the door opening so before you even
+05:38,680 --> 00:05:43,600
+switch to the other shot you'll see the
+05:40,720 --> 00:05:45,840
+red light and then you hear
+05:43,600 --> 00:05:47,560
+that get it that was a good sound of
+05:45,840 --> 00:05:49,039
+that a good sound effect thank you so
+05:47,560 --> 00:05:51,160
+that's why we recommend you change a
+05:49,039 --> 00:05:52,280
+light and see how cool it looks okay
+05:51,160 --> 00:05:54,720
+we're not going to do that right now
+05:52,280 --> 00:05:57,080
+this was just a sample for you to see
+05:54,720 --> 00:05:59,639
+now we are going to go straight into
+05:57,080 --> 00:06:01,759
+rendering so our very first question
+05:59,639 --> 00:06:04,560
+question in the last chapter was what is
+06:01,759 --> 00:06:07,000
+the camera cut track at the top that
+06:04,560 --> 00:06:09,960
+automatically appears when we bring in a
+06:07,000 --> 00:06:13,560
+new camera now that is basically saying
+06:09,960 --> 00:06:14,919
+that I want you from frame zero to frame
+06:13,560 --> 00:06:18,319
+whatever that is
+06:14,919 --> 00:06:20,319
+550 focus on the first camera C camera
+06:18,319 --> 00:06:22,080
+actor you're not rendering anything from
+06:20,319 --> 00:06:24,039
+the second camera or any other camera
+06:22,080 --> 00:06:25,319
+that might be in the scene so how do we
+06:24,039 --> 00:06:27,440
+go ahead and fix that let's say we want
+06:25,319 --> 00:06:29,000
+to go ahead and render this one shot but
+06:27,440 --> 00:06:31,479
+I want all the cameras to change
+06:29,000 --> 00:06:33,919
+depending on whichever frame it is and
+06:31,479 --> 00:06:36,039
+so is that the plus button there
+06:33,919 --> 00:06:38,120
+absolutely so there's a plus button
+06:36,039 --> 00:06:40,039
+right here and one thing that you can do
+06:38,120 --> 00:06:42,080
+to check it by the way and make sure
+06:40,039 --> 00:06:44,160
+you're seeing it through the camera cut
+06:42,080 --> 00:06:46,160
+is if I go to my main camera my first
+06:44,160 --> 00:06:48,639
+camera and I scrub through this is what
+06:46,160 --> 00:06:51,120
+I have if I go to my second camera and I
+06:48,639 --> 00:06:53,400
+scrub through this is my shot and then I
+06:51,120 --> 00:06:55,720
+can go to my camera cut which is exactly
+06:53,400 --> 00:06:57,039
+what is going to be rendered right this
+06:55,720 --> 00:06:57,879
+is exactly what we're going to see when
+06:57,039 --> 00:07:00,520
+we hit
+06:57,879 --> 00:07:03,120
+render we only have the camera so the
+07:00,520 --> 00:07:05,120
+camera cut at this moment equal to cam C
+07:03,120 --> 00:07:07,039
+camera number one absolutely okay now
+07:05,120 --> 00:07:08,879
+how can you change it halfway to go to C
+07:07,039 --> 00:07:10,360
+camera number two very good question so
+07:08,879 --> 00:07:11,960
+we're going to go ahead and use this add
+07:10,360 --> 00:07:14,080
+button and we're going to say okay I
+07:11,960 --> 00:07:16,960
+want you to go ahead and add the cine
+07:14,080 --> 00:07:19,520
+camera actor 2 and wherever my marker
+07:16,960 --> 00:07:21,520
+was it's going to change so now if you
+07:19,520 --> 00:07:23,319
+look closely at the top left here and I
+07:21,520 --> 00:07:27,560
+can just hover over it it says from
+07:23,319 --> 00:07:29,639
+frame 124 to 548 for 424 frames we have
+07:27,560 --> 00:07:31,400
+the second camera and then check check
+07:29,639 --> 00:07:34,479
+this out I'll go all the way back again
+07:31,400 --> 00:07:36,240
+make sure you are locked into this icon
+07:34,479 --> 00:07:38,319
+right here for the camera cut this is
+07:36,240 --> 00:07:40,039
+precisely what you will render out so
+07:38,319 --> 00:07:42,639
+you go from zero scrub through look at
+07:40,039 --> 00:07:45,639
+what happens Boom o you made that switch
+07:42,639 --> 00:07:47,840
+can we drag and extend the our first
+07:45,639 --> 00:07:50,520
+camera yes you can do that you can do
+07:47,840 --> 00:07:52,720
+that and you can basically bring in a
+07:50,520 --> 00:07:54,960
+100 different cameras and switch them at
+07:52,720 --> 00:07:56,680
+every single frame that's up to you you
+07:54,960 --> 00:07:58,479
+just have to make sure to add them here
+07:56,680 --> 00:08:00,000
+now the reason why this is so important
+07:58,479 --> 00:08:01,479
+because for beginners you
+08:00,000 --> 00:08:02,759
+they'll add all these cameras and then
+08:01,479 --> 00:08:04,360
+they'll render they realize they only
+08:02,759 --> 00:08:06,280
+have one camera in the render they
+08:04,360 --> 00:08:08,599
+forget that they have to change this
+08:06,280 --> 00:08:10,639
+right here and what's really neat about
+08:08,599 --> 00:08:12,599
+locking yourself to the camera cut when
+08:10,639 --> 00:08:14,479
+you come up here you cannot move your
+08:12,599 --> 00:08:16,599
+camera so I'm trying to move because
+08:14,479 --> 00:08:18,759
+it's locked with both cameras now it
+08:16,599 --> 00:08:20,400
+doesn't allow you to move the cameras
+08:18,759 --> 00:08:23,199
+now I'm going to give you another tip at
+08:20,400 --> 00:08:25,280
+the end here if I go to my first camera
+08:23,199 --> 00:08:27,120
+right here and I'll try to move it look
+08:25,280 --> 00:08:29,039
+at what happens I can't actually move it
+08:27,120 --> 00:08:31,639
+which is not good I'm already done with
+08:29,039 --> 00:08:33,320
+my render I want to lock my cameras even
+08:31,639 --> 00:08:35,240
+if I'm not locked into the camera cut
+08:33,320 --> 00:08:37,000
+track how do I do it well you're going
+08:35,240 --> 00:08:38,760
+to go to your cameras any camera that
+08:37,000 --> 00:08:42,240
+you want to lock once you're done with
+08:38,760 --> 00:08:44,240
+the positioning right click and then
+08:42,240 --> 00:08:46,399
+edit okay it's not there I'm going to go
+08:44,240 --> 00:08:49,320
+out of it let me try again right click
+08:46,399 --> 00:08:51,360
+okay doesn't work cuz right now we want
+08:49,320 --> 00:08:52,720
+to lock our camera and it doesn't lock
+08:51,360 --> 00:08:54,120
+and this actually happens we wanted to
+08:52,720 --> 00:08:56,000
+go and erase this part but you're going
+08:54,120 --> 00:08:57,959
+to face the same freaking problem for
+08:56,000 --> 00:08:59,600
+some reason sometimes you want to lock
+08:57,959 --> 00:09:01,079
+your camera there are supposed to be
+08:59,600 --> 00:09:03,079
+more options when you right click on it
+09:01,079 --> 00:09:04,959
+and it's not there my only solution to
+09:03,079 --> 00:09:07,480
+this is restart your project so let's go
+09:04,959 --> 00:09:07,480
+ahead and do
+09:08,279 --> 00:09:14,000
+that we are back in the engine going to
+09:10,800 --> 00:09:16,800
+the level load the sequencer let's
+09:14,000 --> 00:09:18,600
+see okay so we're back in the sequencer
+09:16,800 --> 00:09:20,519
+all right now I'm going to go to my
+09:18,600 --> 00:09:22,600
+cameras and check this out right click
+09:20,519 --> 00:09:25,320
+and now I have all these options so I'm
+09:22,600 --> 00:09:27,320
+going to go to transform and then lock
+09:25,320 --> 00:09:30,640
+actor movement I'll do the same thing
+09:27,320 --> 00:09:32,600
+for my second camera transform lock
+09:30,640 --> 00:09:34,399
+actor move and right now even if I'm not
+09:32,600 --> 00:09:36,399
+inside this camera cut track I can go to
+09:34,399 --> 00:09:38,600
+my camera too and I'm trying to right
+09:36,399 --> 00:09:39,959
+click I cannot move the camera anymore
+09:38,600 --> 00:09:42,200
+which is perfect cuz sometimes you might
+09:39,959 --> 00:09:44,120
+mess up your camera angles and it's the
+09:42,200 --> 00:09:45,959
+worst thing ever so we're going to go
+09:44,120 --> 00:09:48,399
+back to camera cut track we've got the
+09:45,959 --> 00:09:49,880
+perfect shot this shot and then we want
+09:48,399 --> 00:09:51,720
+to switch to this guy maybe I'll just
+09:49,880 --> 00:09:53,839
+extend this a little bit more and I
+09:51,720 --> 00:09:55,880
+think 300 frame is enough we don't need
+09:53,839 --> 00:09:57,800
+all the way okay so you can either go
+09:55,880 --> 00:10:00,200
+ahead and say I'm want to close this at
+09:57,800 --> 00:10:02,640
+300 frames here or you can Define the
+10:00,200 --> 00:10:04,440
+range in the render settings so now we
+10:02,640 --> 00:10:06,720
+know this way let's just show you the
+10:04,440 --> 00:10:09,079
+way that happens within the render
+10:06,720 --> 00:10:11,320
+engine one final thing I'd like to
+10:09,079 --> 00:10:13,519
+mention here before we go to actually
+10:11,320 --> 00:10:15,720
+rendering right now we're rendering at
+10:13,519 --> 00:10:17,399
+30 frames per second you can Chang this
+10:15,720 --> 00:10:20,000
+again in the render setting but for you
+10:17,399 --> 00:10:21,640
+to understand it's all the way up here
+10:20,000 --> 00:10:24,440
+uh you have options for all of these
+10:21,640 --> 00:10:27,640
+different frames you got 12 FPS all the
+10:24,440 --> 00:10:30,079
+way up to 240 or your own custom FPS
+10:27,640 --> 00:10:32,320
+another option I really like is down
+10:30,079 --> 00:10:34,440
+here Showtime as so right now we're
+10:32,320 --> 00:10:36,320
+seeing everything in frames let's say
+10:34,440 --> 00:10:37,959
+you're working on a music video and you
+10:36,320 --> 00:10:40,079
+want to see actual seconds you can just
+10:37,959 --> 00:10:42,959
+change the showtime as 2 seconds and
+10:40,079 --> 00:10:46,000
+you'll see right now it's sorry contrl Z
+10:42,959 --> 00:10:48,320
+it's switched to 0 seconds 4 these are
+10:46,000 --> 00:10:51,120
+actual seconds right and if you change
+10:48,320 --> 00:10:52,560
+the FPS you can see that it still keeps
+10:51,120 --> 00:10:54,519
+everything the same for you to make it
+10:52,560 --> 00:10:56,519
+simpler we were on 30 right now so we're
+10:54,519 --> 00:11:00,440
+going to go back to 30 and then Showtime
+10:56,519 --> 00:11:03,320
+as frames cool so now it's time to
+11:00,440 --> 00:11:05,399
+render baby let's do it okay so we're
+11:03,320 --> 00:11:07,760
+going to go to this button right here
+11:05,399 --> 00:11:09,399
+this is what you're looking for okay
+11:07,760 --> 00:11:11,399
+everything's not saved yet so let's go
+11:09,399 --> 00:11:12,920
+ahe and save before we go to render and
+11:11,399 --> 00:11:15,160
+then we're going to go to this button
+11:12,920 --> 00:11:19,839
+and hit it we're going to be presented
+11:15,160 --> 00:11:22,040
+with the movie render queue so don't be
+11:19,839 --> 00:11:23,519
+intimidated by the number of options
+11:22,040 --> 00:11:26,279
+you've got here what you're trying to
+11:23,519 --> 00:11:28,360
+look for is the settings right here so
+11:26,279 --> 00:11:31,639
+the way you can actually change a render
+11:28,360 --> 00:11:33,200
+settings is here it says unsaved config
+11:31,639 --> 00:11:36,839
+that's what you want to go ahead and
+11:33,200 --> 00:11:38,760
+press when you do you have to make sure
+11:36,839 --> 00:11:40,839
+you get familiar with this menu right
+11:38,760 --> 00:11:42,720
+here this is going to be your wife your
+11:40,839 --> 00:11:44,040
+girlfriend your boyfriend your husband
+11:42,720 --> 00:11:45,560
+whatever it is you're going to be
+11:44,040 --> 00:11:47,519
+marrying this guy right here okay you're
+11:45,560 --> 00:11:49,200
+going to be rendering part that you need
+11:47,519 --> 00:11:52,360
+yeah this is the most important part
+11:49,200 --> 00:11:54,120
+right so what happens exactly in this
+11:52,360 --> 00:11:56,480
+section on the left side we're looking
+11:54,120 --> 00:11:58,279
+at different options we can control the
+11:56,480 --> 00:11:59,519
+number of different options that we have
+11:58,279 --> 00:12:01,480
+and there's so many different things we
+11:59,519 --> 00:12:03,240
+can choose from and each of these will
+12:01,480 --> 00:12:04,880
+have their settings on the right side as
+12:03,240 --> 00:12:07,360
+soon as we click on them so as you can
+12:04,880 --> 00:12:09,920
+see right now on the export section we
+12:07,360 --> 00:12:11,839
+are exporting in jpeg which sucks you
+12:09,920 --> 00:12:14,079
+can only do this if you're testing your
+12:11,839 --> 00:12:16,120
+renders then we got the rendering which
+12:14,079 --> 00:12:18,600
+is deferred rendering which is basically
+12:16,120 --> 00:12:21,160
+saying render in Lumen the current
+12:18,600 --> 00:12:22,600
+render that we have which is basically
+12:21,160 --> 00:12:24,839
+going to be your rendering setting for
+12:22,600 --> 00:12:26,720
+the majority of your projects unless you
+12:24,839 --> 00:12:28,920
+go for path racing which we will show
+12:26,720 --> 00:12:31,360
+you also in a moment and then you've got
+12:28,920 --> 00:12:33,519
+your output okay let's start with the
+12:31,360 --> 00:12:35,240
+output because this is the one that is
+12:33,519 --> 00:12:36,480
+going to be common across all projects
+12:35,240 --> 00:12:37,839
+this is basically saying where do you
+12:36,480 --> 00:12:39,600
+want to save your project so let's go a
+12:37,839 --> 00:12:41,839
+and do that first I'm going to go to
+12:39,600 --> 00:12:44,000
+this output directory hit this three
+12:41,839 --> 00:12:46,240
+buttons go to my desktop CU I've already
+12:44,000 --> 00:12:47,959
+prepared a folder go to renders and go
+12:46,240 --> 00:12:50,839
+to Lumen that's the first render that
+12:47,959 --> 00:12:54,160
+we're doing right yes okay so Lumen
+12:50,839 --> 00:12:56,160
+select folder now for the name okay what
+12:54,160 --> 00:12:58,519
+I always like to do is keep my frame
+12:56,160 --> 00:13:00,399
+number so this is a code it says you go
+12:58,519 --> 00:13:02,000
+for sequence name which is right now
+13:00,399 --> 00:13:03,760
+what is our sequencer name Spaceship
+13:02,000 --> 00:13:06,360
+Spaceship door open open we don't want
+13:03,760 --> 00:13:09,880
+that we just change it to maybe St and
+13:06,360 --> 00:13:12,240
+then 001 002 003 so everything before
+13:09,880 --> 00:13:13,720
+this dot we're going to change to St
+13:12,240 --> 00:13:15,079
+okay and then it's giving us all these
+13:13,720 --> 00:13:17,680
+options do we want to change it to shot
+13:15,079 --> 00:13:20,279
+name blah blah blah no just keep it SD
+13:17,680 --> 00:13:22,279
+do frame number so sd1 sd2 sd3 makes
+13:20,279 --> 00:13:24,440
+sense and then I'm just going to go back
+13:22,279 --> 00:13:26,480
+here so that that drop down goes away
+13:24,440 --> 00:13:29,519
+the next thing is output resolution so
+13:26,480 --> 00:13:31,120
+it's on 2K yeah it's on full HD by
+13:29,519 --> 00:13:34,839
+default right now we want to change it
+13:31,120 --> 00:13:36,839
+to 4K 4K so you can do this very easily
+13:34,839 --> 00:13:40,000
+by just taking this value and then
+13:36,839 --> 00:13:43,079
+multiply so using using the asteris by
+13:40,000 --> 00:13:47,199
+two okay and then here I'm going to
+13:43,079 --> 00:13:50,079
+multiply it by two as well and that's
+13:47,199 --> 00:13:52,920
+how you turn your resolution to 4K you
+13:50,079 --> 00:13:54,600
+can go to 1920 1080 again if you're
+13:52,920 --> 00:13:56,759
+testing things if your computer is not
+13:54,600 --> 00:13:59,880
+strong enough we pretty much always go
+13:56,759 --> 00:14:02,920
+for 4K for our final renders
+13:59,880 --> 00:14:04,880
+and then as you can see we have 30 FPS
+14:02,920 --> 00:14:07,000
+that's our frames per second you can
+14:04,880 --> 00:14:09,160
+keep that right now or you can go ahead
+14:07,000 --> 00:14:11,959
+and overwrite that value by clicking
+14:09,160 --> 00:14:13,360
+this and then changing it here okay so
+14:11,959 --> 00:14:14,880
+it works the same way it's just
+14:13,360 --> 00:14:16,480
+overwriting it in case you want to do
+14:14,880 --> 00:14:18,959
+that I don't want to do that I want to
+14:16,480 --> 00:14:21,120
+keep it at 30 now this is what F was
+14:18,959 --> 00:14:24,000
+talking about when he said can we pull
+14:21,120 --> 00:14:26,040
+the frames from 540 that's too much so
+14:24,000 --> 00:14:27,959
+how can we do that we're going to use
+14:26,040 --> 00:14:31,440
+custom playback range farad what is the
+14:27,959 --> 00:14:34,720
+frame that you're to 300 0 to 300 okay
+14:31,440 --> 00:14:37,839
+so we have the frame start custom start
+14:34,720 --> 00:14:42,160
+frame at Zero Custom end frame at 300
+14:37,839 --> 00:14:43,759
+300 cool so all of this should be pretty
+14:42,160 --> 00:14:45,839
+simple your directory where do you want
+14:43,759 --> 00:14:49,160
+to save what's a name what's the
+14:45,839 --> 00:14:51,240
+resolution frame rate and your custom
+14:49,160 --> 00:14:52,839
+frame range you can uncheck this if
+14:51,240 --> 00:14:54,920
+you've already selected the right frame
+14:52,839 --> 00:14:57,399
+range in the beginning and now it's time
+14:54,920 --> 00:14:59,880
+to change the settings V you ready I
+14:57,399 --> 00:15:02,240
+don't like jpeg I don't like JP either
+14:59,880 --> 00:15:03,800
+so we we're going to kick it out we can
+15:02,240 --> 00:15:05,800
+actually go ahead and delete this using
+15:03,800 --> 00:15:08,040
+backspace and then in the top settings
+15:05,800 --> 00:15:10,360
+here just like our ad track it's the
+15:08,040 --> 00:15:11,800
+same thing we have all these options so
+15:10,360 --> 00:15:13,519
+for the settings we have these options
+15:11,800 --> 00:15:16,360
+for the exports we have these options
+15:13,519 --> 00:15:18,160
+and for the renders we have these so for
+15:16,360 --> 00:15:20,240
+these settings you're going to be using
+15:18,160 --> 00:15:23,199
+a bunch of these settings actually for
+15:20,240 --> 00:15:24,680
+your final renders and for the exports I
+15:23,199 --> 00:15:26,360
+think this is the simplest One to begin
+15:24,680 --> 00:15:30,279
+with what format do you want to export
+15:26,360 --> 00:15:33,480
+in P we just deleted jpeg which is 8bit
+15:30,279 --> 00:15:36,279
+and PNG is of course a little bit higher
+15:33,480 --> 00:15:38,959
+quality so usually for our renders that
+15:36,279 --> 00:15:40,639
+we upload on social media we go for PNG
+15:38,959 --> 00:15:43,360
+but if you talk to any professional
+15:40,639 --> 00:15:46,800
+artist they usually would like to go for
+15:43,360 --> 00:15:48,480
+exr which is right here it's 16bit your
+15:46,800 --> 00:15:51,279
+color information and the quality of
+15:48,480 --> 00:15:52,880
+your images will just be so much higher
+15:51,279 --> 00:15:54,880
+and also you have a lot more control
+15:52,880 --> 00:15:57,600
+when you're doing post-processing in
+15:54,880 --> 00:15:59,199
+softwares like d Vinci resolve so first
+15:57,600 --> 00:16:01,480
+I'll just show you PNG really quickly
+15:59,199 --> 00:16:03,800
+this is how you add PNG right Alpha says
+16:01,480 --> 00:16:05,199
+do you want transparency layer or not we
+16:03,800 --> 00:16:07,480
+technically don't want it we don't have
+16:05,199 --> 00:16:09,040
+any transparency so we turn it off and
+16:07,480 --> 00:16:11,560
+you can also go ahead and say hey bring
+16:09,040 --> 00:16:13,000
+in exr as well okay 16 bit so it will
+16:11,560 --> 00:16:14,639
+render both at the same time it will
+16:13,000 --> 00:16:17,360
+render both so I recommend for
+16:14,639 --> 00:16:18,759
+Simplicity for us we'll turn off exr at
+16:17,360 --> 00:16:19,720
+first because we want to do PNG first so
+16:18,759 --> 00:16:22,199
+we can just turn it off you don't have
+16:19,720 --> 00:16:23,880
+to delete it and we have PNG right now
+16:22,199 --> 00:16:26,959
+okay so we're rendering PNG now we're
+16:23,880 --> 00:16:28,720
+rendering Lumen and we know our output
+16:26,959 --> 00:16:31,199
+then the next setting that you're going
+16:28,720 --> 00:16:33,759
+to find really useful is console
+16:31,199 --> 00:16:35,959
+variables this guy right here is exactly
+16:33,759 --> 00:16:37,160
+the same thing at the bottom left right
+16:35,959 --> 00:16:38,639
+and we told you guys something in the
+16:37,160 --> 00:16:41,120
+beginning do you remember F what we said
+16:38,639 --> 00:16:43,759
+the presets absolutely so you can
+16:41,120 --> 00:16:46,399
+actually go ahead and create your
+16:43,759 --> 00:16:48,199
+presets and call them here so if you
+16:46,399 --> 00:16:50,079
+want to already bring a preset that
+16:48,199 --> 00:16:51,680
+you've created throughout your project
+16:50,079 --> 00:16:55,000
+you can just say hey console variable
+16:51,680 --> 00:16:57,160
+presets add this open this up I already
+16:55,000 --> 00:16:59,240
+have one called Star Wars load that bad
+16:57,160 --> 00:17:01,560
+boy in drop it down I know what those
+16:59,240 --> 00:17:03,519
+are okay amazing so you can actually go
+17:01,560 --> 00:17:06,480
+ahead and say you'll have two presets
+17:03,519 --> 00:17:08,799
+one for during your work where you want
+17:06,480 --> 00:17:10,520
+lower quality and you can create one
+17:08,799 --> 00:17:12,480
+super high quality you have like
+17:10,520 --> 00:17:14,760
+everything on ultra settings and then
+17:12,480 --> 00:17:16,679
+you call that only for rendering so your
+17:14,760 --> 00:17:18,520
+computer can really take its time to
+17:16,679 --> 00:17:20,760
+render so now we have our console
+17:18,520 --> 00:17:22,400
+variable preset from before right here
+17:20,760 --> 00:17:24,720
+and we can go ahead and add more to this
+17:22,400 --> 00:17:27,240
+by using this drop down and what I
+17:24,720 --> 00:17:28,960
+usually like to add is just one single
+17:27,240 --> 00:17:32,000
+console command which is called r.
+17:28,960 --> 00:17:34,600
+screen percentage now what does this do
+17:32,000 --> 00:17:37,160
+well this basically actually works in
+17:34,600 --> 00:17:39,000
+your viewport as well if you go to the
+17:37,160 --> 00:17:41,280
+top left right here the three bars
+17:39,000 --> 00:17:42,600
+you'll look for screen percentage and
+17:41,280 --> 00:17:44,480
+you'll notice that right now we're at a
+17:42,600 --> 00:17:47,799
+current screen percentage of
+17:44,480 --> 00:17:49,720
+57% and that is this exact resolution
+17:47,799 --> 00:17:52,360
+Although our screen resolution my
+17:49,720 --> 00:17:54,960
+monitor is 4K so we're rendering at a
+17:52,360 --> 00:17:56,799
+lower resolution but Unreal Engine uses
+17:54,960 --> 00:17:59,480
+anti-aliasing technology which is also
+17:56,799 --> 00:18:01,400
+using games to make it look sharp ER so
+17:59,480 --> 00:18:02,960
+that we can run with higher frame rate
+18:01,400 --> 00:18:04,280
+now I can go ahead and make this a
+18:02,960 --> 00:18:07,159
+different number by using custom
+18:04,280 --> 00:18:09,480
+override I can take this to let's say 95
+18:07,159 --> 00:18:11,520
+or even 100 but my FPS is definitely
+18:09,480 --> 00:18:14,159
+going to take a hit which is not good
+18:11,520 --> 00:18:16,760
+but for render time you can increase it
+18:14,159 --> 00:18:18,880
+absolutely and what will that do exactly
+18:16,760 --> 00:18:20,480
+so let's go and set this back to normal
+18:18,880 --> 00:18:22,640
+let's go back to our render settings
+18:20,480 --> 00:18:24,280
+let's go back here now screen percentage
+18:22,640 --> 00:18:27,520
+of zero is actually really low we don't
+18:24,280 --> 00:18:29,000
+want that 100 will be the normal display
+18:27,520 --> 00:18:31,960
+but we usually like to bump this up to
+18:29,000 --> 00:18:33,880
+125 150 right anything more will
+18:31,960 --> 00:18:35,520
+probably make your computer crash
+18:33,880 --> 00:18:38,320
+basically this says I want you to go
+18:35,520 --> 00:18:40,600
+larger than my screen display and then
+18:38,320 --> 00:18:43,080
+keep the same resolution scale it down
+18:40,600 --> 00:18:44,880
+at the output what that does it it keeps
+18:43,080 --> 00:18:47,440
+the resolution the same but it makes
+18:44,880 --> 00:18:50,200
+your image sharper so it's it's it's
+18:47,440 --> 00:18:53,919
+very good to have a Sharper Image this
+18:50,200 --> 00:18:55,960
+is the best simple setup for a lumen
+18:53,919 --> 00:18:58,039
+render right you can go crazier with
+18:55,960 --> 00:18:59,360
+this but really for beginners this is
+18:58,039 --> 00:19:01,720
+perfect so
+18:59,360 --> 00:19:03,440
+shall we render click accept click
+19:01,720 --> 00:19:05,240
+accept and then render local render
+19:03,440 --> 00:19:06,520
+local if you have servers that you're
+19:05,240 --> 00:19:07,919
+rendering on which you probably don't as
+19:06,520 --> 00:19:09,520
+a beginner that's what you're going to
+19:07,919 --> 00:19:12,840
+go for we never done that we're going to
+19:09,520 --> 00:19:14,919
+go render local and let's see the magic
+19:12,840 --> 00:19:15,880
+so very quickly talking about everything
+19:14,919 --> 00:19:18,799
+that you're seeing here you're going to
+19:15,880 --> 00:19:20,600
+see a lowquality render preview of what
+19:18,799 --> 00:19:22,200
+you're going to see as the output so if
+19:20,600 --> 00:19:24,159
+you see any mistakes here usually you
+19:22,200 --> 00:19:25,919
+want to stop your render by hitting the
+19:24,159 --> 00:19:27,559
+escape button and on the left side
+19:25,919 --> 00:19:29,960
+you're looking at the total frames and
+19:27,559 --> 00:19:31,280
+the number of frames and also the time
+19:29,960 --> 00:19:32,600
+remaining for your renders we haven't
+19:31,280 --> 00:19:34,840
+started anything yet it's going to take
+19:32,600 --> 00:19:37,960
+some time but on the right side you're
+19:34,840 --> 00:19:40,559
+also going to see the actual frames plus
+19:37,960 --> 00:19:42,400
+the camera cut track so right now we're
+19:40,559 --> 00:19:44,240
+on the first camera there's two of them
+19:42,400 --> 00:19:46,400
+of course and you'll see the switch
+19:44,240 --> 00:19:47,880
+happen as well so fire how long do we
+19:46,400 --> 00:19:52,000
+have remaining for this render 12
+19:47,880 --> 00:19:53,840
+minutes only now 10 now 9 now 8 s I'm
+19:52,000 --> 00:19:55,520
+going to fast forward this until we get
+19:53,840 --> 00:19:56,840
+to the end of this no I want to go to
+19:55,520 --> 00:19:59,080
+the next camera cut track so we'll see
+19:56,840 --> 00:20:00,600
+you in the next camera cut track okay
+19:59,080 --> 00:20:03,280
+all right I want to bring you guys back
+20:00,600 --> 00:20:05,200
+just so you see how freaking fast this
+20:03,280 --> 00:20:07,720
+is this is the reason why you're using
+20:05,200 --> 00:20:10,200
+Onre Engine 5 now the camera cut changed
+20:07,720 --> 00:20:11,559
+actually yes it changed the second one
+20:10,200 --> 00:20:13,520
+right and we're just going to have a
+20:11,559 --> 00:20:15,520
+quick pause and it's going to switch and
+20:13,520 --> 00:20:19,640
+guys if you were coming here from
+20:15,520 --> 00:20:22,440
+blender 4D you'll notice basically how
+20:19,640 --> 00:20:25,200
+fast this render is this is why people
+20:22,440 --> 00:20:26,559
+switch to Unreal Engine 5 because when
+20:25,200 --> 00:20:28,159
+we actually go ahead and switch to the
+20:26,559 --> 00:20:30,240
+path racing render after this which is
+20:28,159 --> 00:20:32,360
+similar to to the other 3D softwares
+20:30,240 --> 00:20:35,240
+you'll notice small differences the
+20:32,360 --> 00:20:38,000
+Lumen render is really close to the path
+20:35,240 --> 00:20:39,960
+racing renderer so we done let's check
+20:38,000 --> 00:20:42,880
+the render okay so we're going to go to
+20:39,960 --> 00:20:45,400
+the folder and I have installed this
+20:42,880 --> 00:20:47,880
+software called djv really recommend it
+20:45,400 --> 00:20:51,240
+to you guys basically you can view image
+20:47,880 --> 00:20:53,440
+sequences inside your windows by right
+20:51,240 --> 00:20:56,200
+clicking and dragging we can see what
+20:53,440 --> 00:20:56,200
+our render looks
+20:56,540 --> 00:20:59,120
+[Music]
+20:57,600 --> 00:21:04,159
+like
+20:59,120 --> 00:21:06,039
+dude look at this oh this is so good wow
+21:04,159 --> 00:21:08,600
+honestly I don't think if your PC cannot
+21:06,039 --> 00:21:12,600
+handle path racing this is more than
+21:08,600 --> 00:21:14,960
+good enough yes yeah perfect so this was
+21:12,600 --> 00:21:17,039
+your Lumen render rendered in about 4
+21:14,960 --> 00:21:19,559
+minutes which is so freaking fast we
+21:17,039 --> 00:21:22,120
+have an RTX 4090 so we understand but
+21:19,559 --> 00:21:23,960
+still it's very fast hold up did you
+21:22,120 --> 00:21:26,039
+know that you can use photogrametry to
+21:23,960 --> 00:21:27,919
+create highly photo realistic scenes by
+21:26,039 --> 00:21:30,600
+taking what exists in the real world
+21:27,919 --> 00:21:33,360
+into 3D we've been using polyam to do
+21:30,600 --> 00:21:34,799
+exactly that using our phone and drone
+21:33,360 --> 00:21:36,679
+that's right and shout out to them for
+21:34,799 --> 00:21:39,200
+sponsoring this video giving you guys
+21:36,679 --> 00:21:42,120
+30% off their promo plan the promo code
+21:39,200 --> 00:21:45,440
+is bad no 30% off their plan not the
+21:42,120 --> 00:21:49,600
+promo plan they don't have a promo plan
+21:45,440 --> 00:21:51,320
+30% off their plan plan Pro Plan use the
+21:49,600 --> 00:21:54,200
+code bad decisions in the link in the
+21:51,320 --> 00:21:56,760
+description let's continue and right now
+21:54,200 --> 00:21:59,120
+we're going to go to path racer yes go
+21:56,760 --> 00:22:00,679
+to the setting again okay as you
+21:59,120 --> 00:22:02,880
+mentioned we're going to turn off
+22:00,679 --> 00:22:04,360
+deferred rendering yes cuz that's the
+22:02,880 --> 00:22:06,360
+Lumen rendering right now yes you're
+22:04,360 --> 00:22:09,679
+going to add the setting for path Tracer
+22:06,360 --> 00:22:11,840
+all the way down here yes perfect so for
+22:09,679 --> 00:22:13,640
+the path racing if you want motion blur
+22:11,840 --> 00:22:15,520
+you can go ahead and read this sometimes
+22:13,640 --> 00:22:16,720
+I like to leave this on sometimes off
+22:15,520 --> 00:22:18,559
+for this time around we're going to
+22:16,720 --> 00:22:20,200
+leave it on it really depends on your
+22:18,559 --> 00:22:22,600
+scene so make sure you do some test
+22:20,200 --> 00:22:24,000
+renders and check it out turn this on do
+22:22,600 --> 00:22:25,200
+we want to change the number of frames
+22:24,000 --> 00:22:27,559
+because I don't think we want to render
+22:25,200 --> 00:22:28,880
+300 frames no path racing takes a lot
+22:27,559 --> 00:22:30,720
+longer so we're going to go to the
+22:28,880 --> 00:22:35,400
+output frame maybe let's just start at
+22:30,720 --> 00:22:37,159
+frame 200 and then go to 203 question if
+22:35,400 --> 00:22:39,120
+I want to render a single image I'll
+22:37,159 --> 00:22:42,000
+just put one single frame right like 200
+22:39,120 --> 00:22:45,440
+and 2011 absolutely amazing yes
+22:42,000 --> 00:22:47,400
+203 and that's great so the thing about
+22:45,440 --> 00:22:49,720
+the path racing render that you have to
+22:47,400 --> 00:22:51,400
+understand is that it works with samples
+22:49,720 --> 00:22:53,840
+so this is the difference if you
+22:51,400 --> 00:22:55,679
+remember our postprocess volume chapter
+22:53,840 --> 00:22:57,880
+we had a path racing setting on the
+22:55,679 --> 00:22:59,080
+right here and I have it you know on the
+22:57,880 --> 00:23:01,600
+screen so that you'll see what I'm
+22:59,080 --> 00:23:03,679
+talking about if I switch to the path
+23:01,600 --> 00:23:06,720
+tracing mode in my viewport you'll
+23:03,679 --> 00:23:09,840
+notice that we're running at 200 samples
+23:06,720 --> 00:23:11,679
+so the less bright your scene is the
+23:09,840 --> 00:23:12,880
+darker your scene the more samples
+23:11,679 --> 00:23:14,600
+you're going to need because in the
+23:12,880 --> 00:23:16,039
+darker areas just like in real life with
+23:14,600 --> 00:23:18,320
+cameras you're going to have a lot of
+23:16,039 --> 00:23:20,640
+noise but the brighter your scen is you
+23:18,320 --> 00:23:23,559
+can use less samples now if you have a
+23:20,640 --> 00:23:26,279
+lot of metallic and shiny surfaces that
+23:23,559 --> 00:23:27,880
+are even noisy in Lumen renders then you
+23:26,279 --> 00:23:29,840
+know that in your path racing you have
+23:27,880 --> 00:23:31,640
+to render with High samples now I don't
+23:29,840 --> 00:23:33,840
+know the perfect number for your scene
+23:31,640 --> 00:23:36,400
+but usually for a final render you want
+23:33,840 --> 00:23:38,159
+to go somewhere above a th000 samples
+23:36,400 --> 00:23:40,880
+and that really depends on you and your
+23:38,159 --> 00:23:43,840
+GPU but 1,000 samples takes a while to
+23:40,880 --> 00:23:46,080
+render per frame where do we set that up
+23:43,840 --> 00:23:47,400
+so in viewport this is where you change
+23:46,080 --> 00:23:49,520
+the settings so if I change it to one
+23:47,400 --> 00:23:51,600
+look at how noisy my image is e right
+23:49,520 --> 00:23:53,720
+this renders fast but it's very noisy
+23:51,600 --> 00:23:55,400
+but if I set it to 500 right you can
+23:53,720 --> 00:23:57,120
+sort of see okay I'm going to let my
+23:55,400 --> 00:23:59,640
+screen go I'm not going to touch
+23:57,120 --> 00:24:01,080
+anything so the loading bar finishes the
+23:59,640 --> 00:24:03,039
+reason why you can control this in the
+24:01,080 --> 00:24:05,600
+viewport is so that you can understand
+24:03,039 --> 00:24:09,799
+how many samples you need to get a
+24:05,600 --> 00:24:12,840
+pretty decent photo photo but I by photo
+24:09,799 --> 00:24:15,279
+I mean picture without any noise this is
+24:12,840 --> 00:24:16,919
+without any noise at this moment so
+24:15,279 --> 00:24:18,640
+actually I do see some noise on the top
+24:16,919 --> 00:24:21,200
+left and that noise is going to change
+24:18,640 --> 00:24:22,760
+per image which is not good so I assume
+24:21,200 --> 00:24:25,600
+for us we're going to need somewhere
+24:22,760 --> 00:24:28,440
+about a th000 samples for a really clean
+24:25,600 --> 00:24:30,159
+image these numbers here don't actually
+24:28,440 --> 00:24:33,360
+impact your render you need to change
+24:30,159 --> 00:24:35,240
+them using the anti-aliasing setting so
+24:33,360 --> 00:24:37,200
+we're going to go to unsafe config we're
+24:35,240 --> 00:24:39,080
+going to keep all the settings the same
+24:37,200 --> 00:24:41,039
+but we're going to go to settings and
+24:39,080 --> 00:24:44,360
+we're going to go to
+24:41,039 --> 00:24:46,559
+anti-aliasing now for anti-aliasing this
+24:44,360 --> 00:24:48,399
+is already working in your viewport you
+24:46,559 --> 00:24:50,880
+already have something called I believe
+24:48,399 --> 00:24:53,320
+super resolution so in your settings
+24:50,880 --> 00:24:55,120
+project settings
+24:53,320 --> 00:24:57,880
+anti-aliasing what we're running in the
+24:55,120 --> 00:25:00,000
+viewport is temporal super resolution
+24:57,880 --> 00:25:02,600
+which is why we have the 57% screen
+25:00,000 --> 00:25:05,720
+percentage but it looks as if it's 100
+25:02,600 --> 00:25:07,159
+it's using TSR for your final render you
+25:05,720 --> 00:25:09,240
+want to go ahead and override the
+25:07,159 --> 00:25:11,960
+anti-aliasing and turn it to none that
+25:09,240 --> 00:25:14,559
+is I've done extensive research on this
+25:11,960 --> 00:25:17,080
+it has to be this specific setting now
+25:14,559 --> 00:25:20,360
+for your samples it's basically your
+25:17,080 --> 00:25:22,720
+spatial sample count multiplied by your
+25:20,360 --> 00:25:25,080
+temporal sample count so these two
+25:22,720 --> 00:25:27,120
+numbers together will make up the total
+25:25,080 --> 00:25:29,840
+sample per pixel so fire if you want to
+25:27,120 --> 00:25:33,159
+go to a th what number do we want to put
+25:29,840 --> 00:25:35,240
+maybe 30 * 30 they I believe they have
+25:33,159 --> 00:25:36,880
+32 * 32 yeah I believe they have to go
+25:35,240 --> 00:25:40,799
+to the power of two something like this
+25:36,880 --> 00:25:43,279
+so like two or they have to go to 8 16
+25:40,799 --> 00:25:46,320
+something like that so 32 32 what will
+25:43,279 --> 00:25:48,720
+that be 900 something okay so if we go
+25:46,320 --> 00:25:50,640
+to 3232 we'll see the total sample count
+25:48,720 --> 00:25:53,520
+when we're hitting render so no worries
+25:50,640 --> 00:25:55,720
+let's just try with that okay so I also
+25:53,520 --> 00:25:57,919
+like to go ahead and disable the screen
+25:55,720 --> 00:26:00,200
+percentage when it comes to path racing
+25:57,919 --> 00:26:03,520
+because it really increases the render
+26:00,200 --> 00:26:06,000
+time all right this seems to be the one
+26:03,520 --> 00:26:07,720
+we want to go for let's go to accept and
+26:06,000 --> 00:26:09,760
+hit render local and we're going to
+26:07,720 --> 00:26:12,279
+actually see how many samples it's going
+26:09,760 --> 00:26:15,559
+to be at the bottom right in a moment so
+26:12,279 --> 00:26:17,520
+that's 1,24 samples which is
+26:15,559 --> 00:26:21,159
+perfect let's see how long this will
+26:17,520 --> 00:26:21,159
+take we're going to fast forward
+26:22,320 --> 00:26:27,240
+this fire is this still rendering yeah
+26:25,720 --> 00:26:30,240
+path
+26:27,240 --> 00:26:30,240
+tracing
+26:33,720 --> 00:26:38,159
+oh s still
+26:38,440 --> 00:26:43,080
+rendering dude your Beard's grown
+26:40,919 --> 00:26:45,399
+already since we started the render you
+26:43,080 --> 00:26:47,880
+have more white hairs oh my God and
+26:45,399 --> 00:26:50,440
+we're only at half of the
+26:47,880 --> 00:26:52,279
+samples of the first frame of the first
+26:50,440 --> 00:26:54,120
+frame what what did you put as a setup
+26:52,279 --> 00:26:57,240
+we were already done with the Lumen
+26:54,120 --> 00:26:59,840
+render for like 300 400
+26:57,240 --> 00:27:01,440
+frames so this is why you do not do the
+26:59,840 --> 00:27:03,200
+path racing render just kidding path
+27:01,440 --> 00:27:05,559
+racing renders are really great but you
+27:03,200 --> 00:27:07,760
+just have to have the patience and the
+27:05,559 --> 00:27:07,760
+right
+27:08,240 --> 00:27:13,640
+GPU I think we'll just render one
+27:11,080 --> 00:27:15,919
+frame our path said render is already
+27:13,640 --> 00:27:19,360
+let's go done after 5 years let's take a
+27:15,919 --> 00:27:22,240
+look boom oh
+27:19,360 --> 00:27:23,520
+wow but guys honestly there's almost no
+27:22,240 --> 00:27:25,399
+difference between the path racing
+27:23,520 --> 00:27:27,159
+render and the Lumen render we're going
+27:25,399 --> 00:27:28,919
+to Overlay both so you can take a look
+27:27,159 --> 00:27:30,520
+so if you don't have a b computer you
+27:28,919 --> 00:27:33,799
+can still go with Lumen and you will be
+27:30,520 --> 00:27:36,000
+fine f I think it's time guys
+27:33,799 --> 00:27:38,640
+congratulations you guys finished the
+27:36,000 --> 00:27:41,679
+Unreal Engine beginner tutorial series
+27:38,640 --> 00:27:43,760
+you are a pro now yes and you started
+27:41,679 --> 00:27:45,200
+just a few weeks ago or maybe just a few
+27:43,760 --> 00:27:47,320
+days ago depending on how long it took
+27:45,200 --> 00:27:50,000
+you to complete this tutorial series you
+27:47,320 --> 00:27:52,159
+started as a complete beginner someone
+27:50,000 --> 00:27:55,080
+who had no knowledge or little knowledge
+27:52,159 --> 00:27:56,320
+of unre LED but now you know so much so
+27:55,080 --> 00:27:58,640
+the fact that you made it until this
+27:56,320 --> 00:28:00,640
+point makes you a freaking Pro and you
+27:58,640 --> 00:28:03,640
+deserve a round of
+28:00,640 --> 00:28:03,640
+applause
