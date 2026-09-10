@@ -1,0 +1,1137 @@
+by the end of this video you're going to
+
+learn how to use the postprocess volume
+
+to turn your boring looking scenes from
+
+this to this and guess what we're also
+
+going to teach you how to use the path
+
+tracing rendering engine to get the most
+
+physically accurate scene what is up
+
+beautiful people welcome to chapter 10
+
+of our Unreal Engine beginner tutorial
+
+Series today we are going to talk about
+
+post process volume wow you made it
+
+until chapter 10 it's amazing you are
+
+good you are good
+
+great job great job now today's video
+
+this one right here is going to be one
+
+of the easiest honestly it's going to be
+
+a breeze and it's going to be also one
+
+of the best because what we're actually
+
+going to do is bring in something into
+
+our scene called the post-process volume
+
+now the post-process volume acts as an
+
+extra final filter on top of all of your
+
+renders which makes them look beautiful
+
+this is where you can add glow and Bloom
+
+add Vette to your screen even film grain
+
+things of that sort control the exposure
+
+usually postprocess volume is added in
+
+the beginning of our projects like right
+
+in the beginning right in the start so
+
+you can control the look of your scene
+
+it just didn't make sense to do it this
+
+time around because we had to go through
+
+the paces go from materials you know
+
+modeling and all that but you want to do
+
+this in the very beginning we always do
+
+it in the start so this is how you can
+
+go and bring it into your scene you'll
+
+just go to the top left where you can
+
+add things and then either just search
+
+so while your mouse is still on the
+
+Square Cube button you just search for
+
+post process while volume now it's
+
+showing it under three different
+
+categories all of them are the same
+
+right it's because it's under visual
+
+effects and volumes and also under all
+
+classes just drag any of them to your
+
+scene and it should look like the frame
+
+if you hit F and find it it will look
+
+like oh we have g off which is our
+
+overlay so hit G make sure you have your
+
+overlays back on and then it looks like
+
+this empty Cube that's what the
+
+postprocess volume looks like so
+
+basically all you have to do is control
+
+it it details right here it has a lot of
+
+options and we're going to go through
+
+some of the most important options so
+
+now that we have the post-process volume
+
+in the scene we're just going to go
+
+inside it and start playing around with
+
+some of the parameters so hit
+
+postprocess volume and let's start at
+
+Bloom okay this is my favorite we're
+
+going to turn them on just like our
+
+material instances just to enable them
+
+and activate them let's turn on method
+
+and intensity and already if we go Ahad
+
+and increase the slider let's look at
+
+what happens to our light magical you
+
+see that it's adding a glow around our
+
+lights if we look around you'll see it
+
+as well what what's going to happen if
+
+you go outside the cube so if I walk
+
+outside the cube let's see what happens
+
+boom gone see what if I don't want it to
+
+be only in the cube I want it to be
+
+active all the time so there's a way you
+
+can do that and the way you do that is
+
+by looking for by searching for unb
+
+that's a short term but it's called
+
+Unbound so unb infinite Unbound infinite
+
+extent Unbound by checking this it says
+
+hey this postprocess volume will work
+
+anywhere in the scene so now that I'm
+
+outside I'm still seeing the impacts of
+
+the bloom but I can have multiple post
+
+process volume for a scene right that's
+
+absolutely the case here so if you were
+
+to uncheck this imagine if you have a
+
+game right and you want to go ahead and
+
+place a postprocess volume and then
+
+maybe scale it you can absolutely change
+
+its size and say okay if I have a player
+
+and he's walking into this area I want
+
+to increase the bloom and Max it out
+
+because I have a fire in this location
+
+and then when he walks out of this
+
+bounding box I want to bring down the
+
+bloom so you can have another hold alt
+
+another post-process volume so I have
+
+two now and this one can have absolutely
+
+different settings and that's fine when
+
+the camera or the player walks into the
+
+other post-process volume and we can we
+
+can check this right now actually the
+
+second postprocess volume let's go ahead
+
+and change it intensity to maybe like
+
+eight so right now we're in the first
+
+one and then if you go to the next one
+
+you see the bloom see the difference
+
+this one is four this one is eight makes
+
+sense so that's the whole reason why you
+
+have multiple post-process volumes but
+
+usually for cinematics where you're
+
+changing the levels based on every scene
+
+usually we only have one we've only
+
+created one per scene so far but you
+
+know what it's good to know that you can
+
+have more than one so in our first
+
+postprocess volume let's first go ahead
+
+and click unb search for unb and turn it
+
+on so that it affects our entire scene
+
+so we don't have to be inside the
+
+postprocess volume then we can go and
+
+actually hide this one we can just drag
+
+it anywhere in our scene so we don't see
+
+it anymore now starting with our we
+
+don't need mobile depth field our Bloom
+
+there is the standard function and there
+
+is convolution so convolution is more
+
+expensive but it also works specifically
+
+with the lights so you don't see Bloom
+
+applied to the entire scene it only
+
+works on top of the lights if you look
+
+closely if I increase convolution you
+
+see it only affects our lights which is
+
+why it's more realistic more realistic
+
+but also more EXP expensive but you
+
+might want to go for standard let's just
+
+keep standard for now it's fine so let's
+
+go I don't know why all of them are open
+
+I don't like the fact that all drop
+
+downs are open I want to now go directly
+
+to lens flare you see how we have lens
+
+flare I don't like it and that comes
+
+with our postprocess volume so if I open
+
+it up by default it's on one so all I
+
+have to do is either increase the
+
+intensity of my lens flare or decrease
+
+it to zero I don't want to have any so
+
+I'm going to disable it by decreasing it
+
+to zero now the next thing and also
+
+super important setting is exposure so
+
+you can have Auto exposure which by
+
+default is on in Unreal Engine and what
+
+that does is for example if you're in an
+
+absolutely dark environment and suddenly
+
+go to a light environment your eyes your
+
+pupils change size to adjust to the
+
+lighting unal engine does the same thing
+
+but sometimes you want to make sure it
+
+stays the same so when you're going to
+
+different parts of your scene your light
+
+is not changing so to do that you have
+
+two choices one you can change this Auto
+
+exposure to manual and by default it's
+
+on one so you can increase it and then
+
+now everything in your scene will be
+
+sticking to this specific exposure or
+
+another way to do it is instead of going
+
+to manual we like to do it this way
+
+changing your Min and Max EV to just
+
+zero so this is now our default the same
+
+exposure that we had and it's not going
+
+to change anymore this is your exposure
+
+chromatic aberation if you played with
+
+After Effects and Premier Pro and D
+
+Vinci you will know this effect it's
+
+basically changing the RGB and and
+
+taking the RGB planes and just moving
+
+them a lot of people like to like use
+
+this for an artistic effect i' like to
+
+keep it either at a very minimal value
+
+like 0.2 to help sell more of the photo
+
+realism CU some cameras actually have
+
+the chromatic aberation which is why it
+
+exists as an effect but you can also add
+
+it in post if you don't want to use it
+
+here so you can just turn it off how we
+
+can add vignette so vignette is going to
+
+be under your image effects right here
+
+so if you turn it on by default it's on
+
+0.4 by just increasing the value it just
+
+makes your scene more cinematic cuz it
+
+puts all the focus in the middle of the
+
+scene and the vignette around the darker
+
+circles around your image is going to
+
+make it more cinematic so maybe we can
+
+keep this at a value of 0.4 five what do
+
+you say yeah I think that looks good I
+
+like that yeah one more thing I like to
+
+say is dirt mask so dirt mask is
+
+basically the dirt you're going to have
+
+on your lens to sell the realism and
+
+that one is a texture that you have to
+
+bring in we don't have it right now so
+
+we're not going to add anything but you
+
+can go ahead and bring in a dirt MK
+
+texture and add it over there the camera
+
+settings we're not going to touch cuz
+
+we're going to change that within the
+
+camera we're going to skip everything
+
+else like depth of field again
+
+everything can be done within the camera
+
+itself next up is color grading right
+
+again you do that in D Vinci right I
+
+exactly I like to do it in post in Da
+
+Vinci resolve that's where I'm used to
+
+all the settings but you're more than
+
+welcome to change the settings here you
+
+have access to global sh Shadow Global
+
+for everything or separately the Shadows
+
+the midtones the highlights and also
+
+maybe we'll just change one of the
+
+settings here how about we just play
+
+with the temperature since we know this
+
+scene is going to be dark and cold
+
+because it's the hanger for the bad guys
+
+the Sith Lords so we're going to reduce
+
+this number see what happens oh you see
+
+have you come to destroy me ob1 you know
+
+yesterday we saw the Japanese of Darth
+
+vad I want to watch Star Wars in
+
+Japanese now the only thing that works
+
+in a dub I would say that doesn't make
+
+it cringey is if you change English to
+
+Japanese but if you change Japanese to
+
+English sometimes it becomes really
+
+cringey like if you watch Animes in dub
+
+but yeah so we just made it slightly
+
+colder just a little bit we don't have
+
+to we can always changes but now you see
+
+it's more of a filter right that's what
+
+postprocess volume does so these are
+
+your color gradings now the next thing
+
+we want to talk about again film does
+
+the same thing you can change all of
+
+these settings the next one we're going
+
+to talk about which is really important
+
+is your rendering settings right and
+
+this comes in really handy because
+
+technically you can directly access
+
+these settings either through your
+
+settings right here the project settings
+
+which we're going to touch on in a
+
+moment or through your console commands
+
+which we're going to touch on as well
+
+later in this tutorial series but they
+
+have a shortcut for you in the
+
+post-process volume so you have access
+
+to some of the render settings so let's
+
+see what they are first of all we have
+
+to look at I'm I'm going to close all
+
+these drop downs cuz they're really
+
+annoying because by default they should
+
+be like this now the next thing we're
+
+going to cover is the rendering settings
+
+that we can access within the
+
+postprocess volume now these are not all
+
+of your rendering settings but some
+
+shortcuts that will help you quickly
+
+change some of those qualities in your
+
+renders now by default Unreal Engine 5
+
+is using Lumen so if you take a closer
+
+look here for our GI Global illumination
+
+and Reflections we're using Lumen far
+
+what is Lumen can I cheat yes please
+
+Lumen is under engine's fully dynamic
+
+Global illumination and reflection
+
+system absolutely so the reason why
+
+Lumen works really well with Unreal
+
+Engine 5 is because of how realistic it
+
+looks at the same time because of how
+
+real time it is which means we can work
+
+and move around scenes really quickly
+
+and have multiple different materials
+
+multiple different assets and have
+
+almost no noise almost no noise what is
+
+the other option that we have beside l
+
+so beside Lumen we have another option
+
+which is path tracing right and if come
+
+from blender or other 3D softwares the
+
+Cycles Render for instance is a path
+
+tracing renderer that's a method of
+
+rendering and if you have no knowledge
+
+of 3D rendering then you should know
+
+this so for us to be able to see and
+
+view these objects the computer the
+
+hardware has to work with the software
+
+to create this look for you how does it
+
+know what the metals should look like
+
+how does it know how the metals should
+
+reflect like so that it looks like real
+
+metal well there's different rendering
+
+enges and they work differently but path
+
+tracing renders are actually the most
+
+physically accurate because they're
+
+actually bouncing out hundreds of
+
+different rays of light and then see how
+
+they will bounce off different materials
+
+and then come back to the camera which
+
+is your eyes and then make it as
+
+realistic as possible now inside Unreal
+
+Engine we actually have access to a path
+
+tracing render which is the most
+
+realistic and we'll show you exactly how
+
+to access it so right now we're in Lumen
+
+which is why we can move around the
+
+scene really quickly there's no noise
+
+almost noise and things are super smooth
+
+but if you go to our lit View at the top
+
+left here and then actually change this
+
+to path tracing now if you don't have a
+
+strong computer be careful with this
+
+make sure you save before you do this
+
+because you might crash again depending
+
+on your computer if you change it to
+
+path tracing pay close attention to what
+
+happens to our
+
+materials do you see the difference this
+
+looks a lot more realistic look at the
+
+roof look at the ceiling sorry and you
+
+can actually see if you pay close
+
+attention the edges the normal maps that
+
+we created if you go back to Lumen look
+
+at how light is being reflected first of
+
+all we lose detail in the top area like
+
+right right here because it's trying to
+
+cancel out the noise and make this work
+
+in real time but if you go back to the
+
+path tracing renderer and try to move
+
+around the scene do you see the noise
+
+yep if you come from blender or other 3D
+
+software this is what you're used to
+
+right this is why Lumen is so freaking
+
+good because it looks almost as closed
+
+as possible possible that it can to a
+
+path racing renderer it's not there yet
+
+but it's close but it can work in real
+
+time with 80 FPS right now with all
+
+these things in our scene so if you go
+
+to our postprocess volume we have Lumen
+
+as our rendering method now we can go
+
+ahead and change some of its settings
+
+like for instance for the global
+
+illumination which is how you know it's
+
+Illuminating our scene we can go ahead
+
+and enable all these settings and
+
+sometimes they're going to make a huge
+
+difference depending on what materials
+
+you you have what items you have let's
+
+say you have a forest but sometimes they
+
+not they might not make that big of a
+
+difference so if you goe and change for
+
+example our scene detail from 1 to zero
+
+do you see what happens to our light
+
+here and then change it to back to one
+
+do you see the reflections exactly and
+
+also here seen lighting doesn't make
+
+that much of a difference right final
+
+gather quality not much of a difference
+
+right now but the more items you add you
+
+can keep playing with these values ready
+
+to go and then see what difference it
+
+makes to your scene for us it doesn't
+
+make that much of a difference so we're
+
+not going to touch it default is great
+
+the next thing is Reflections now I'm
+
+going to enable these and let's just
+
+talk about quality so right now it's at
+
+one reflection quality look at the top
+
+here look at what happens far if I
+
+change this back to
+
+0.25 noisy do you see the noise yeah
+
+because the reflection quality is low
+
+and then bring it back to one see the
+
+difference we can take this number to
+
+something like
+
+40 right and there's a difference right
+
+one to 40 there's a slight difference
+
+it's slightly brighter at the top but
+
+it's not so noticeable and remember when
+
+you increase these sliders your FPS is
+
+going to take a hit now the biggest
+
+difference is actually outside of the
+
+post-process volume and since we're
+
+talking about rendering fire should we
+
+go and talk about the settings let's go
+
+to Project setting and then let's look
+
+at them I think that's a great idea
+
+because the problem right now is if you
+
+look at the reflections here on this
+
+Cube you don't even see the lights you
+
+do not oh yes I just noticed that yeah
+
+where are these lights why are they not
+
+reflecting from this Cube and also if I
+
+use right click and C to zoom in look at
+
+the the the weirdness in the shapes
+
+they're they're just so unclear and I
+
+don't like it so let's go to our
+
+rendering settings outside of the
+
+postprocess volume so we go to setting
+
+we go to Project settings and then we're
+
+going to go all the way down to
+
+rendering rendering right here and
+
+you're going to be doing this this
+
+almost every project by the way so make
+
+sure you get used to doing this you're
+
+going to go down here and depending on
+
+your computer if you have an RTX enabled
+
+graphics card like we do a
+
+4090 you can go ahead and use something
+
+called software and Hardware rate
+
+tracing and rate Tred Shadows to
+
+increase the quality and the realism of
+
+your scene so in order to change and
+
+enable those effects one under Lumen we
+
+can enable Hardware rate tracing when
+
+available so pay close attention to the
+
+difference this is going to make okay
+
+look at the reflections here and look at
+
+what happens Hardware rracing enabled
+
+boom boom lights are here
+
+congratulations so right now it's
+
+actually using our graphics cards R
+
+tracing capabilities to be able to
+
+bounce off and we can even see our aial
+
+lights reflecting off of this Cube which
+
+is great right so the quality is better
+
+it's not perfect yet now the next thing
+
+we're going to change is our Ray
+
+lighting mode from surface cache to hit
+
+lighting for reflection I don't even
+
+know if this is going to make a huge
+
+difference for our scene but just
+
+looking at what the description is
+
+talking about the hit lighting for
+
+reflection has better quality so that's
+
+what we're going to do and even if you
+
+don't do it oh it did it did actually
+
+make a difference right but guess what
+
+farad we can actually change this one
+
+this one already has a shortcut in our
+
+postprocess volume let's quickly go back
+
+here check this out project default or
+
+no let's go to surface cache see we
+
+don't see half of our lights hit
+
+lighting for reflection boom now the
+
+reflections are perfect yes it's
+
+freaking perfect okay so again some of
+
+these settings are in our postprocess
+
+volume some of them are not wait listen
+
+did you know that you can create highly
+
+photo realistic scenes with
+
+photogrammetry by taking in what exists
+
+in the real world into 3D we've been
+
+using polycam to do exactly that using
+
+our phone and drone yes that's right and
+
+guess what they sponsor this video to
+
+give you guys 30% off their Pro Plan so
+
+you guys can go ahead and try it for
+
+yourself use the code bad decisions in
+
+the link in the description back to the
+
+course so the last thing we're going to
+
+do is turn on Ray Trace Shadows now
+
+currently in our scene because of our
+
+lighting setup we're not going to see a
+
+big difference but this is actually
+
+going to make your shadows a lot more
+
+realistic let us maybe see if it makes a
+
+difference here hold on yes perfect see
+
+that so right now this cube is creating
+
+this Shadow which is not realistic but
+
+you don't notice it because you don't
+
+know better but check this out R Shadows
+
+boom that is what Shadows are supposed
+
+to look like so change your settings and
+
+make sure that your computer can handle
+
+it though before you do that but if it
+
+can changing settings and your scene is
+
+going to look a lot better I still have
+
+a question about postp paress volume
+
+what is that fum grain can we add that
+
+absolutely we're going to do that so
+
+let's go ahead and close the project
+
+settings let's go and save make sure we
+
+have everything saved and then we are
+
+going to close Global illumination and
+
+fart right before getting to film grain
+
+do you want to just test the quality and
+
+Max refle reflection bounces here just
+
+just I just want to see if it's going to
+
+make any difference so zero no one so in
+
+Reflections nothing and then Max
+
+reflection bounces oh yes did you see
+
+that yes so this was at one but because
+
+the lights will be reflecting multiple
+
+times if we change it to two we're
+
+actually seeing these Reflections on the
+
+on the wall inside this Cube as well if
+
+you change to three you'll see yes we'll
+
+see even more but look at our FPS oh
+
+dropping look at our FPS from 70 to 60
+
+so be very careful I want to keep it at
+
+three I want to keep it high or two I
+
+think two is good for us right we're
+
+going to find the the middle ground and
+
+now we're going to go to fire Hud's
+
+request of film grain film grain which
+
+is right here so film grain is just
+
+going to emulate some film grain that
+
+you usually add in post and we're going
+
+to in enable it right here and increase
+
+it all the way to one so you see the
+
+difference look at a cube do you see the
+
+film grain yep yep and then decrease it
+
+you can put you can add it in div result
+
+too so absolutely I always like to add
+
+just a little bit here like 0.3 because
+
+the more imperfection you add here a
+
+small amount and then later when you add
+
+a little bit more in post it's going to
+
+make everything look less CG and that is
+
+always our goal because we want to make
+
+it as photo realistic as possible so I
+
+would say 0.3 is perfect okay so faras
+
+you showed us the Lumen settings how we
+
+can change the path tracing settings
+
+okay that's actually a good question
+
+because the setting are here as well
+
+under path racing let's go ahead this is
+
+for the path racer nerds let's go change
+
+lit to path racing right now and we can
+
+go ahead and enable all of these options
+
+okay and then change the settings here
+
+so you can go ahead and change the
+
+samples right now look at this loading
+
+bar it's loading in yeah 248 samples so
+
+we have to decrease that number so that
+
+it doesn't take ages something like
+
+maybe 150 and you see how much faster
+
+that loading is and then we can change a
+
+Max bounces to a lower number like three
+
+is fine okay it's going to be enough and
+
+then Max path exposure to 13 this is
+
+usually my sweet spot and then now we
+
+can go around the scene and then look at
+
+all these beautiful Reflections this is
+
+the most realistic way you can look at
+
+your scene if you're nerding out with
+
+path racing but for the continuation of
+
+this series we're going to go back to
+
+Lumen okay perfect and farro I think we
+
+are done with our post-process volume
+
+guys we are 10 chapters in next chapter
+
+we are going to talk about hdri and how
+
+you can add your own custom hdri so see
+
+you guys in the next video

@@ -1,0 +1,2004 @@
+1: 1
+2: 00:00:00,080 --> 00:00:03,399
+3: by the end of this video you will learn
+4: 
+5: 2
+6: 00:00:02,080 --> 00:00:05,240
+7: everything you need to know about
+8: 
+9: 3
+10: 00:00:03,399 --> 00:00:06,799
+11: materials like creating a material from
+12: 
+13: 4
+14: 00:00:05,240 --> 00:00:09,120
+15: scratch we'll even teach you all of
+16: 
+17: 5
+18: 00:00:06,799 --> 00:00:11,360
+19: their properties and then having access
+20: 
+21: 6
+22: 00:00:09,120 --> 00:00:13,480
+23: to them in real time in the viewport so
+24: 
+25: 7
+26: 00:00:11,360 --> 00:00:15,120
+27: that you can change their Properties
+28: 
+29: 8
+30: 00:00:13,480 --> 00:00:18,119
+31: Plus we'll even teach you how to bring
+32: 
+33: 9
+34: 00:00:15,120 --> 00:00:20,439
+35: materials from online websites create a
+36: 
+37: 10
+38: 00:00:18,119 --> 00:00:23,039
+39: material and then we'll even tell you
+40: 
+41: 11
+42: 00:00:20,439 --> 00:00:24,199
+43: about problems such as tiling that will
+44: 
+45: 12
+46: 00:00:23,039 --> 00:00:26,400
+47: probably happen when you bring in
+48: 
+49: 13
+50: 00:00:24,199 --> 00:00:29,679
+51: materials and we'll teach you how to fix
+52: 
+53: 14
+54: 00:00:26,400 --> 00:00:31,439
+55: it so stay tuned welcome back everybody
+56: 
+57: 15
+58: 00:00:29,679 --> 00:00:33,600
+59: you guys made it we are now at the
+60: 
+61: 16
+62: 00:00:31,439 --> 00:00:35,719
+63: chapters for the materials and textures
+64: 
+65: 17
+66: 00:00:33,600 --> 00:00:37,640
+67: and we are going to learn all the basics
+68: 
+69: 18
+70: 00:00:35,719 --> 00:00:40,600
+71: that's right and who's going to teach it
+72: 
+73: 19
+74: 00:00:37,640 --> 00:00:44,719
+75: you hell yeah am I getting paid yes you
+76: 
+77: 20
+78: 00:00:40,600 --> 00:00:46,160
+79: do by who by me and polyam the sponsor
+80: 
+81: 21
+82: 00:00:44,719 --> 00:00:48,680
+83: of this
+84: 
+85: 22
+86: 00:00:46,160 --> 00:00:50,760
+87: video that was good right that was PR
+88: 
+89: 23
+90: 00:00:48,680 --> 00:00:52,520
+91: good okay shout out to Paul the cam for
+92: 
+93: 24
+94: 00:00:50,760 --> 00:00:54,840
+95: sponsoring this video by the way this
+96: 
+97: 25
+98: 00:00:52,520 --> 00:00:56,399
+99: entire course if you will so I just
+100: 
+101: 26
+102: 00:00:54,840 --> 00:00:58,320
+103: wanted to start by saying
+104: 
+105: 27
+106: 00:00:56,399 --> 00:01:00,760
+107: congratulations if you made it this far
+108: 
+109: 28
+110: 00:00:58,320 --> 00:01:03,320
+111: materials are going to be such an an an
+112: 
+113: 29
+114: 00:01:00,760 --> 00:01:06,080
+115: important part of your 3D projects your
+116: 
+117: 30
+118: 00:01:03,320 --> 00:01:07,600
+119: 3D files your cinematics your Creations
+120: 
+121: 31
+122: 00:01:06,080 --> 00:01:09,200
+123: because just like in the real world
+124: 
+125: 32
+126: 00:01:07,600 --> 00:01:11,560
+127: everything as materials right your table
+128: 
+129: 33
+130: 00:01:09,200 --> 00:01:13,479
+131: is probably made of wood your wall is
+132: 
+133: 34
+134: 00:01:11,560 --> 00:01:15,080
+135: made of plaster right these are all
+136: 
+137: 35
+138: 00:01:13,479 --> 00:01:16,680
+139: different materials and what is the
+140: 
+141: 36
+142: 00:01:15,080 --> 00:01:18,759
+143: exact definition of materials so
+144: 
+145: 37
+146: 00:01:16,680 --> 00:01:20,600
+147: materials Define the optical properties
+148: 
+149: 38
+150: 00:01:18,759 --> 00:01:22,960
+151: of an object for example if it's made of
+152: 
+153: 39
+154: 00:01:20,600 --> 00:01:26,040
+155: wood metals or anything else so it's
+156: 
+157: 40
+158: 00:01:22,960 --> 00:01:28,159
+159: color how dull or shiny it is these are
+160: 
+161: 41
+162: 00:01:26,040 --> 00:01:30,439
+163: all the material properties exactly and
+164: 
+165: 42
+166: 00:01:28,159 --> 00:01:32,079
+167: textures according to Google is the
+168: 
+169: 43
+170: 00:01:30,439 --> 00:01:33,920
+171: patterns that goes on top of the
+172: 
+173: 44
+174: 00:01:32,079 --> 00:01:36,680
+175: material yeah that they break up the
+176: 
+177: 45
+178: 00:01:33,920 --> 00:01:38,560
+179: uniform appearance so in 3D files right
+180: 
+181: 46
+182: 00:01:36,680 --> 00:01:40,799
+183: here in onreal engine the material is
+184: 
+185: 47
+186: 00:01:38,560 --> 00:01:43,200
+187: what we apply right to different objects
+188: 
+189: 48
+190: 00:01:40,799 --> 00:01:45,439
+191: and within the material we have textures
+192: 
+193: 49
+194: 00:01:43,200 --> 00:01:47,799
+195: these textures usually come in as PNG
+196: 
+197: 50
+198: 00:01:45,439 --> 00:01:49,960
+199: files so we have a color texture a
+200: 
+201: 51
+202: 00:01:47,799 --> 00:01:51,759
+203: metallic texture if you're familiar with
+204: 
+205: 52
+206: 00:01:49,960 --> 00:01:53,079
+207: 3D software you will know what these are
+208: 
+209: 53
+210: 00:01:51,759 --> 00:01:56,240
+211: if you don't know we're going to show
+212: 
+213: 54
+214: 00:01:53,079 --> 00:01:58,360
+215: you all of that in this video so do not
+216: 
+217: 55
+218: 00:01:56,240 --> 00:02:00,560
+219: worry now we're going to be talking
+220: 
+221: 56
+222: 00:01:58,360 --> 00:02:02,759
+223: about the basic setup of materials here
+224: 
+225: 57
+226: 00:02:00,560 --> 00:02:04,799
+227: in on Dual engine so let's get started
+228: 
+229: 58
+230: 00:02:02,759 --> 00:02:08,920
+231: first things first we actually want to
+232: 
+233: 59
+234: 00:02:04,799 --> 00:02:10,399
+235: go ahead and go to maybe these TIE
+236: 
+237: 60
+238: 00:02:08,920 --> 00:02:12,360
+239: fighter blocks right here and we're
+240: 
+241: 61
+242: 00:02:10,399 --> 00:02:14,160
+243: going to use them just for the setup of
+244: 
+245: 62
+246: 00:02:12,360 --> 00:02:16,000
+247: some of our materials so that we can
+248: 
+249: 63
+250: 00:02:14,160 --> 00:02:18,440
+251: describe to you what materials are in
+252: 
+253: 64
+254: 00:02:16,000 --> 00:02:20,000
+255: order to create a material we have to
+256: 
+257: 65
+258: 00:02:18,440 --> 00:02:21,599
+259: basically save that material in our
+260: 
+261: 66
+262: 00:02:20,000 --> 00:02:23,160
+263: content drawer we have to create it
+264: 
+265: 67
+266: 00:02:21,599 --> 00:02:26,160
+267: there so we're going to open up our
+268: 
+269: 68
+270: 00:02:23,160 --> 00:02:28,239
+271: content drawer by hitting control space
+272: 
+273: 69
+274: 00:02:26,160 --> 00:02:30,920
+275: and we're going to create a new folder
+276: 
+277: 70
+278: 00:02:28,239 --> 00:02:33,480
+279: called materials so right click on your
+280: 
+281: 71
+282: 00:02:30,920 --> 00:02:35,840
+283: content folder new folder call it
+284: 
+285: 72
+286: 00:02:33,480 --> 00:02:38,280
+287: materials and boom just like that we've
+288: 
+289: 73
+290: 00:02:35,840 --> 00:02:39,720
+291: created a new folder inside this folder
+292: 
+293: 74
+294: 00:02:38,280 --> 00:02:42,440
+295: all we have to do is go ahead and right
+296: 
+297: 75
+298: 00:02:39,720 --> 00:02:44,159
+299: click and then look for materials right
+300: 
+301: 76
+302: 00:02:42,440 --> 00:02:46,360
+303: here right there's so many things you
+304: 
+305: 77
+306: 00:02:44,159 --> 00:02:48,319
+307: can add and you can basically check out
+308: 
+309: 78
+310: 00:02:46,360 --> 00:02:51,080
+311: all of these on your own you can look
+312: 
+313: 79
+314: 00:02:48,319 --> 00:02:52,840
+315: what they are online on Google we
+316: 
+317: 80
+318: 00:02:51,080 --> 00:02:54,280
+319: haven't used half of them more than half
+320: 
+321: 81
+322: 00:02:52,840 --> 00:02:55,840
+323: of them you're probably going to be
+324: 
+325: 82
+326: 00:02:54,280 --> 00:02:57,400
+327: using material not probably you're going
+328: 
+329: 83
+330: 00:02:55,840 --> 00:02:59,080
+331: to be using material in every single
+332: 
+333: 84
+334: 00:02:57,400 --> 00:03:01,159
+335: project so always know where it's
+336: 
+337: 85
+338: 00:02:59,080 --> 00:03:04,120
+339: located you also have the option to add
+340: 
+341: 86
+342: 00:03:01,159 --> 00:03:05,840
+343: it from here right so material boom and
+344: 
+345: 87
+346: 00:03:04,120 --> 00:03:07,799
+347: we are going to go ahead and name our
+348: 
+349: 88
+350: 00:03:05,840 --> 00:03:11,000
+351: material far can we give it a name box
+352: 
+353: 89
+354: 00:03:07,799 --> 00:03:13,440
+355: material maybe box material now in onal
+356: 
+357: 90
+358: 00:03:11,000 --> 00:03:15,319
+359: engine 5 usually if you watch any of the
+360: 
+361: 91
+362: 00:03:13,440 --> 00:03:17,360
+363: tutorials or if you've ever used it
+364: 
+365: 92
+366: 00:03:15,319 --> 00:03:20,159
+367: everybody likes to call their first
+368: 
+369: 93
+370: 00:03:17,360 --> 00:03:22,840
+371: materials the master material because in
+372: 
+373: 94
+374: 00:03:20,159 --> 00:03:25,200
+375: onal engine we have parent materials
+376: 
+377: 95
+378: 00:03:22,840 --> 00:03:26,959
+379: slash Master materials and you have
+380: 
+381: 96
+382: 00:03:25,200 --> 00:03:29,360
+383: children materials so child materials
+384: 
+385: 97
+386: 00:03:26,959 --> 00:03:31,400
+387: which are called material instances and
+388: 
+389: 98
+390: 00:03:29,360 --> 00:03:32,599
+391: these are Lifesavers they're amazing
+392: 
+393: 99
+394: 00:03:31,400 --> 00:03:34,439
+395: we're going to tell you exactly how you
+396: 
+397: 100
+398: 00:03:32,599 --> 00:03:35,879
+399: can use them to your advantage but for
+400: 
+401: 101
+402: 00:03:34,439 --> 00:03:38,560
+403: now we're just going to call it box
+404: 
+405: 102
+406: 00:03:35,879 --> 00:03:40,560
+407: material for Simplicity now how do we go
+408: 
+409: 103
+410: 00:03:38,560 --> 00:03:43,200
+411: ahead and apply one of these to uh one
+412: 
+413: 104
+414: 00:03:40,560 --> 00:03:45,599
+415: of these boxes drag and drop there you
+416: 
+417: 105
+418: 00:03:43,200 --> 00:03:48,439
+419: go so drag the material drop it on top
+420: 
+421: 106
+422: 00:03:45,599 --> 00:03:50,360
+423: of boxes and we've got the box material
+424: 
+425: 107
+426: 00:03:48,439 --> 00:03:53,519
+427: right it's gray it's ugly let's go ahead
+428: 
+429: 108
+430: 00:03:50,360 --> 00:03:55,720
+431: and change it boom control space double
+432: 
+433: 109
+434: 00:03:53,519 --> 00:03:57,720
+435: click oh my God what is this we got a
+436: 
+437: 110
+438: 00:03:55,720 --> 00:03:59,760
+439: new window to talk about let's go ahead
+440: 
+441: 111
+442: 00:03:57,720 --> 00:04:01,519
+443: and maximize this window so we can tell
+444: 
+445: 112
+446: 00:03:59,760 --> 00:04:03,480
+447: you exactly what this window is all
+448: 
+449: 113
+450: 00:04:01,519 --> 00:04:05,400
+451: about anytime you open up a material
+452: 
+453: 114
+454: 00:04:03,480 --> 00:04:07,319
+455: you're going to be shown this window
+456: 
+457: 115
+458: 00:04:05,400 --> 00:04:09,360
+459: right here and on the left side what
+460: 
+461: 116
+462: 00:04:07,319 --> 00:04:11,720
+463: you're looking at here in this window is
+464: 
+465: 117
+466: 00:04:09,360 --> 00:04:13,519
+467: your 3D viewport right this is where you
+468: 
+469: 118
+470: 00:04:11,720 --> 00:04:15,799
+471: get to visualize what your material
+472: 
+473: 119
+474: 00:04:13,519 --> 00:04:17,799
+475: looks like as you make changes to it on
+476: 
+477: 120
+478: 00:04:15,799 --> 00:04:20,840
+479: the right side right here which is your
+480: 
+481: 121
+482: 00:04:17,799 --> 00:04:22,960
+483: material graph now just like any other
+484: 
+485: 122
+486: 00:04:20,840 --> 00:04:25,360
+487: 3D software you'll be able to connect
+488: 
+489: 123
+490: 00:04:22,960 --> 00:04:27,400
+491: different nodes bring in new textures
+492: 
+493: 124
+494: 00:04:25,360 --> 00:04:29,240
+495: and make up any material that you like
+496: 
+497: 125
+498: 00:04:27,400 --> 00:04:30,160
+499: right here you can have thousands of
+500: 
+501: 126
+502: 00:04:29,240 --> 00:04:32,720
+503: nodes
+504: 
+505: 127
+506: 00:04:30,160 --> 00:04:34,880
+507: if you're a material Maniac we're just
+508: 
+509: 128
+510: 00:04:32,720 --> 00:04:36,720
+511: going to be doing a few noes the ones
+512: 
+513: 129
+514: 00:04:34,880 --> 00:04:38,400
+515: that you're going to need all the time
+516: 
+517: 130
+518: 00:04:36,720 --> 00:04:39,520
+519: and if you've never used nodes before
+520: 
+521: 131
+522: 00:04:38,400 --> 00:04:42,199
+523: we're going to teach you how to do that
+524: 
+525: 132
+526: 00:04:39,520 --> 00:04:44,240
+527: too so don't worry when you want to uh
+528: 
+529: 133
+530: 00:04:42,199 --> 00:04:45,600
+531: move around the 3D viewport right here
+532: 
+533: 134
+534: 00:04:44,240 --> 00:04:48,080
+535: you have to use different controls so
+536: 
+537: 135
+538: 00:04:45,600 --> 00:04:50,840
+539: here it's left Mouse click to rotate
+540: 
+541: 136
+542: 00:04:48,080 --> 00:04:53,360
+543: around this spherical object and zoom in
+544: 
+545: 137
+546: 00:04:50,840 --> 00:04:54,680
+547: and zoom out using your scroll button
+548: 
+549: 138
+550: 00:04:53,360 --> 00:04:56,800
+551: just to see what your material looks
+552: 
+553: 139
+554: 00:04:54,680 --> 00:04:59,600
+555: like and it updates the moment you go
+556: 
+557: 140
+558: 00:04:56,800 --> 00:05:01,199
+559: ahead and create changes right here now
+560: 
+561: 141
+562: 00:04:59,600 --> 00:05:03,680
+563: on the bottom left side we have a
+564: 
+565: 142
+566: 00:05:01,199 --> 00:05:05,360
+567: details panel and this is very similar
+568: 
+569: 143
+570: 00:05:03,680 --> 00:05:07,600
+571: to the details panel right here so if
+572: 
+573: 144
+574: 00:05:05,360 --> 00:05:09,720
+575: you go ahead and select anything in the
+576: 
+577: 145
+578: 00:05:07,600 --> 00:05:11,960
+579: material graph you will actually see the
+580: 
+581: 146
+582: 00:05:09,720 --> 00:05:14,600
+583: new details panel pop up that you'll be
+584: 
+585: 147
+586: 00:05:11,960 --> 00:05:17,759
+587: able to use to make changes to an exact
+588: 
+589: 148
+590: 00:05:14,600 --> 00:05:19,199
+591: node on its own so the first node that
+592: 
+593: 149
+594: 00:05:17,759 --> 00:05:21,280
+595: we always are going to end up with is
+596: 
+597: 150
+598: 00:05:19,199 --> 00:05:23,160
+599: going to be our output node right this
+600: 
+601: 151
+602: 00:05:21,280 --> 00:05:25,759
+603: is the material the overall material
+604: 
+605: 152
+606: 00:05:23,160 --> 00:05:26,919
+607: node that everything comes to right all
+608: 
+609: 153
+610: 00:05:25,759 --> 00:05:28,720
+611: of the nodes that we create will come
+612: 
+613: 154
+614: 00:05:26,919 --> 00:05:30,600
+615: towards this node to Define what our
+616: 
+617: 155
+618: 00:05:28,720 --> 00:05:32,720
+619: material looks like so fire we got a
+620: 
+621: 156
+622: 00:05:30,600 --> 00:05:34,680
+623: bunch of names here and these names are
+624: 
+625: 157
+626: 00:05:32,720 --> 00:05:36,360
+627: the same pretty much the same in other
+628: 
+629: 158
+630: 00:05:34,680 --> 00:05:38,800
+631: 3D software so if you're coming from
+632: 
+633: 159
+634: 00:05:36,360 --> 00:05:40,080
+635: Cinema 40 blender Maya 3ds Max you will
+636: 
+637: 160
+638: 00:05:38,800 --> 00:05:42,080
+639: know what these are but if you don't
+640: 
+641: 161
+642: 00:05:40,080 --> 00:05:43,840
+643: know let's have a quick recap of what
+644: 
+645: 162
+646: 00:05:42,080 --> 00:05:46,120
+647: every single one of them means starting
+648: 
+649: 163
+650: 00:05:43,840 --> 00:05:47,720
+651: with base color so what is base color
+652: 
+653: 164
+654: 00:05:46,120 --> 00:05:50,720
+655: the color that your material will have
+656: 
+657: 165
+658: 00:05:47,720 --> 00:05:52,520
+659: the RGB color right so RGB color can be
+660: 
+661: 166
+662: 00:05:50,720 --> 00:05:55,039
+663: confusing if you've never studied
+664: 
+665: 167
+666: 00:05:52,520 --> 00:05:57,800
+667: photography and all but RGB is basically
+668: 
+669: 168
+670: 00:05:55,039 --> 00:05:59,720
+671: red green blue these are three planes
+672: 
+673: 169
+674: 00:05:57,800 --> 00:06:02,319
+675: that combined together can make up a
+676: 
+677: 170
+678: 00:05:59,720 --> 00:06:04,600
+679: color right and we are going to be
+680: 
+681: 171
+682: 00:06:02,319 --> 00:06:08,199
+683: basically using those planes the RGB
+684: 
+685: 172
+686: 00:06:04,600 --> 00:06:10,639
+687: values to create a color and to enable a
+688: 
+689: 173
+690: 00:06:08,199 --> 00:06:13,520
+691: new node to create a new node we can go
+692: 
+693: 174
+694: 00:06:10,639 --> 00:06:15,520
+695: ahead and use right click to basically
+696: 
+697: 175
+698: 00:06:13,520 --> 00:06:16,560
+699: search for anything that we want if you
+700: 
+701: 176
+702: 00:06:15,520 --> 00:06:18,360
+703: don't know what you're looking for you
+704: 
+705: 177
+706: 00:06:16,560 --> 00:06:20,319
+707: can use these drop downs to find out
+708: 
+709: 178
+710: 00:06:18,360 --> 00:06:22,400
+711: exactly the note that you want and there
+712: 
+713: 179
+714: 00:06:20,319 --> 00:06:24,800
+715: are thousands of them are we going to
+716: 
+717: 180
+718: 00:06:22,400 --> 00:06:26,960
+719: use any of them no way we haven't used
+720: 
+721: 181
+722: 00:06:24,800 --> 00:06:28,440
+723: 95% of these there's just way too many
+724: 
+725: 182
+726: 00:06:26,960 --> 00:06:30,160
+727: you're going to be using only a few of
+728: 
+729: 183
+730: 00:06:28,440 --> 00:06:32,080
+731: them all the time so that's what we're
+732: 
+733: 184
+734: 00:06:30,160 --> 00:06:33,840
+735: going to cover today so if you want to
+736: 
+737: 185
+738: 00:06:32,080 --> 00:06:35,720
+739: bring any of them you just click on it
+740: 
+741: 186
+742: 00:06:33,840 --> 00:06:37,800
+743: and it appears in your window and then
+744: 
+745: 187
+746: 00:06:35,720 --> 00:06:39,000
+747: you can move it around your scene we're
+748: 
+749: 188
+750: 00:06:37,800 --> 00:06:41,080
+751: not going to need this so we're going to
+752: 
+753: 189
+754: 00:06:39,000 --> 00:06:42,319
+755: delete it and one more thing before we
+756: 
+757: 190
+758: 00:06:41,080 --> 00:06:45,599
+759: actually bring in any note if you want
+760: 
+761: 191
+762: 00:06:42,319 --> 00:06:48,240
+763: to move around this tab right here you
+764: 
+765: 192
+766: 00:06:45,599 --> 00:06:50,039
+767: use right click and that's going to grab
+768: 
+769: 193
+770: 00:06:48,240 --> 00:06:52,160
+771: the screen and you're just moving around
+772: 
+773: 194
+774: 00:06:50,039 --> 00:06:54,440
+775: and then scroll to zoom out and scroll
+776: 
+777: 195
+778: 00:06:52,160 --> 00:06:56,919
+779: to zoom in yeah so we want to bring in
+780: 
+781: 196
+782: 00:06:54,440 --> 00:07:00,960
+783: an RGB note the shortcut for that
+784: 
+785: 197
+786: 00:06:56,919 --> 00:07:03,479
+787: memorize this is three left click so
+788: 
+789: 198
+790: 00:07:00,960 --> 00:07:06,120
+791: look at this right here three left click
+792: 
+793: 199
+794: 00:07:03,479 --> 00:07:07,919
+795: boom just like that yeah easy three left
+796: 
+797: 200
+798: 00:07:06,120 --> 00:07:10,280
+799: click you can do it many times just to
+800: 
+801: 201
+802: 00:07:07,919 --> 00:07:12,960
+803: memorize it right and what we're looking
+804: 
+805: 202
+806: 00:07:10,280 --> 00:07:16,319
+807: at right now is basically an RGB node
+808: 
+809: 203
+810: 00:07:12,960 --> 00:07:18,440
+811: and RGB will have three values right 0 0
+812: 
+813: 204
+814: 00:07:16,319 --> 00:07:21,520
+815: 0 at this moment which means it's
+816: 
+817: 205
+818: 00:07:18,440 --> 00:07:23,639
+819: absolutely black and we have four nodes
+820: 
+821: 206
+822: 00:07:21,520 --> 00:07:25,639
+823: that can be popping out of this exact
+824: 
+825: 207
+826: 00:07:23,639 --> 00:07:27,919
+827: note which is our overall note which
+828: 
+829: 208
+830: 00:07:25,639 --> 00:07:29,759
+831: combines the RGB that's what we want for
+832: 
+833: 209
+834: 00:07:27,919 --> 00:07:31,360
+835: our color and then you have the red on
+836: 
+837: 210
+838: 00:07:29,759 --> 00:07:33,639
+839: its own the green on its own and the
+840: 
+841: 211
+842: 00:07:31,360 --> 00:07:35,199
+843: blue on its own for our use case we're
+844: 
+845: 212
+846: 00:07:33,639 --> 00:07:37,160
+847: going to need the overall cuz we want to
+848: 
+849: 213
+850: 00:07:35,199 --> 00:07:39,879
+851: use the color and farod what do we do
+852: 
+853: 214
+854: 00:07:37,160 --> 00:07:42,599
+855: now connect the overall to base color
+856: 
+857: 215
+858: 00:07:39,879 --> 00:07:44,199
+859: connect it by left clicking drag it drop
+860: 
+861: 216
+862: 00:07:42,599 --> 00:07:46,520
+863: it on base color you'll see the check
+864: 
+865: 217
+866: 00:07:44,199 --> 00:07:49,120
+867: mark Let It Go and just like that we
+868: 
+869: 218
+870: 00:07:46,520 --> 00:07:51,120
+871: have it on so right now it's black so
+872: 
+873: 219
+874: 00:07:49,120 --> 00:07:52,520
+875: there's absolutely no difference fot can
+876: 
+877: 220
+878: 00:07:51,120 --> 00:07:54,599
+879: we change it to another color let's
+880: 
+881: 221
+882: 00:07:52,520 --> 00:07:56,360
+883: change it to Red how do we do that click
+884: 
+885: 222
+886: 00:07:54,599 --> 00:07:58,680
+887: on the black box over there we're going
+888: 
+889: 223
+890: 00:07:56,360 --> 00:08:00,360
+891: to double click on this right here and
+892: 
+893: 224
+894: 00:07:58,680 --> 00:08:01,840
+895: we're present it with this color wheel
+896: 
+897: 225
+898: 00:08:00,360 --> 00:08:03,319
+899: we can go ahead and change it to any
+900: 
+901: 226
+902: 00:08:01,840 --> 00:08:04,680
+903: color that we want there are just way
+904: 
+905: 227
+906: 00:08:03,319 --> 00:08:07,280
+907: too many things that you can play around
+908: 
+909: 228
+910: 00:08:04,680 --> 00:08:08,720
+911: with to pretty much Define the specific
+912: 
+913: 229
+914: 00:08:07,280 --> 00:08:10,960
+915: color that you want you can even use the
+916: 
+917: 230
+918: 00:08:08,720 --> 00:08:14,080
+919: ey dropper tool or you can go ahead and
+920: 
+921: 231
+922: 00:08:10,960 --> 00:08:15,560
+923: bring in an hex value from Google maybe
+924: 
+925: 232
+926: 00:08:14,080 --> 00:08:17,120
+927: you have a specific image you're looking
+928: 
+929: 233
+930: 00:08:15,560 --> 00:08:19,520
+931: at and you're trying to create a
+932: 
+933: 234
+934: 00:08:17,120 --> 00:08:22,639
+935: specific color you can use that exact
+936: 
+937: 235
+938: 00:08:19,520 --> 00:08:24,599
+939: hex color code so let's just go for what
+940: 
+941: 236
+942: 00:08:22,639 --> 00:08:26,240
+943: color did you Sayed color red color okay
+944: 
+945: 237
+946: 00:08:24,599 --> 00:08:28,879
+947: cool we got a red color something like
+948: 
+949: 238
+950: 00:08:26,240 --> 00:08:31,720
+951: that and then we're going to hit okay so
+952: 
+953: 239
+954: 00:08:28,879 --> 00:08:33,320
+955: we can see that the material has changed
+956: 
+957: 240
+958: 00:08:31,720 --> 00:08:36,120
+959: and if you go ahead and drag the tab
+960: 
+961: 241
+962: 00:08:33,320 --> 00:08:38,320
+963: right here however we do not see the
+964: 
+965: 242
+966: 00:08:36,120 --> 00:08:40,440
+967: change happening here why is that apply
+968: 
+969: 243
+970: 00:08:38,320 --> 00:08:42,039
+971: it bro apply it we got to apply it right
+972: 
+973: 244
+974: 00:08:40,440 --> 00:08:43,800
+975: so every single time we make changes
+976: 
+977: 245
+978: 00:08:42,039 --> 00:08:45,760
+979: here we have to go ahead and hit apply
+980: 
+981: 246
+982: 00:08:43,800 --> 00:08:49,800
+983: at the top left to make sure it applies
+984: 
+985: 247
+986: 00:08:45,760 --> 00:08:52,200
+987: to our scene so hit apply a voila we did
+988: 
+989: 248
+990: 00:08:49,800 --> 00:08:55,600
+991: it done congratulations guys we made our
+992: 
+993: 249
+994: 00:08:52,200 --> 00:08:57,880
+995: first material so this is basically how
+996: 
+997: 250
+998: 00:08:55,600 --> 00:08:59,560
+999: you change the color right very simple
+1000: 
+1001: 251
+1002: 00:08:57,880 --> 00:09:01,640
+1003: so let's keep this tab right here so
+1004: 
+1005: 252
+1006: 00:08:59,560 --> 00:09:03,680
+1007: that we can see the changes happen in
+1008: 
+1009: 253
+1010: 00:09:01,640 --> 00:09:05,880
+1011: real time I'm going to drag this guy
+1012: 
+1013: 254
+1014: 00:09:03,680 --> 00:09:07,240
+1015: right here so you see our Mouse clicks
+1016: 
+1017: 255
+1018: 00:09:05,880 --> 00:09:09,760
+1019: now the next thing we're going to change
+1020: 
+1021: 256
+1022: 00:09:07,240 --> 00:09:11,600
+1023: is the metallic value the metallic value
+1024: 
+1025: 257
+1026: 00:09:09,760 --> 00:09:13,000
+1027: now the metallic value and the specular
+1028: 
+1029: 258
+1030: 00:09:11,600 --> 00:09:14,880
+1031: value and the roughness value and we're
+1032: 
+1033: 259
+1034: 00:09:13,000 --> 00:09:17,240
+1035: going to describe what they are all use
+1036: 
+1037: 260
+1038: 00:09:14,880 --> 00:09:18,440
+1039: a single value they're not your RGB they
+1040: 
+1041: 261
+1042: 00:09:17,240 --> 00:09:20,120
+1043: don't need three different values
+1044: 
+1045: 262
+1046: 00:09:18,440 --> 00:09:23,320
+1047: they're just one so what's the shortcut
+1048: 
+1049: 263
+1050: 00:09:20,120 --> 00:09:25,800
+1051: for that uh one one yes and left click
+1052: 
+1053: 264
+1054: 00:09:23,320 --> 00:09:28,040
+1055: so one left click that's your shortcut
+1056: 
+1057: 265
+1058: 00:09:25,800 --> 00:09:30,440
+1059: to basically bring in a value a single
+1060: 
+1061: 266
+1062: 00:09:28,040 --> 00:09:33,160
+1063: value a single number and we are going
+1064: 
+1065: 267
+1066: 00:09:30,440 --> 00:09:34,720
+1067: to hook this into our metallic right the
+1068: 
+1069: 268
+1070: 00:09:33,160 --> 00:09:36,399
+1071: same way we did the base color now
+1072: 
+1073: 269
+1074: 00:09:34,720 --> 00:09:38,959
+1075: before we go ahead and apply farad what
+1076: 
+1077: 270
+1078: 00:09:36,399 --> 00:09:40,880
+1079: does metallic do so it will show you how
+1080: 
+1081: 271
+1082: 00:09:38,959 --> 00:09:42,720
+1083: metallic your material is whether it's
+1084: 
+1085: 272
+1086: 00:09:40,880 --> 00:09:44,000
+1087: fully metallic or it's not or something
+1088: 
+1089: 273
+1090: 00:09:42,720 --> 00:09:46,160
+1091: in the middle something in the middle
+1092: 
+1093: 274
+1094: 00:09:44,000 --> 00:09:48,880
+1095: will be between zero and one that's the
+1096: 
+1097: 275
+1098: 00:09:46,160 --> 00:09:51,279
+1099: value right so if it's at zero and if we
+1100: 
+1101: 276
+1102: 00:09:48,880 --> 00:09:52,720
+1103: hit apply nothing will happen really
+1104: 
+1105: 277
+1106: 00:09:51,279 --> 00:09:54,880
+1107: because our material was not really
+1108: 
+1109: 278
+1110: 00:09:52,720 --> 00:09:57,320
+1111: metallic prior to this but if we go and
+1112: 
+1113: 279
+1114: 00:09:54,880 --> 00:09:59,399
+1115: change this value to one we can change
+1116: 
+1117: 280
+1118: 00:09:57,320 --> 00:10:01,600
+1119: it from here or from the details panel
+1120: 
+1121: 281
+1122: 00:09:59,399 --> 00:10:03,040
+1123: right here so change it to one hit apply
+1124: 
+1125: 282
+1126: 00:10:01,600 --> 00:10:04,760
+1127: you already see the difference before we
+1128: 
+1129: 283
+1130: 00:10:03,040 --> 00:10:07,360
+1131: hit apply right here let's go ahead and
+1132: 
+1133: 284
+1134: 00:10:04,760 --> 00:10:09,560
+1135: hit apply and see it boom just like that
+1136: 
+1137: 285
+1138: 00:10:07,360 --> 00:10:11,519
+1139: our material is now a little bit more
+1140: 
+1141: 286
+1142: 00:10:09,560 --> 00:10:13,800
+1143: metallic right you see how it reflects
+1144: 
+1145: 287
+1146: 00:10:11,519 --> 00:10:16,160
+1147: light it's very different the next thing
+1148: 
+1149: 288
+1150: 00:10:13,800 --> 00:10:19,160
+1151: we're going to change is specular so how
+1152: 
+1153: 289
+1154: 00:10:16,160 --> 00:10:21,399
+1155: do we change the value same you contrl D
+1156: 
+1157: 290
+1158: 00:10:19,160 --> 00:10:23,240
+1159: duplicate our value node and then
+1160: 
+1161: 291
+1162: 00:10:21,399 --> 00:10:26,240
+1163: connect it to specular contrl D to
+1164: 
+1165: 292
+1166: 00:10:23,240 --> 00:10:27,800
+1167: duplicate or use one left click right
+1168: 
+1169: 293
+1170: 00:10:26,240 --> 00:10:30,800
+1171: and then we can go ahead and insert it
+1172: 
+1173: 294
+1174: 00:10:27,800 --> 00:10:33,519
+1175: into our specular so what is specular
+1176: 
+1177: 295
+1178: 00:10:30,800 --> 00:10:36,000
+1179: how shiny our material is how smooth our
+1180: 
+1181: 296
+1182: 00:10:33,519 --> 00:10:37,760
+1183: material is so we actually have the
+1184: 
+1185: 297
+1186: 00:10:36,000 --> 00:10:39,320
+1187: definition right here as well do not use
+1188: 
+1189: 298
+1190: 00:10:37,760 --> 00:10:41,000
+1191: Microsoft Edge we're only using it
+1192: 
+1193: 299
+1194: 00:10:39,320 --> 00:10:42,920
+1195: because our Chrome is filled up but
+1196: 
+1197: 300
+1198: 00:10:41,000 --> 00:10:44,839
+1199: basically a specular is basically the
+1200: 
+1201: 301
+1202: 00:10:42,920 --> 00:10:46,880
+1203: highlights of your mesh right how smooth
+1204: 
+1205: 302
+1206: 00:10:44,839 --> 00:10:48,680
+1207: it is and that is going to change the
+1208: 
+1209: 303
+1210: 00:10:46,880 --> 00:10:51,240
+1211: way it's going to show highlights on the
+1212: 
+1213: 304
+1214: 00:10:48,680 --> 00:10:53,200
+1215: material so right now I'm not sure how
+1216: 
+1217: 305
+1218: 00:10:51,240 --> 00:10:54,880
+1219: much this is going to be visible because
+1220: 
+1221: 306
+1222: 00:10:53,200 --> 00:10:56,800
+1223: our material is really plain remember we
+1224: 
+1225: 307
+1226: 00:10:54,880 --> 00:10:58,360
+1227: don't have textures on it so it's not
+1228: 
+1229: 308
+1230: 00:10:56,800 --> 00:10:59,920
+1231: going to be really clear but it's still
+1232: 
+1233: 309
+1234: 00:10:58,360 --> 00:11:01,920
+1235: going to be enough let's go and change
+1236: 
+1237: 310
+1238: 00:10:59,920 --> 00:11:04,600
+1239: our metallic to zero this might be
+1240: 
+1241: 311
+1242: 00:11:01,920 --> 00:11:06,480
+1243: easier to see and our specular sorry
+1244: 
+1245: 312
+1246: 00:11:04,600 --> 00:11:08,160
+1247: it's okay and our specular to zero as
+1248: 
+1249: 313
+1250: 00:11:06,480 --> 00:11:10,560
+1251: well and see what our material looks
+1252: 
+1253: 314
+1254: 00:11:08,160 --> 00:11:12,680
+1255: like so this is it with zero value so
+1256: 
+1257: 315
+1258: 00:11:10,560 --> 00:11:14,120
+1259: zero metallic zero specular you can even
+1260: 
+1261: 316
+1262: 00:11:12,680 --> 00:11:15,560
+1263: see this ball right here and see what
+1264: 
+1265: 317
+1266: 00:11:14,120 --> 00:11:16,839
+1267: happens when we change it to one
+1268: 
+1269: 318
+1270: 00:11:15,560 --> 00:11:19,720
+1271: specular of one do you see the
+1272: 
+1273: 319
+1274: 00:11:16,839 --> 00:11:22,760
+1275: difference in the highlights see Zero no
+1276: 
+1277: 320
+1278: 00:11:19,720 --> 00:11:25,000
+1279: highlights one highlights hit apply see
+1280: 
+1281: 321
+1282: 00:11:22,760 --> 00:11:26,279
+1283: the difference yep you can actually see
+1284: 
+1285: 322
+1286: 00:11:25,000 --> 00:11:28,120
+1287: the difference it probably would have
+1288: 
+1289: 323
+1290: 00:11:26,279 --> 00:11:29,560
+1291: been easier to see it on a sphere in the
+1292: 
+1293: 324
+1294: 00:11:28,120 --> 00:11:31,079
+1295: scene but that's okay okay you get the
+1296: 
+1297: 325
+1298: 00:11:29,560 --> 00:11:33,399
+1299: point now the next thing we're going to
+1300: 
+1301: 326
+1302: 00:11:31,079 --> 00:11:36,079
+1303: change is your roughness duplicate again
+1304: 
+1305: 327
+1306: 00:11:33,399 --> 00:11:38,200
+1307: do it again duplicate again and we're
+1308: 
+1309: 328
+1310: 00:11:36,079 --> 00:11:40,920
+1311: going to hook this up to our roughness a
+1312: 
+1313: 329
+1314: 00:11:38,200 --> 00:11:42,320
+1315: roughness of one which means our value
+1316: 
+1317: 330
+1318: 00:11:40,920 --> 00:11:45,240
+1319: our our material is going to be super
+1320: 
+1321: 331
+1322: 00:11:42,320 --> 00:11:47,000
+1323: rough super dull so hit apply probably
+1324: 
+1325: 332
+1326: 00:11:45,240 --> 00:11:48,800
+1327: going to take away from the shininess
+1328: 
+1329: 333
+1330: 00:11:47,000 --> 00:11:50,720
+1331: right now far this is going to be my
+1332: 
+1333: 334
+1334: 00:11:48,800 --> 00:11:53,240
+1335: favorite part let's make it zero let's
+1336: 
+1337: 335
+1338: 00:11:50,720 --> 00:11:56,000
+1339: make it zero see what happens boom now
+1340: 
+1341: 336
+1342: 00:11:53,240 --> 00:11:59,560
+1343: we got this glossy material that is
+1344: 
+1345: 337
+1346: 00:11:56,000 --> 00:12:02,720
+1347: reflecting light and so we can see are
+1348: 
+1349: 338
+1350: 00:11:59,560 --> 00:12:03,880
+1351: seen inside this Cube on top of the cube
+1352: 
+1353: 339
+1354: 00:12:02,720 --> 00:12:06,639
+1355: if you will it's like a mirror it's like
+1356: 
+1357: 340
+1358: 00:12:03,880 --> 00:12:08,680
+1359: a mirror exactly now if you see if you
+1360: 
+1361: 341
+1362: 00:12:06,639 --> 00:12:10,639
+1363: look closely by the way you'll notice
+1364: 
+1365: 342
+1366: 00:12:08,680 --> 00:12:12,639
+1367: that our Reflections look kind of
+1368: 
+1369: 343
+1370: 00:12:10,639 --> 00:12:14,720
+1371: horrible and that's because of some of
+1372: 
+1373: 344
+1374: 00:12:12,639 --> 00:12:16,720
+1375: our render settings and we're going to
+1376: 
+1377: 345
+1378: 00:12:14,720 --> 00:12:19,040
+1379: talk about the render settings later on
+1380: 
+1381: 346
+1382: 00:12:16,720 --> 00:12:21,279
+1383: to make it look like perfect and make
+1384: 
+1385: 347
+1386: 00:12:19,040 --> 00:12:22,320
+1387: the reflections great using rate tracing
+1388: 
+1389: 348
+1390: 00:12:21,279 --> 00:12:24,000
+1391: that's what we talked about in the very
+1392: 
+1393: 349
+1394: 00:12:22,320 --> 00:12:25,120
+1395: beginning of our chapter one we're going
+1396: 
+1397: 350
+1398: 00:12:24,000 --> 00:12:26,320
+1399: to talk about that later when we get to
+1400: 
+1401: 351
+1402: 00:12:25,120 --> 00:12:30,000
+1403: the settings so don't worry it's going
+1404: 
+1405: 352
+1406: 00:12:26,320 --> 00:12:32,160
+1407: to look really good later on now the
+1408: 
+1409: 353
+1410: 00:12:30,000 --> 00:12:33,760
+1411: roughness specular metallic base color
+1412: 
+1413: 354
+1414: 00:12:32,160 --> 00:12:34,839
+1415: we've already shown you so the next
+1416: 
+1417: 355
+1418: 00:12:33,760 --> 00:12:37,160
+1419: thing we're going to change is our
+1420: 
+1421: 356
+1422: 00:12:34,839 --> 00:12:39,320
+1423: emissive color this is basically saying
+1424: 
+1425: 357
+1426: 00:12:37,160 --> 00:12:42,120
+1427: are we emitting any light from our
+1428: 
+1429: 358
+1430: 00:12:39,320 --> 00:12:43,880
+1431: material one of my favorite nodes so we
+1432: 
+1433: 359
+1434: 00:12:42,120 --> 00:12:46,240
+1435: are going to be using first of all a
+1436: 
+1437: 360
+1438: 00:12:43,880 --> 00:12:48,199
+1439: three node that's going to be our RGB to
+1440: 
+1441: 361
+1442: 00:12:46,240 --> 00:12:49,639
+1443: decide what color the light is and then
+1444: 
+1445: 362
+1446: 00:12:48,199 --> 00:12:51,519
+1447: later we're going to teach you how to
+1448: 
+1449: 363
+1450: 00:12:49,639 --> 00:12:53,560
+1451: actually increase the intensity to make
+1452: 
+1453: 364
+1454: 00:12:51,519 --> 00:12:54,880
+1455: it emit even more light cuz materials
+1456: 
+1457: 365
+1458: 00:12:53,560 --> 00:12:57,399
+1459: can emit light and then they can be
+1460: 
+1461: 366
+1462: 00:12:54,880 --> 00:12:59,720
+1463: dynamic in your scene very cool so let's
+1464: 
+1465: 367
+1466: 00:12:57,399 --> 00:13:03,000
+1467: go ahead and bring in what a three an
+1468: 
+1469: 368
+1470: 00:12:59,720 --> 00:13:04,760
+1471: RGB a three node so three left click
+1472: 
+1473: 369
+1474: 00:13:03,000 --> 00:13:07,560
+1475: just like the top we're going to take
+1476: 
+1477: 370
+1478: 00:13:04,760 --> 00:13:08,880
+1479: this drag it to our msf color and right
+1480: 
+1481: 371
+1482: 00:13:07,560 --> 00:13:10,360
+1483: now it's on black so it's not going to
+1484: 
+1485: 372
+1486: 00:13:08,880 --> 00:13:11,839
+1487: do anything hit apply it's not going to
+1488: 
+1489: 373
+1490: 00:13:10,360 --> 00:13:13,839
+1491: emit any light if you go ahead and
+1492: 
+1493: 374
+1494: 00:13:11,839 --> 00:13:15,959
+1495: double click this change it to White
+1496: 
+1497: 375
+1498: 00:13:13,839 --> 00:13:17,760
+1499: that's red change it to Red no it's
+1500: 
+1501: 376
+1502: 00:13:15,959 --> 00:13:19,040
+1503: already red I don't want to do that I
+1504: 
+1505: 377
+1506: 00:13:17,760 --> 00:13:20,399
+1507: want to see the difference okay so I'm
+1508: 
+1509: 378
+1510: 00:13:19,040 --> 00:13:23,120
+1511: going to change it to White and hit okay
+1512: 
+1513: 379
+1514: 00:13:20,399 --> 00:13:26,399
+1515: and see the difference okay hit okay
+1516: 
+1517: 380
+1518: 00:13:23,120 --> 00:13:28,199
+1519: boom apply t look at that it's already
+1520: 
+1521: 381
+1522: 00:13:26,399 --> 00:13:30,399
+1523: emitted light and it's not a lot you'll
+1524: 
+1525: 382
+1526: 00:13:28,199 --> 00:13:33,240
+1527: see you see if i contrl z look at this
+1528: 
+1529: 383
+1530: 00:13:30,399 --> 00:13:35,680
+1531: contrl Z and I'm just going to okay if
+1532: 
+1533: 384
+1534: 00:13:33,240 --> 00:13:37,760
+1535: you want to disable a note it's control
+1536: 
+1537: 385
+1538: 00:13:35,680 --> 00:13:40,079
+1539: click on the line that is connecting the
+1540: 
+1541: 386
+1542: 00:13:37,760 --> 00:13:41,360
+1543: note so control click this note right
+1544: 
+1545: 387
+1546: 00:13:40,079 --> 00:13:44,160
+1547: here so make sure it's highlighted
+1548: 
+1549: 388
+1550: 00:13:41,360 --> 00:13:46,360
+1551: control click and then let go right
+1552: 
+1553: 389
+1554: 00:13:44,160 --> 00:13:48,000
+1555: that's how you disable a note break a
+1556: 
+1557: 390
+1558: 00:13:46,360 --> 00:13:49,560
+1559: connection and then see this light
+1560: 
+1561: 391
+1562: 00:13:48,000 --> 00:13:51,959
+1563: bouncing off this Cube It's going to go
+1564: 
+1565: 392
+1566: 00:13:49,560 --> 00:13:54,639
+1567: away hit apply boom off so it was
+1568: 
+1569: 393
+1570: 00:13:51,959 --> 00:13:55,880
+1571: actually emitting light now do we want
+1572: 
+1573: 394
+1574: 00:13:54,639 --> 00:13:57,480
+1575: to go ahead and talk about how we can
+1576: 
+1577: 395
+1578: 00:13:55,880 --> 00:14:00,000
+1579: control the intensity of the light here
+1580: 
+1581: 396
+1582: 00:13:57,480 --> 00:14:01,959
+1583: we can do it okay perfect so if you want
+1584: 
+1585: 397
+1586: 00:14:00,000 --> 00:14:04,040
+1587: to go ahead and connect this again okay
+1588: 
+1589: 398
+1590: 00:14:01,959 --> 00:14:06,240
+1591: let's go and since I I wanted red let's
+1592: 
+1593: 399
+1594: 00:14:04,040 --> 00:14:07,720
+1595: see what that looks like hit apply so
+1596: 
+1597: 400
+1598: 00:14:06,240 --> 00:14:09,839
+1599: right now there's a bit of red the color
+1600: 
+1601: 401
+1602: 00:14:07,720 --> 00:14:12,600
+1603: changed because it's now red as a base
+1604: 
+1605: 402
+1606: 00:14:09,839 --> 00:14:14,399
+1607: color and also an emissive light on top
+1608: 
+1609: 403
+1610: 00:14:12,600 --> 00:14:16,759
+1611: of it so it changed to sort of like a
+1612: 
+1613: 404
+1614: 00:14:14,399 --> 00:14:18,680
+1615: pinkish red if you want to go ahead and
+1616: 
+1617: 405
+1618: 00:14:16,759 --> 00:14:22,279
+1619: increase the intensity we're going to be
+1620: 
+1621: 406
+1622: 00:14:18,680 --> 00:14:24,279
+1623: using a multiply node a multiply node
+1624: 
+1625: 407
+1626: 00:14:22,279 --> 00:14:27,040
+1627: that's going to allow us to hook in a
+1628: 
+1629: 408
+1630: 00:14:24,279 --> 00:14:28,880
+1631: value to control how intense the light
+1632: 
+1633: 409
+1634: 00:14:27,040 --> 00:14:31,480
+1635: is so this is going to come in real
+1636: 
+1637: 410
+1638: 00:14:28,880 --> 00:14:33,399
+1639: handy in a lot of situations so memorize
+1640: 
+1641: 411
+1642: 00:14:31,480 --> 00:14:35,800
+1643: this so how do we bring in a multiply
+1644: 
+1645: 412
+1646: 00:14:33,399 --> 00:14:36,920
+1647: node right click search multiply or do
+1648: 
+1649: 413
+1650: 00:14:35,800 --> 00:14:38,519
+1651: you have a shortcut for do have a
+1652: 
+1653: 414
+1654: 00:14:36,920 --> 00:14:40,320
+1655: shortcut so let's do it let's do it your
+1656: 
+1657: 415
+1658: 00:14:38,519 --> 00:14:41,920
+1659: way you're absolutely right it's m but
+1660: 
+1661: 416
+1662: 00:14:40,320 --> 00:14:43,880
+1663: let's do it your way so let's go to
+1664: 
+1665: 417
+1666: 00:14:41,920 --> 00:14:47,199
+1667: multiply and hit okay so that's a
+1668: 
+1669: 418
+1670: 00:14:43,880 --> 00:14:50,160
+1671: multiply node or you can do that shorter
+1672: 
+1673: 419
+1674: 00:14:47,199 --> 00:14:53,079
+1675: M left click for multiply okay very cool
+1676: 
+1677: 420
+1678: 00:14:50,160 --> 00:14:55,360
+1679: so up until now you've learned three
+1680: 
+1681: 421
+1682: 00:14:53,079 --> 00:14:57,279
+1683: right three left click one left click
+1684: 
+1685: 422
+1686: 00:14:55,360 --> 00:14:59,000
+1687: and M left click so everything we just
+1688: 
+1689: 423
+1690: 00:14:57,279 --> 00:15:00,639
+1691: learned can be done really quick quickly
+1692: 
+1693: 424
+1694: 00:14:59,000 --> 00:15:03,720
+1695: trust me that's 50% of the nodes that
+1696: 
+1697: 425
+1698: 00:15:00,639 --> 00:15:05,680
+1699: you will lose really really and once we
+1700: 
+1701: 426
+1702: 00:15:03,720 --> 00:15:08,639
+1703: have the multiply node okay we're going
+1704: 
+1705: 427
+1706: 00:15:05,680 --> 00:15:12,000
+1707: to bring in also a value node which is
+1708: 
+1709: 428
+1710: 00:15:08,639 --> 00:15:14,399
+1711: one one okay to control the intensity so
+1712: 
+1713: 429
+1714: 00:15:12,000 --> 00:15:16,920
+1715: now we want to just combine the emissive
+1716: 
+1717: 430
+1718: 00:15:14,399 --> 00:15:20,000
+1719: color plus this value together so we're
+1720: 
+1721: 431
+1722: 00:15:16,920 --> 00:15:21,560
+1723: going to hook this now into our a so one
+1724: 
+1725: 432
+1726: 00:15:20,000 --> 00:15:24,120
+1727: of these values and then we're going to
+1728: 
+1729: 433
+1730: 00:15:21,560 --> 00:15:26,000
+1731: hook this into the B and now they're
+1732: 
+1733: 434
+1734: 00:15:24,120 --> 00:15:27,680
+1735: combined they're multiplied together and
+1736: 
+1737: 435
+1738: 00:15:26,000 --> 00:15:29,560
+1739: now instead of this connection we don't
+1740: 
+1741: 436
+1742: 00:15:27,680 --> 00:15:31,600
+1743: need to break it we just need to replace
+1744: 
+1745: 437
+1746: 00:15:29,560 --> 00:15:33,240
+1747: it it will automatically place it
+1748: 
+1749: 438
+1750: 00:15:31,600 --> 00:15:35,120
+1751: instead of the old connection so take
+1752: 
+1753: 439
+1754: 00:15:33,240 --> 00:15:37,079
+1755: this multiply note put it into emissive
+1756: 
+1757: 440
+1758: 00:15:35,120 --> 00:15:38,600
+1759: color and right now it's there so the
+1760: 
+1761: 441
+1762: 00:15:37,079 --> 00:15:40,920
+1763: value is right now zero so hit apply see
+1764: 
+1765: 442
+1766: 00:15:38,600 --> 00:15:43,120
+1767: what happens no emissive change it to
+1768: 
+1769: 443
+1770: 00:15:40,920 --> 00:15:44,920
+1771: one it's going to be just like before
+1772: 
+1773: 444
+1774: 00:15:43,120 --> 00:15:46,399
+1775: change it to three change it to three
+1776: 
+1777: 445
+1778: 00:15:44,920 --> 00:15:48,440
+1779: it's going to emit even more light look
+1780: 
+1781: 446
+1782: 00:15:46,399 --> 00:15:50,440
+1783: at it boom boom wow it's going to emit
+1784: 
+1785: 447
+1786: 00:15:48,440 --> 00:15:52,839
+1787: even more light change it to 55 it's
+1788: 
+1789: 448
+1790: 00:15:50,440 --> 00:15:54,199
+1791: going to turn white because you much
+1792: 
+1793: 449
+1794: 00:15:52,839 --> 00:15:56,199
+1795: yeah too much light that's exactly what
+1796: 
+1797: 450
+1798: 00:15:54,199 --> 00:15:57,800
+1799: happens change it to 55 boom look at
+1800: 
+1801: 451
+1802: 00:15:56,199 --> 00:15:59,680
+1803: that and then we have these blotchy
+1804: 
+1805: 452
+1806: 00:15:57,800 --> 00:16:01,480
+1807: lights all over because right now we
+1808: 
+1809: 453
+1810: 00:15:59,680 --> 00:16:02,759
+1811: haven't changed our render settings and
+1812: 
+1813: 454
+1814: 00:16:01,480 --> 00:16:04,600
+1815: that's why we're getting this weird
+1816: 
+1817: 455
+1818: 00:16:02,759 --> 00:16:06,399
+1819: lighting artifact we're going to fix all
+1820: 
+1821: 456
+1822: 00:16:04,600 --> 00:16:07,920
+1823: of that later on but just showing you
+1824: 
+1825: 457
+1826: 00:16:06,399 --> 00:16:10,199
+1827: that we're actually emitting a lot of
+1828: 
+1829: 458
+1830: 00:16:07,920 --> 00:16:12,480
+1830: light if this was by the way path Racing
+1831: 
+1832: 459
+1833: 00:16:10,199 --> 00:16:14,199
+1834: for all of you 3D nerds this would look
+1835: 
+1836: 460
+1837: 00:16:12,480 --> 00:16:16,120
+1838: perfect because we're using Lumen it's
+1839: 
+1840: 461
+1841: 00:16:14,199 --> 00:16:17,839
+1842: not Lumin and path racing we're going to
+1843: 
+1844: 462
+1845: 00:16:16,120 --> 00:16:20,440
+1846: describe later on in the rendering
+1847: 
+1848: 463
+1849: 00:16:17,839 --> 00:16:25,079
+1850: chapters don't worry okay change this
+1851: 
+1852: 464
+1853: 00:16:20,440 --> 00:16:27,800
+1854: back to one apply and save so fire what
+1855: 
+1856: 465
+1857: 00:16:25,079 --> 00:16:30,199
+1858: do we have next material instances let's
+1859: 
+1860: 466
+1861: 00:16:27,800 --> 00:16:33,399
+1862: see how we can use them okay perfect so
+1863: 
+1864: 467
+1865: 00:16:30,199 --> 00:16:35,199
+1866: right now we have a parent material
+1867: 
+1868: 468
+1869: 00:16:33,399 --> 00:16:37,880
+1870: right this is the original material that
+1871: 
+1872: 469
+1873: 00:16:35,199 --> 00:16:40,160
+1874: we created let's say okay we created
+1875: 
+1876: 470
+1877: 00:16:37,880 --> 00:16:41,680
+1878: this one material and we're a pro we
+1879: 
+1880: 471
+1881: 00:16:40,160 --> 00:16:43,480
+1882: have thousands of nodes or not even
+1883: 
+1884: 472
+1885: 00:16:41,680 --> 00:16:46,199
+1886: thousands we have like 10 more nodes
+1887: 
+1888: 473
+1889: 00:16:43,480 --> 00:16:49,120
+1890: here and we don't want to go ahead and
+1891: 
+1892: 474
+1893: 00:16:46,199 --> 00:16:50,600
+1894: create a new material for every single
+1895: 
+1896: 475
+1897: 00:16:49,120 --> 00:16:52,360
+1898: different color that we want we want to
+1899: 
+1900: 476
+1901: 00:16:50,600 --> 00:16:54,319
+1902: use all of the properties of that same
+1903: 
+1904: 477
+1905: 00:16:52,360 --> 00:16:56,040
+1906: material maybe the normal map the
+1907: 
+1908: 478
+1909: 00:16:54,319 --> 00:16:58,000
+1910: specular the roughness is the same but
+1911: 
+1912: 479
+1913: 00:16:56,040 --> 00:16:58,880
+1914: we just want to change the color right
+1915: 
+1916: 480
+1917: 00:16:58,000 --> 00:17:00,880
+1918: we don't want to go go ahead and
+1919: 
+1920: 481
+1921: 00:16:58,880 --> 00:17:02,680
+1922: duplicate the material five times and
+1923: 
+1924: 482
+1925: 00:17:00,880 --> 00:17:04,919
+1926: then go and change we just want to
+1927: 
+1928: 483
+1929: 00:17:02,680 --> 00:17:06,600
+1930: create a child material from the parent
+1931: 
+1932: 484
+1933: 00:17:04,919 --> 00:17:08,360
+1934: material and make changes to the child
+1935: 
+1936: 485
+1937: 00:17:06,600 --> 00:17:10,600
+1938: materials and the reason for that is
+1939: 
+1940: 486
+1941: 00:17:08,360 --> 00:17:12,919
+1942: also because we'll have quicker access
+1943: 
+1944: 487
+1945: 00:17:10,600 --> 00:17:14,720
+1946: to the child material parameters inside
+1947: 
+1948: 488
+1949: 00:17:12,919 --> 00:17:18,480
+1950: the engine right here without having to
+1951: 
+1952: 489
+1953: 00:17:14,720 --> 00:17:19,799
+1954: go back to the material graph right and
+1955: 
+1956: 490
+1957: 00:17:18,480 --> 00:17:21,319
+1958: you'll understand exactly why that's
+1959: 
+1960: 491
+1961: 00:17:19,799 --> 00:17:22,919
+1962: going to be useful in a moment so we
+1963: 
+1964: 492
+1965: 00:17:21,319 --> 00:17:27,160
+1966: have this box material I'm going to
+1967: 
+1968: 493
+1969: 00:17:22,919 --> 00:17:30,559
+1970: change a name to box master or short
+1971: 
+1972: 494
+1973: 00:17:27,160 --> 00:17:31,880
+1974: will be mm so master material uncore box
+1975: 
+1976: 495
+1977: 00:17:30,559 --> 00:17:33,840
+1978: right this is going to be Master
+1979: 
+1980: 496
+1981: 00:17:31,880 --> 00:17:35,919
+1982: material box and we're going to apply
+1983: 
+1984: 497
+1985: 00:17:33,840 --> 00:17:37,320
+1986: this make sure it's applied and then
+1987: 
+1988: 498
+1989: 00:17:35,919 --> 00:17:39,760
+1990: we're going to create a child can you
+1991: 
+1992: 499
+1993: 00:17:37,320 --> 00:17:41,200
+1994: turn off the emissive for this mm box
+1995: 
+1996: 500
+1997: 00:17:39,760 --> 00:17:42,679
+1998: sure I'm going to turn off the emissive
+
+
+just make it zero I actually I'm just going to break this connection for now okay control click break the connection okay cool hit apply and save so right now I have this value and one of the things that's really annoying is that every time I want to make changes I have to go back to the material graph and I hit apply we're going to change that using material instances so this is MM box we're going to create a child material or material instance by right clicking on it and creating material instance okay it's already created an mm box instance with the name and we can just hit okay we're okay with that so let's replace the instance material now on top of the cube change it so drag and drop so that it's using that material so that it's not going back to the parent now if we open up the material instance we're not going to be seeing a material graph we're going to see what the material looks like and just a bunch of options here telling us how to find the parent material so it's just leading us to mm box if we look for it using this button which we already learned at an earlier chapter we'll find a parent material so what's the use case of it right now if you want to change the color or other parameters we can go to material master and then set them to a parameter and then come and change it here absolutely and that's the best freaking part about unal engine materials so let's go back to the parent material and we have to make some changes this is just like coding if you're a developer you probably know how this works in writing a code we can go ahe and change all of these to parameters simply by right clicking on a node right not all nodes will allow you to do this it really depends on what kind of node it is but all of this actually work with parameters so right click convert to parameter if you convert it to a parameter it's asking us for a name now because we need to look at the name in the instance and actually be able to Define what this color is used for so this is our base color right base base color cool and then these guys they need to be changing uh they need to change to a parameter as well so right click convert to parameter this is metallic this right click this is specular specular and this one is roughness okay let's not talk about let's not talk about emissive yet let's just keep it simple simple hit apply and save nothing's changed but if we go back to our material instances now you see all the values now we see all the values and check this bad boy out so we're going to save make sure everything's safe save at the bottom right so in case we crash we are going to check these guys just to say okay we want to start using these right now we have converted to parameters so the moment we did that they appeared here we're going to check our metallic check our roughness which means we want to start changing these values and then check our base color open it up guess what now we can update all of these values in real time and see the difference without having to apply anything so let's go ahead and change the metallic value o or maybe the roughness wow or maybe the specular right which is not going to make that much of a difference right now in this in this in this Cube it it was a sphere will'll see it or Farah what about the color less than is to Blue boom right done now why is this useful check this out so I now want to make this also a cube of similar properties with a different color I'm going to go ahead take my master material create another instance right call this m mm box instance but I'm going to call this yellow yellow I want this to be my yellow and then you can see at the bottom left it says material instance right these are my instances this is my material I'm going to drag and drop this guy here right I'm going to make sure I change this instance to Blue so I know this is my blue color blue right sorry that's blue te blue blue BL so this is my yellow drag and drop just want to make sure it's correct and this is my blue so now without going to my master material I can open up my yellow right check these guys again and then I can now set these values independent of the first one I can change this to Yellow is that yellow that is yellow yellow and I can make it more metallic make it more rough and just like that I didn't have to go and create a whole new material go and keep updating the material graph here I have all of those accessible within the material instance and that is why material instances are so freaking powerful now one last thing I just want to cover since we did play with the the emissive we can go ahead and hook this up now into emissive and the changes will all go through all the instances right because they're all children of this parent material let's go ahead and convert this to a parameter call it a color right and then we're going to change this also to a parameter call it emissive intensity strength or intensity both of them work and then hit apply and save both of them will and now both of them shine bright yes have an emissive because it's default at one let's change a default to zero because we don't want it to emitting light maybe I only want one of them to emit light I want the yellow to emit light so now I have this extra option for my emissive color and an extra option for emissive strength I can go and change emissive color color to also yellow and then increase that value right here and see it react in real time baby congratulations that was the texture and material hold up did you guys know you can speed up your workflow by using poly Cam's photogrametry instead of modeling and texturing yeah you just snap a couple of photos a voila plus your objects will automatically look photo realistic because they're actually real shout out to poam for sponsoring this course and giving you guys 30% off the Pro Plan promo code and Link in the description but what if we want to bring realistic textures from the internet that's actually a good question because most of the time we're going to be doing that we're probably not going to be creating a simple material like this so let's say you want to bring in material from outside what we're going to do is use one of the free materials of textures.com so shout out to these guys we went ahead to their free section you can go ahead and do the exact same and then we looked for this material right here which said says sci-fi panel so we went on top of the S sci-fi panel and then we went ahead and downloaded the 4K version of all of these different Maps right here except the height map we didn't need that and we'll explain why in a moment so go ahead and download the 4K 2K 1K version the resolution is basically defining how good your materials look how detailed they look if your computer doesn't have the storage or the performance capabilities you can go ahead and download a lower res version so once you download them we're going to go ahead and find them in our content browser on our computer right we have it located right here and what we have to do is simply open up an our content drawer we're going to create a new folder call it sci-fi panel no let's call it textures.com I don't check there's no dot textures from internet stupid hor name stupidest name but it's okay and then we're going to go to to our folder right here and we're going to drag and drop all of these into our content drawer really as simple as that right they're just going to pop right in control space and we see all of these right here you can go ahead and double click on them to see what they look like and their properties are going to be here you can even change some of these values I'm not going to go ahead and do that we don't need that right now so once you have these textures loaded we need to go ahead and create a new material to load them in and connect them to the right nodes so let's go ahead and create a new material we already know how to do this what are we going to call it SciFi panels right and we're going to open up the material and we're going to maximize this right click to drag to the side and I'm going to put this right here so we'll see and then control space to open up the content drawer let's drag everything shift select everything and then drag it into the material graph now we have too many notes so let's go and separate them just so we don't get confused by what they are and what they do and if you forget what each of these maps are we can go ahead and look on the very left side once we click on them to see what they are so if they're very small go ahead and enlarge the space so you'll see what they are for example this is my metallic map this is my AO I'll explain what that is in a moment my normal map my roughness map and my albo starting from the albo fire what is albo the base color that's the base color that's just another word for base color right so in order to hook this in we're going to use the RGB value base color and we can already see the difference right here in this sphere so first things first I want to talk to you guys about the bottom right corner right here you can actually change your view viewing mesh it can be a sphere it can be a cylinder it can be a plane sometimes that helps it can be a cube or I think this is going to be really cool for when you have a specific mesh if you have let's say I don't have anything right now to show you guys but I'll just tell you theoretically how this works if you have a specific mes like a spaceship that you want to go ahead and use here in the material viewport you can basically use this button right here as long as you have the mesh selected in your drawer you'll be able to switch it with this button and it will change to that specific spaceship we don't have it right now we only have cubes so it doesn't work but it's good to know so moving on I want to go ahead and actually apply this to my scene so you'll make sure to see the differences so if I let's go ahead and do that let's go ahe and take this scii panel let's apply it to this guy right here so at first it's gray why apply apply baby got to apply let's go hit apply and boom boom we have the Sci-Fi panels on top of the cube but but it's still lacking a lot of detail right we need to connect other Maps we need to connect the other Maps so in order to do that let's first see what this one is this one is the's see should be roughness roughness map so roughness will go into roughness so you guys will come here you're going to go to roughness roughness to roughness hit apply and see what happens boom immediately it got more shiny more shiny perfect okay so the next thing we're going to need is the metallic so this is metallic I'm going to look closer metallic map right perfect so metallic will go into metallic right here RGB to metallic and then let's pay close attention to what happens to the sides right here to these guys when I hit apply boom already turned metallic right and if you want to know exactly how this works let's double click this texture image see the white areas that's the one value value of one that's where the metallic surface is and anything that is black is not metallic the same thing applies to roughness and specular by the way and then the next thing is your normal map so remember how we talked about normal map giving fake detail right so if you H hook up the normal map here let's go closer to these dots like right here yeah so right now they're just flat dots and this is a flat Cube it's just one plane but see what normal Maps do hit apply boom Oh do you see that fake detail we haven't changed the mesh the mesh is still the cube but we got this fake detail on top because the normal map says Hey I want you to bounce off Lighting in a different way when you hit that specific spot because of the normal map and the last map we're going to talk about Here Is AO which is ambient occlusion absolutely ambient occlusion ambient occlusion if you open it up is basically the occlusion means blocking things out so ambient occlusion usually if you look at a floor sorry a floor and a wall in the very Corners you'll see a dark spot because light is not reaching it and so it's it's it's slightly dark the darkness in the corner gives you the sense of realism so when you're missing that in CG that's when you can tell if something is fake and not real not photoreal so ambient occlusion helps you with that photorealism and so we're going to hook that in it's probably going to be a very minute difference I don't even know where it is it's probably here in these dots right here so let's pay close attention RGB will go to ambient inclusion hit apply yeah it's it's it's very minimal sometimes the the difference can be a lot so hit apply all right perfect now fire hot do you know what happens if I go ahead and stretch this Cube your texture would be stretched right yeah so let's go and do that so let's go and scale this oh that's ruined okay so in order to fix this we need to go ahead and control the way these uh textures are tiling on top of our mesh and the way we do that we don't want to get too deep into the concept of it but basically it's using using UVS right here each node has that each texture has UVS and it's basically how they're wrapped around a mesh so in order to control this tiling we're going to be using a setup that is already created for us in Unreal Engine you can manually do this we're not going to do that cuz why do we do it if it's already there so right click look for tiling MF tiling so if I search for tiling I'll see MF tiling multiple times just use any of them they still work bring it in and all we have to do is connect the result node into the uves of all of these nodes and hook it up hook it up we're going to do the same thing for all of these guys hook it up and one last one right here okay cool so hit apply and save now this hasn't changed anything yet we have to go and change the values but if you want to see what this is actually doing we have to click this right double click it to see what MF tiling is there's a whole other node graph just for MF tiling but this actually works like how we created a parameter so in order to change these values we have to create a material instance to access the numbers so let's go ahead and do that save and then let's minimize this let's go ahead and create a material instance right here and the name is fine let's go ahead and apply this now to our Cube we can see on the right side it's applied and if we go and open up the material instance we haven't converted anything to a parameter but because we brought in MF tiling this one automatically comes with parameters which is why if you go ahead and turn on tiling offset which is what we want and what we hooked into our UVS we now have access to tiling X and tiling y by changing these values we're actually going to be changing the tiling so now we can make this huge sci-fi panel which is really cool or reset this value um to one and then we can go ahead and maybe play with this right pull the Y to larger number and now we have I think successfully created proper tiling what do you say far yeah I think it looks good perfect okay and I believe that brings us to the end of the basics of materials materal so right now you know how to create a basic setup for a material and you know how to create tilings so that your materials are not stretched in the next chapter we are going to use this knowledge and put material and texture on our spaceship right so we're going to go more advanced so if you're ready for that go ahead and get yourself some coffee and let's start with the next chapter click the video right here
+1999: 
+2000: 

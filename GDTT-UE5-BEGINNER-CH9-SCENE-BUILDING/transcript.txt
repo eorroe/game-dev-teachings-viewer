@@ -1,0 +1,1076 @@
+By the end of this video, you would have
+learned how to do more scene building
+like adding all of these lights across
+your scene to your pillars and columns
+and even adding that extra light rim to
+the edge and also controlling all of
+them using a single material so that
+your spaceship can start looking really
+cool.
+What is up, beautiful people? Welcome to
+chapter nine of our Unreal Engine
+beginners tutorial series. In this
+chapter, we are going to cover scene
+building. We are going to decorate our
+scene with lighting.
+Are you frozen?
+I'm lagging.
+Yes, we're going to be doing some scene
+building. And if you look closely to our
+reference image right here, we have all
+these sexy lights that are on the
+pillars. That's why we built these
+pillars. That's why we even have these
+little windows in there so that we can
+decorate it with emissive lights. We
+also have more lights in the small
+pillars, right? They're different. We
+have the small, big, small. And then
+here we have these uniform lights. And
+that's what we're going to create today.
+Plus, we're also going to create this
+extra extra part in front of our
+spaceship, which is going to add to the
+coolness of it. That big giant LED that
+goes all the way around. LED? I don't
+think that's an LED.
+Star Wars has
+Whatever it is. They don't have LED.
+Whatever it is, we're going to add that
+light. So, Farhad, are we ready?
+Yeah, let's go.
+Okay, so in order to create our lights,
+we're going to go back to the roots. Go
+back to the modeling tab to begin
+creating the shape for our lights. So,
+go to your modeling tab and then I'm
+going to bring this guy here so you guys
+can see what we're clicking on. And then
+we're just going to come to the middle
+of the scene. We can create our lights
+right here in uh on the floor. So, for
+our lights, we found out that rectangles
+will be the best to begin with because
+we can make them round. So, we're We're
+to go to rectangles. And then as you can
+see, if I place it anywhere on my floor,
+it's just going to create it. So, let's
+just place it here. And then I'm going
+to raise it up cuz it's like in the in
+the floor. We don't want that. And then,
+Farhad, what should we do with it now?
+First of all, make it look like a
+rectangle and make it rounded corners.
+I like that. So, let's create these
+lights first, right?
+The small ones?
+Yes. So, to make it rounded corners, we
+can change the type of rectangle to
+rounded. Perfect. And then we're going
+to play with the width and the depth
+to create that look. And actually, we
+just did.
+Yeah.
+We're done. Yeah, you Okay, so as you
+can see
+a big
+Is this a big one or is this a small
+We can always make it smaller anyways,
+right, with the scale. I think this is
+pretty good.
+Sure.
+And this is going to be accepted, right?
+Make sure we accept it. And we're going
+to just pull it here. This is going to
+be the light itself, but we also need a
+base for the light, right?
+Yes.
+And we don't have to go too crazy with
+the detail here because it's going to be
+always far away from the camera. So, all
+I'm going to do is just go and duplicate
+this. Hold Alt, bring it down, right?
+And then slightly scale it up with R,
+and then scale it up so that it can just
+be underneath it and act as the base.
+The base. And I can actually scale it a
+little bit wider. I actually don't like
+that it's snapping on the scale. And
+then I'm going to make it a bit smaller.
+What do you think about that, Farhad?
+that's good. Do we need to extrude them?
+Absolutely, cuz right now it's flat,
+right? That's not going to That's not
+going to work for us.
+And we're just going to select the upper
+one, and then we're going to go to
+model, polygroup edit. You guys should
+already know this. And then we're going
+to hit
+the face, and then we're going to say,
+"Okay, we want to extrude this." So, hit
+extrude, and then guess what? It's going
+to extrude, right? We are going to
+change this click and viewport to fixed,
+and then I'm going to go in the negative
+value, all right, cuz I want it to go
+down, and then just see like, "Okay,
+it's going way too low. We don't want
+that. We just want this to be like um
+maybe -5. Let's see.
+Um, no, -15. Okay. I think that's pretty
+good. -15.
+No, this is perfect. It can you can go
+below the base, that's completely fine.
+Now, I don't know if this is going to
+happen, but before when we extruded this
+for some reason, because the bottom part
+was uh
+duplicated from this, it also extruded
+that, which is like, thank you
+automatically doing it for us. I don't
+know if it's going to work here, so
+let's hit accept.
+It did.
+I don't know I think it's because it's a
+duplicate, it automatically Yeah, yeah,
+yeah. We we knew it. We knew it. We knew
+it. We knew it. We knew it.
+But in case it didn't work for you guys,
+just go ahead and do exactly the same
+thing to the base. Right now, see, we
+have two rectangles, rounded rectangles.
+One is going to be our emissive light,
+and the one at the bottom is going to be
+the metallic base, right? So, we're
+going to go out of the modeling tool
+really quickly, just to show you guys
+what we got. Looks absolutely perfect.
+We're going to rename them, just so we
+know what they are. So, lights.
+So, Faris, can we go now and create the
+lights for the smaller columns?
+Yeah, so the smaller columns, they have
+no base, right? It's just like a small
+light and a big light and a big light
+and a small light. So, we're just going
+to have to create two more versions
+right now for the smaller columns, and
+they have to be slightly thinner. So,
+let's go back to the modeling tab. Let's
+go to rectangle. And then place it here,
+raise it up. This is way too big, so
+we're going to control the width. No,
+the width is fine. Control the depth. I
+would say, oh, this is this is actually
+I want to go ahead and play with the
+corner radius, make sure it's round,
+super round. I like this for maybe,
+let's see, the small one. And then we're
+going to make one more for the bigger
+one. I'm just going to make it a bit
+like, oh, no. I have to play with the
+corner radius again.
+It it gets ruined for some reason. Okay.
+I think this is good. I like this.
+More rounded, more rounded.
+More rounded. Okay, cool. This is good
+for the small one. Okay, I want it to be
+the exact same width.
+Change the depth. Yeah.
+Longer, longer, longer.
+depth but different width, yes.
+I
+think
+No, a bit longer.
+A bit longer?
+Yeah, good.
+Okay.
+Right. You are good.
+Thank you very much. Is it the same
+width? Absolutely the same. Yes,
+perfect. Okay, this is great. Now, we
+need to go ahead and extrude both of
+them. So, this one time we have to
+extrude both of them separately cuz
+they're not duplicated. Poly Group Edit,
+select. Extrude. That is perfect. The
+value from before is there. Hit accept.
+Do the same thing here. Poly Group Edit.
+And select the face. Extrude.
+Boom.
+That is perfect. And hit accept. So, now
+we have the small light, the big light,
+which is going to be used for the
+smaller columns. And then we have this
+uh light with the metal base. So, before
+we go ahead and arrange them and
+duplicate them and even merge these two
+together to become one mesh, we have to
+go ahead and apply their materials,
+right? Just to make sure they're working
+fine.
+So, let's go back to the selection mode.
+And in order to create these materials,
+let's open up our content drawer. Let's
+go to our materials. And then I'm going
+to create a new folder, call it
+Emissive lights.
+Light materials, right? Light materials.
+And then inside light materials, I'm
+going to create a new material, right?
+Call this
+Um light emissive.
+Yeah.
+Yeah, light emissive. And this one, I'm
+going to create an instance for it
+automatically because we know we always
+going to use it. And let's apply this
+emissive on top of this light and also
+to this light and to this light. We just
+want the same material, same color. You
+can then create more instances if you
+want to change the color. Remember we
+did that in the first chapter of
+materials. And for the base here, let's
+go to our starter content. We're just
+going to use one of the materials. One
+of the metal materials. Which one should
+we go for?
+Go for metal steel.
+Okay. Yeah, why not? Why not? Let's do
+that. So, metal steel, drag it, drop it.
+Yeah, that looks good.
+Perfect. Yeah, this is going to be good.
+So,
+Light it up.
+Yes, we have to go to our light
+materials. Farrokh, you got to guide me
+here. How do we light this up?
+Emissive color. Let's go.
+Okay, so
+RGB, three left click.
+Yes.
+Okay, bring this here.
+Do you want to control the intensity
+maybe?
+Absolutely, yes.
+Yes, do an M.
+Okay, so maybe change this to white so
+we can see. Hit okay, apply just to see
+the difference. Okay, they're working.
+Now, a multiply node.
+Yes.
+And
+And make it a parameter.
+Make it a parameter. So, here's another
+tip. We know about one and then right
+one left click and then right click to
+convert to parameter. We know about the
+scalar shortcut. There's also another
+way. If you have this variable that
+needs to turn into a parameter, you can
+just right click here and say, "Hey, go
+ahead and promote this to a parameter."
+It automatically makes a scalar for you
+and connects it to the node. Just
+another tip for you.
+tips for you guys.
+Very, very important. So, what are we
+going to call this?
+Uh this is a light intensity, right?
+That's right. Emissive strength. Okay,
+cool. So, hit apply and hit save. Right
+now it's at zero. Let's change this to
+one. Perfect. And if you go ahead and
+open up our in instance, we can go ahead
+and control this intensity, of course.
+But
+Keep it to one and then let's place
+everything and see how they're going to
+look.
+Yeah, and let's also convert this to a
+parameter so we can change the color.
+Do you want to?
+Of course. Cuz we want to change the
+mood, right? Emissive color. And hit
+apply and save.
+Very cool. Okay. So, we have everything
+ready to go. We're going to close this
+guy. We have the small light, the big
+light, and then we have this guy.
+How we can merge two meshes together
+because we don't want to carry the base
+and the light itself all the time,
+right?
+Yeah, and then imagine the amount of
+lights we're going to have, like the
+amount of meshes we're going to have
+because it's now two of them. And we
+also don't want to have to control both
+separately. So, when you have this one,
+the light and the It says rectangle two.
+Let's call this light base so it's
+clear. I think we already did this,
+didn't we? Maybe we didn't. So, we have
+the light and the light base. Let's
+forget about these two right now. Hide
+it. Hide it.
+These two want to become one mesh,
+right? And right now they do not exist
+inside our content drawer as one mesh.
+So we need to create that. How do we do
+it? Well, we're going to select the
+base, select the light, and then we're
+going to go to actor at the top. And
+we're going to look for merge actors.
+And there's a bracket with two because
+those are two different actors that
+you're trying to merge. If there's more,
+it's going to show up right there.
+You're looking for merge. When you hit
+merge, it's going to say okay, we're
+going to turn this into a static mesh.
+Give me a name.
+Give me a name. And also a place to save
+it. So let's go ahead in our content
+folder. Let's create a new folder. Call
+it light mesh. Right? I don't know. Just
+any name. And then call this
+Small light.
+Small light.
+Boom.
+Just like that, we have created a static
+mesh, as you can see, that we can now
+drag and drop into our scene, and it
+comes as one single mesh. And guess
+what? If you go towards the details
+panel, you'll see it has two slots for
+your material. So you can always switch
+out the base and switch out the light.
+Impressive.
+This is why we did the materials first.
+If you were to merge these two together
+while having the same gray material,
+you'll only have one slot, which means
+you cannot change them anymore.
+So now that we've created this, we can
+go ahead and hide the original or delete
+it if you If If you're not going to use
+it anymore. In case you want to keep it
+for safety reasons, you can. But we
+don't need it. So now we have this mesh.
+I'm going to move it to a new folder.
+Right? Create a new folder. Call it
+Decoration or
+Big pillar lights.
+Okay.
+Big pillar lights, right? Because we're
+going to have a lot of them now. And
+then we're going to just move them to
+this guy right here. Let's hide these
+guys. They're annoying me right now.
+Hit F to focus. And then we're going to
+bring it up here. So Farhad, I'm going
+to create a lot of these lights. How do
+I do it? Alt?
+Oh, no. We are going to use pattern
+because we are not going to create more
+than one. So, I don't want to alt six
+times.
+And guess what? If you use alt, you have
+to manually figure out where they have
+to be placed, right? There's a quicker
+way to do this, and that is
+pattern.
+Where do we find it?
+Modeling tab.
+Modeling tab. So, select this guy.
+a lot, actually.
+Yeah, that's why it's useful. So, we're
+going to go to the modeling tab right
+here, and then we're going to go to
+XForm, and while having this selected,
+go to pattern.
+Boom.
+And pattern has many different
+functions. So, first of all, you can
+create a pattern in a line, in a grid,
+right? If you
+move this, you'll see what it is.
+And see, it's a grid, or in circles.
+Super cool.
+Super cool, right? So, we're going to go
+to line, and Farhad, this is not
+correct.
+want Y axis. We don't want X axis.
+So, change it to a different direction
+of Y axis. The extent is controlling
+their distance, which is great. We need
+that. And there's too many of them. How
+many do we need? Six?
+Maybe.
+Six? Let's try six.
+This looks perfect, but it's definitely
+bigger. It's definitely bigger.
+No, I think the orientation, yes.
+the the distance.
+Get them closer.
+What do you think about this?
+Uh let's try it.
+Let's give it a try. So, what do we do
+now?
+Rotate it 45°.
+Yes.
+Okay.
+And then let's boop.
+Rotate it, okay, and then we just move
+it.
+Yes.
+Move it.
+And let's see. So, I don't think that
+was 45°. I might have done a mistake
+there. Let's move it closer. Let's try
+to eyeball this and see if this is
+working or not. Definitely the rotation
+is off. I need to rotate it again one
+more time to make sure it's flat. Again,
+you can use the snapping tool here to
+make sure you're precise.
+Okay, push this in.
+And Farhad, that is
+centered.
+It's not centered, definitely not. But,
+I think the distance is too far off.
+it's it's good. Bring it lower a bit.
+Just a little bit less.
+Uh a little bit Okay, yeah.
+Maybe five lights, what do you say?
+About that? Five? I think five will be
+just fine.
+okay. Bring it lower a bit.
+So, the problem is right now, Farhat, I
+want to I want to bring this up, slant
+it just like on its own axis. I cannot
+do that because the gizmo is staying
+according to the world axis. How can I
+change it?
+There is something called global and
+local positions, and it's on the top
+right.
+So, we never talked about this before,
+but he told somebody now. Yes, toggle
+between the world This is the world, the
+globe, and then local it's going to
+define the current rotation of your
+object, and then change the gizmo to
+match it. And right now, because this is
+already rotated, guess what? We can now
+go and pull it up on the same axis. So,
+we don't have to go up, left, up, left.
+This is going to come in real handy. So,
+this is the button that you can use to
+toggle between world and local axes.
+And Farhat from the front
+That is looking really good.
+Send it Make it center.
+Center aligned.
+All the way a bit to the right. Yes,
+this is looking really
+really good.
+Yes.
+Yummy. Accept before it crashes.
+Okay. All right, this is this is really
+good. This is really good. Amazing.
+Okay, hit accept. We're done. Yes. So,
+we created a new pattern. It's not in
+the big pillar lights. Let's go ahead
+and drop it there. Let's call it small
+light
+pattern.
+pattern. Okay, cool.
+Now, we need to duplicate it to the
+other columns.
+Exactly. So, now that we have the
+perfect shape and perfect pattern, we
+can go ahead back to our normal mode, uh
+normal transform, and then now, using
+the local again because we want to move
+it on the same axis, we're going to hold
+Alt
+and then just drag it to the side.
+Yes.
+Right? Perfect. A little bit more.
+And then hold Alt again.
+Drag it all the way here. Hit S. Go
+closer. Go out of the modeling mode. We
+don't need that right now. This is
+perfect. Now, Farhat, I want to create
+the same lights for the ceiling. How do
+I do it?
+Uh select all three.
+Select all three.
+Alt.
+Alt.
+Take it out.
+Okay, I'm going to go back to global.
+Hold alt to take it out. And then I want
+to I want to mirror this. How do I do
+it?
+So, mirror it over the Z axis. So, it
+will go and reflect it on the top side.
+So, I can go and while having all of
+this selected, go and right click.
+Go So, you have a bunch of different
+options, okay? The one we're going to
+use is transform and mirror. So, this is
+going to mirror it on different axes.
+And we just have to play around with the
+different X, Y, and Z axes to find out
+which one works for us. So, which axis
+are we trying?
+Z.
+Z?
+Boom.
+Boom. Just like that, it's mirrored it
+perfectly on the Z axis. And guess what?
+We can now just drag these guys up. It's
+going to be at the perfect angle once we
+pull these in. We're going to hit F just
+to get closer. And then go back to local
+so we can move it on the same local
+axis. Pull it up. Pull it out ever so
+slightly.
+done.
+And guess what? If we go up close to it,
+I think we finished one side.
+Now, select all six.
+What? Are we going to mirror again?
+Yes, for the other side.
+Okay, let me just check this out. Yeah,
+it's perfect. Dude, it's perfect. Okay.
+So, select all six. And now, go back to
+global. Go back to global, right? So,
+that we can move it just on the global X
+axis. And then, we want to go ahead and
+duplicate. So, hold alt
+and then click and drag. And all we have
+to do is just mirror this. Flip it. So,
+how do we do it?
+Mirror Y. Right click.
+Right click.
+Try the mirrors. See which one works for
+you. But for us, it's mirror Y.
+And it's as simple as that. We don't
+have to go out and duplicate them one by
+one. Okay. And we're going to bring it
+all the way to the right. Hit F. Make
+sure we go up close. Make sure we see
+what we're doing.
+Hello,
+we're done.
+And wow.
+Let's go to the small columns now. All
+the big ones are done.
+Big ones are done. Big boys are done.
+Yes.
+The small light, the first one that we
+created. F, we don't need it anymore
+because we already created our pattern,
+right? So, now it's up to the next
+lights that we created. Unhide them.
+Remember these two? So, we want to put
+these on the smaller pillars. We're
+going to use the exact same method, but
+instead of using the pattern, since we
+have weird patterns, we have like a
+small one and a big one and a big one
+and a small one, we're going to manually
+create the duplicates, but then for the
+mirroring, we're going to use exactly
+the same method. Okay. So, I want to
+take these two. I should name them. So,
+I will call this
+b a small pillar light.
+And small pillar
+light
+two.
+B. So, this is this is S.
+For small. Okay? And then I'm going to
+take these two into a new folder.
+Create new folder. Call this
+small
+pillar light. Okay, cool. So, I have
+these two guys. Let's go ahead and
+select both.
+And then drag them
+all the way to my smaller pillars. Let's
+start with the first one. Okay, spring
+it up.
+And then we have to go ahead and rotate
+them. Hit E.
+And then rotate 45°
+should be the angle we want. And then
+bring it closer here.
+And we just want to insert it inside the
+wall. We don't need bases for this. If
+you want to create bases for it, you are
+more than welcome to do so. Make sure
+it's center aligned. Farad, I think it
+is center aligned, but I think the
+lights are a little small. What do you
+say?
+Compared compared to the actual pillar.
+So, I'm going to change this to the
+local,
+Okay.
+right? So, I can pull this light up a
+little bit.
+And then I'm going to scale both of
+them. So, I'm going to select both. I'm
+going to scale both of them on all axes.
+I want them to be a bit bigger.
+Oh, yes.
+This is looking a lot nicer.
+So, add one more. So, maybe control alt
+to duplicate the big one.
+Yes, I'll just pull this down a little
+bit. Again, this is dependent on your
+taste. You can change the way your
+lights look. This is how we're going to
+go for it. So, duplicate this guy one
+more time.
+Here.
+And then do two one more small.
+One more small. So, alt on the local
+axis, duplicate, bring it up here.
+And let's see what that looks like.
+I think we have space for one more small
+one.
+One more small one. Okay.
+Alt and duplicate.
+Yeah, let's look at from the far.
+I think that looks perfect.
+amazing. Are we going to merge actor
+here again?
+Absolutely. Right? Why do we want to
+keep all these different names where we
+can just have one static mesh since we
+know the shapes are all going to be the
+same. So, once you have everything
+selected, we're going to go to actor.
+And now we have five different meshes.
+We're going to merge. In the same
+folder, light mesh, we're going to
+create the
+big lights. I'm going to big lights.
+Name them whatever you want. We are
+horrible at naming. So, you have the big
+lights right here. Let's go ahead and
+bring the big lights into the scene and
+just replace
+this one
+with the big light.
+So, I'm going to pull it up. Try to
+eyeball it and see where it is. So, we
+can remove the original.
+And maybe I can actually already remove
+it. So, big pillar lights.
+It's not what we're looking for. Small
+pillar lights, delete them. We don't
+need them. And I can just take this. Now
+it's just one mesh, one material.
+Bring it lower.
+And move it to the left.
+Farhad, what do you say?
+Bring it lower a bit.
+Lower?
+Bring it lower a bit.
+Okay, perfect. What do you say?
+Good. Duplicate. Let's go.
+Okay, cool. So, I'm going to go ahead
+and duplicate this right now.
+Like so. Boom.
+We're going to fast forward this so you
+guys can see it's exact
+workflow that we did before.
+Duplicate it. Now it's time to mirror Z
+again.
+Transform, mirror Z.
+To put it on the other side.
+Pull it up.
+Farris, did you know who sponsored this
+video?
+Polycam.
+What is Polycam?
+Polycam is a photo scanning application
+that is available on your devices, your
+phone, mobile devices, and also on the
+web. So if you are looking to create
+photorealistic scenes and you're
+suffering from your models looking
+horrible or just taking too much time to
+build, you can just go ahead to the real
+world, scan anything using your phone or
+your drone, and then bring it to your 3D
+software and have it look absolutely
+gorgeous.
+That's what Polycam is.
+Thank you.
+Okay, now we have all of these guys. I'm
+going to select everything here. I'm
+going to bring it to small pillar
+lights. And then, Farris, what do we do?
+Alt.
+Duplicate.
+Yes.
+And then mirror on
+Y.
+Right click, transform,
+mirror on Y axis.
+Beautiful.
+So we just mirrored it on the other
+axis.
+Nice.
+We're going to bring it and stick it
+into the wall.
+Oh my god.
+Amazing.
+We did it.
+We did it. One final thing. Let's
+Wait, wait, can you guys just Look Look
+at this Look at this beauty.
+We did it. You guys did it. Guys, if
+your scene looks something like this,
+you are
+a pro now.
+Looking good. Yes. And again, if you
+made mistakes, if your scene doesn't
+look like this, don't be afraid to go
+back and try again. This is our 10th
+time creating this spaceship. We didn't
+get it right in the first time, no way.
+So again, don't worry, go back, try
+again.
+Now hold up. Did you know that you can
+use photogrammetry to create highly
+photorealistic scenes by taking what
+exists in the real world into 3D? We've
+been using Polycam to to exactly that
+using our phone and drone.
+That's right. And shout out to them for
+sponsoring this video giving you guys
+30% off their promo plan.
+The promo code is bad decisions.
+off their plan. Not the promo plan. They
+don't have a promo plan.
+30% off their plan.
+Promo plan.
+Promo plan.
+Use the code bad decisions in the link
+in the description. Let's continue.
+Now Farhad, what do we have next?
+The
+window at the back. So, we need to have
+the emissive window. Let's go and do it.
+Okay, cool. So, for the emissive window,
+we are going to pull out our mesh and
+create a an extra part in front of the
+spaceship to create that emissive light,
+right? And to show you guys the
+reference, it's right here. This is what
+we're trying to create. So, Farhad,
+we're going to hit our spaceship again
+and then we're going to go to the
+modeling tab.
+Now, what we need to do, we can go to
+create we we can go ahead and create the
+shape again from beginning, but why the
+hell do we want to do that when we can
+go ahead and copy this exact shape? So,
+I'm just going to change our view from
+lit to unlit because it's really dark. I
+just want to see these sides. And I'm
+going to go to model, go to polygroup
+edit, and make sure I'm only selecting
+faces, so disable vertices, disable
+edges. And once I have that, I am going
+to
+to uncheck the hits back?
+Thank you. You saved my life. You saved
+my life.
+I want to go ahead now and select this
+outer layer, all of these faces, so that
+I can go ahead and duplicate it, pull it
+out, and then extrude it, and then make
+that my light, right? So, copy the exact
+same shape. You'll understand exactly
+why in a moment. So, just go ahead and
+select the outer edge. So, again, select
+one, shift hold shift, and then select
+select select.
+All right. So, as you can see I've
+already selected everything, but also
+selected all these random things. So,
+control drag deselect everything else
+that was selected. We don't need any of
+these guys. Make sure you go around your
+spaceship. Make sure you check that
+you've selected nothing by mistake and
+there's nothing else that is yellow,
+which is perfect and I've lost this
+already. God damn it.
+Select, select, select. Okay, we are
+good. Now, we want to go ahead and
+duplicate these faces so we can pull it
+out. I don't want it to be the same part
+of the mesh. So, I'm going to hit
+duplicate and it's already done it. So,
+all I have to do is pull it out.
+See? 1 2 3. Pull it out. Perfect. Do you
+see that?
+Yes.
+Okay, so now we have some distance from
+the main spaceship, which is fine. This
+is a spaceship. It's sci-fi. We can do
+that. It's like floating in the air,
+which is perfect. Now, I want to go
+ahead and create an extrusion so that
+it's actually having some depth. So,
+while everything is already selected,
+just go to extrude
+and it's already on fixed from before.
+So, we're going to use a positive value
+and go ahead and pull this guy out. I
+want it to be pretty damn thick. That's
+what I like.
+That sounded very wrong. Okay, that
+sounded very wrong. I take it back.
+I take it back.
+Oh my god. Okay.
+That's the truth.
+Uh it isn't No, no. I I take it back.
+Kids are watching.
+Nope. Okay. All right, Farah, what do
+you think about this? I think it's
+pretty cool, right? Okay.
+All right, we went really thick with
+this one. Not that I like it. Just yeah.
+Single direction works here because
+they're all facing the outer side, all
+the faces, so it works and we're going
+to hit accept.
+Now, I need to go ahead. If I go back to
+the interior, I still don't have Check
+this out. I still don't have these edges
+that are turning into my light. So, if
+you go closer, first of all, it's coming
+outside. You have this one layer, which
+is still your metal and we have this
+emissive lights and then you have the
+one big layer, which is the actual big,
+big big light. So, fire, how do we do
+it?
+Insert edge loop.
+Okay, so polygroup edit.
+half. Yes.
+Yeah. I'm going to go to insert edge
+loop, and we don't need this to be even
+anymore. We can just lay down one cut.
+So, we want the outer layer to be
+extruded inwards. So, let's just leave a
+line maybe somewhere here. I think
+that's pretty good. And then we're going
+to extrude this part towards the middle
+side.
+So, we need to select the faces now.
+Absolutely. So, we're going to hit
+accept, go back to polygroup edit, and
+we're going to select this outer edge
+right here.
+Boom. Okay. Farrokh, seems like we've
+got it selected. So, what do we do now?
+Now, we need to extrude.
+Extrude, but it's going towards a single
+direction again. So, let's go and change
+this again to selected triangle normals,
+and now it's working just fine. So, it's
+coming in, but it's too much. Too much.
+Let's show the wireframe so that we make
+sure we're not breaking anything.
+And wow.
+This is good.
+This is looking good. So, the number 350
+for us. So, 350.
+I really like this.
+340, 350, I think it's fine.
+350, perfect. What do you say?
+Yeah.
+Perfect. Hit accept.
+Okay. Let's go back to the lit mode.
+Let's see what this looks like.
+We need to add the material now.
+Yes, absolutely. So, this is perfect. We
+already have the edge, and I love how it
+looks, but right now we don't have any
+light. So,
+we're going to go back to the unlit mode
+so it's easier to see. What we need to
+do, if you look closer to our reference,
+we have the outer edge, which is still
+the metal, and then the inner edge,
+which is larger, is going to be our
+light. So, this is going to be a tip
+that we're going to use, which is going
+to be coming really handy. Usually you
+do this in other softwares cuz they're
+much faster. It's not as fast in Unreal,
+but again, it's really good to know how
+it works. What we have to do is let's go
+back to selection mode. If you select
+our spaceship, we only have one slot for
+one material because the entire mesh is
+using the metal material. We need to go
+out and say, "Hey, for these specific
+polygons, I want to add a new material
+and I want it to be emissive." So, we
+need to add a material slot and define
+those polygons. So, first, for those
+polygons to exist, we need to go ahead
+and create another edge loop. Let's go
+to the modeling tab and then go to our
+polygroup edit. And see, right now, if
+you want this exact look, we don't have
+it because look, the moment we actually
+extrude inwards, it's just one face all
+across the whole thing. So, if you make
+it emissive, it's all going to be
+emissive. We don't have this look. So,
+we're going to add it another edge loop
+to keep the metal there. So, let's find
+where that edge loop is going to live.
+I'm I'm still looking for it. Waiting
+for it to make itself
+Oh, there you go. All right. So, Farhod,
+let me know where you think would be the
+right place. So,
+with high edge, yes. Higher higher
+So, something like this? So, we have the
+bottom half metal, the top half will be
+emissive. So, click okay and right now
+we can see this part can be left as
+metal. So, hit accept. Now, we're going
+to go this time around, we're going to
+go to another section to change the
+materials. And that one is going to be
+right here in the attributes and edit
+materials. Okay, this might seem a
+little bit confusing. Honestly, it could
+have been simpler. I think Unreal Engine
+needs to work on this specific thing
+right here, but we still know how to use
+it and we're going to teach you how to
+do it. So, instead of selection tool,
+you're given a paintbrush, which is way
+too big, which is way too big. So, let's
+make it smaller. Size lower.
+And if this is not small enough for you,
+you You actually go to advanced, specify
+radius, and actually go even smaller
+with the value. Okay? Now, we need to go
+ahead and paint on top of the polygons
+that we want to go ahead and change. So,
+Farhad, shall we?
+Let's go.
+We know it's this one, right? It's this
+one right here.
+like selecting your face.
+Yes. But now there's like it's showing
+the wireframe with triangles, so it's an
+extra
+extra faces that we have to select, but
+you know already the shape of the light,
+right? Okay, cool.
+And this works for anything, right? You
+want to change the material of anything
+on the mesh,
+you can do it, even on imported models
+from, you know, online resources.
+Is this this one? Oh my god, it's so
+confusing even for me right now.
+Okay, painting, painting, painting.
+Painting.
+This has to be better. There has to be a
+better way.
+Okay, cool. Yeah, I have everything.
+But I think we've got it, right?
+Yeah.
+Look at it from afar, and you'll notice
+that has to be our emissive layer. Okay.
+So, this part, pay close attention.
+You have to go all the way down here,
+and then look at the materials, okay?
+So, drop down the materials. Right now
+it says the active material is this
+specific material, the world grid
+material. No, we want to change this to
+an emissive material. So, first off, we
+need to add that extra material. We're
+going to click add, and then here, we're
+going to look for the emissive material
+that we've already created. If you
+haven't created it, go ahead and create
+it. So, emissive.
+Emissive.
+Did we call it light emissive?
+yeah.
+We called it light emissive, right? We
+want to use the instance material, so we
+can change the color and everything. So,
+we're going to choose that. Now, it's
+not done yet. We have to go ahead and
+change the active material to this light
+material right here.
+Boom.
+Not done yet. This is the last step. You
+have to go ahead, not hit accept, but
+assign active material to change it. 1 2
+3 boom. And when you do it, you can see
+the change made and that's when you can
+say adios, hit accept
+and you're done.
+Once it's done, you go back to selection
+mode, go back to lit and see the change
+made and you, my friend, have
+successfully created the edge light of
+your material.
+amazing.
+And guess what, Farhad? One last thing
+really quickly that I want to show you
+because if we go to our ship, right now
+we have two material slots, you can
+always go ahead and change this material
+and that one is going to change, but
+guess what? We're going to open this guy
+up and since all of our lights are
+connected
+everything is going to work together.
+So, if we go ahead and change this
+emissive material to red
+look at what happens. Change it to blue,
+look at what happens.
+And then increase the intensity.
+Do you see that?
+Yep.
+Everything changes together. Now,
+Farhad, what do we have coming up next
+in the upcoming chapter?
+All right, guys, we are done with
+chapter nine. My next chapter would be
+Farhad's favorite, post process volume.
+What we're going to do is add filters to
+our screen like glow, bloom, vignette,
+maybe some film grain to really spice
+things up and our scene is just going to
+automatically look better in the next
+video. So, make sure you catch it. Ciao.
