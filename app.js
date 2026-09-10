@@ -1,19 +1,19 @@
 const REPO_OWNER = 'eorroe';
-const REPO_NAME = 'AI-Teachings-Viewer';
+const REPO_NAME = 'game-dev-teachings-viewer';
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main`;
 const TREES_API_BASE = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/trees`;
 const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 
-const REPO_TREE_CACHE_KEY = 'ai-teachings-repo-tree';
+const REPO_TREE_CACHE_KEY = 'game-dev-teachings-repo-tree';
 const SOURCES_LIST_CACHE_KEY = 'sources';
-const TEACHING_INDEX_CACHE_KEY = 'ai-teachings-teaching-index';
-const QUOTES_CACHE_KEY = 'ai-teachings-quotes';
+const TEACHING_INDEX_CACHE_KEY = 'game-dev-teachings-teaching-index';
+const QUOTES_CACHE_KEY = 'game-dev-teachings-quotes';
 
-const THEME_KEY = 'ai-teachings-theme';
+const THEME_KEY = 'game-dev-teachings-theme';
 
-const PINNED_KEY = 'ai-teachings-pinned';
-const PINNED_ORDER_KEY = 'ai-teachings-pinned-order';
-const RECENTS_KEY = 'ai-teachings-recents';
+const PINNED_KEY = 'game-dev-teachings-pinned';
+const PINNED_ORDER_KEY = 'game-dev-teachings-pinned-order';
+const RECENTS_KEY = 'game-dev-teachings-recents';
 const MAX_RECENTS = 20;
 
 let currentPath = '';
@@ -72,7 +72,7 @@ const elements = {
 
 const openCacheDb = () => {
     return new Promise((resolve, reject) => {
-        const request = indexedDB.open('ai-teachings-cache', 1);
+        const request = indexedDB.open('game-dev-teachings-cache', 1);
         request.onupgradeneeded = (event) => {
             const database = event.target.result;
             if (!database.objectStoreNames.contains('cache')) {
@@ -600,7 +600,7 @@ const renderEmptyState = (message) => {
     return `
         <div class="empty-state">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <h2>AI Teachings</h2>
+            <h2>Game Dev Teachings</h2>
             <p>${message}</p>
         </div>
     `;
@@ -1320,7 +1320,7 @@ const deleteAllIndexedDb = async () => {
             db.close();
             db = null;
         }
-        const request = indexedDB.deleteDatabase('ai-teachings-cache');
+        const request = indexedDB.deleteDatabase('game-dev-teachings-cache');
         request.onsuccess = () => resolve();
         request.onerror = (event) => reject(event.target.error);
     });
@@ -1514,7 +1514,7 @@ const renderRandomQuote = async () => {
     try {
         let text = await getCachedItem(QUOTES_CACHE_KEY);
         if (!text) {
-            const response = await fetch('https://raw.githubusercontent.com/eorroe/AI-Teachings-Viewer/refs/heads/main/quotes.txt?t=' + Date.now());
+            const response = await fetch('https://raw.githubusercontent.com/eorroe/game-dev-teachings-viewer/refs/heads/main/quotes.txt?t=' + Date.now());
             if (!response.ok) throw new Error('Failed to load quotes');
             text = await response.text();
             await setCachedItem(QUOTES_CACHE_KEY, text);

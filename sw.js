@@ -1,5 +1,5 @@
-const CACHE_NAME = 'ai-teachings-v1';
-const META_CACHE = 'ai-teachings-meta';
+const CACHE_NAME = 'game-dev-teachings-v1';
+const META_CACHE = 'game-dev-teachings-meta';
 const APP_SHELL = [
   '/',
   '/index.html',
