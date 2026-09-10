@@ -1,0 +1,345 @@
+1
+00:00:00,000 --> 00:00:05,640
+[Music]
+
+2
+00:00:03,800 --> 00:00:07,520
+if you've been looking to learn the 3D
+
+3
+00:00:05,640 --> 00:00:09,719
+software of the future then you're in
+
+4
+00:00:07,520 --> 00:00:12,360
+the right place we are talking about
+
+5
+00:00:09,719 --> 00:00:13,880
+Unity what no what are you talking about
+
+6
+00:00:12,360 --> 00:00:16,320
+we're not talking about Unity we're
+
+7
+00:00:13,880 --> 00:00:18,760
+talking about Unreal Engine 5 that's
+
+8
+00:00:16,320 --> 00:00:20,720
+right this is a free tutorial series for
+
+9
+00:00:18,760 --> 00:00:23,519
+absolute beginners that will teach you
+
+10
+00:00:20,720 --> 00:00:26,119
+all of the basics Unreal Engine 5 is a
+
+11
+00:00:23,519 --> 00:00:28,800
+free and Powerful 3D software known for
+
+12
+00:00:26,119 --> 00:00:30,640
+its photorealistic Graphics Unreal
+
+13
+00:00:28,800 --> 00:00:32,439
+Engine is an absolute beast and as
+
+14
+00:00:30,640 --> 00:00:35,040
+industry standard which means learning
+
+15
+00:00:32,439 --> 00:00:36,719
+unreal can help you make money and land
+
+16
+00:00:35,040 --> 00:00:38,920
+jobs at some of the top Studios
+
+17
+00:00:36,719 --> 00:00:42,039
+worldwide it is one of the most sought
+
+18
+00:00:38,920 --> 00:00:43,800
+after skills today now listen it doesn't
+
+19
+00:00:42,039 --> 00:00:46,399
+matter if you want to use unreal to make
+
+20
+00:00:43,800 --> 00:00:48,640
+films games visuals for events or even
+
+21
+00:00:46,399 --> 00:00:50,280
+Motion Graphics and product shoots by
+
+22
+00:00:48,640 --> 00:00:52,239
+the end of this tutorial series you will
+
+23
+00:00:50,280 --> 00:00:54,280
+have everything you need to take
+
+24
+00:00:52,239 --> 00:00:56,680
+whichever path you desire by the end of
+
+25
+00:00:54,280 --> 00:00:59,039
+this tutorial you'll be able to create a
+
+26
+00:00:56,680 --> 00:00:59,039
+beautiful Star Wars spaceship hanger
+
+27
+00:00:59,039 --> 00:01:04,199
+just like this and then F A cinematic
+
+28
+00:01:01,760 --> 00:01:06,000
+animation inside it we understand if
+
+29
+00:01:04,199 --> 00:01:08,000
+you're just starting out it must be so
+
+30
+00:01:06,000 --> 00:01:10,000
+confusing to have to learn a software as
+
+31
+00:01:08,000 --> 00:01:12,640
+big as unreal through hundreds of
+
+32
+00:01:10,000 --> 00:01:14,799
+tutorials from different sources that is
+
+33
+00:01:12,640 --> 00:01:16,600
+exactly why we created this series you
+
+34
+00:01:14,799 --> 00:01:18,880
+don't need to find anything we have
+
+35
+00:01:16,600 --> 00:01:21,040
+compiled everything that you need in one
+
+36
+00:01:18,880 --> 00:01:23,240
+single playlist now there are 20
+
+37
+00:01:21,040 --> 00:01:26,200
+episodes in this playlist available for
+
+38
+00:01:23,240 --> 00:01:27,799
+you for free here on YouTube along the
+
+39
+00:01:26,200 --> 00:01:32,159
+way we're going to teach you about
+
+40
+00:01:27,799 --> 00:01:34,119
+modeling materials lighting animation
+
+41
+00:01:32,159 --> 00:01:36,520
+importing assets from unreal's own
+
+42
+00:01:34,119 --> 00:01:39,840
+library or other 3D softwares to build
+
+43
+00:01:36,520 --> 00:01:42,439
+scenes decals post processing camera
+
+44
+00:01:39,840 --> 00:01:44,280
+work and finally render settings then
+
+45
+00:01:42,439 --> 00:01:48,600
+we're going to use all of that to create
+
+46
+00:01:44,280 --> 00:01:51,920
+a beautiful cinematic animation like
+
+47
+00:01:48,600 --> 00:01:55,240
+this you know what's going on maybe it's
+
+48
+00:01:51,920 --> 00:01:55,240
+another drill
+
+49
+00:01:57,550 --> 00:02:14,840
+[Music]
+
+50
+00:02:11,319 --> 00:02:17,200
+it's so good and guess what we rendered
+
+51
+00:02:14,840 --> 00:02:19,360
+this entire animation in less than 20
+
+52
+00:02:17,200 --> 00:02:21,640
+minutes how well because we use unreal's
+
+53
+00:02:19,360 --> 00:02:23,400
+real time renderer Lumen and you'll be
+
+54
+00:02:21,640 --> 00:02:25,760
+able to create exactly the same
+
+55
+00:02:23,400 --> 00:02:27,360
+animation if you finish this tutorial
+
+56
+00:02:25,760 --> 00:02:28,920
+series now aside from making this course
+
+57
+00:02:27,360 --> 00:02:30,840
+free we've actually teamed up with
+
+58
+00:02:28,920 --> 00:02:32,959
+polyam the guys behind that sick
+
+59
+00:02:30,840 --> 00:02:35,440
+photogrametry application to give you
+
+60
+00:02:32,959 --> 00:02:37,440
+guys 30% off their Pro Plan which means
+
+61
+00:02:35,440 --> 00:02:39,760
+you can take 3D scans of real life
+
+62
+00:02:37,440 --> 00:02:41,440
+assets and bring them to your 3D scenes
+
+63
+00:02:39,760 --> 00:02:43,840
+we've always used polycam in our
+
+64
+00:02:41,440 --> 00:02:47,040
+workflow to bring real life assets into
+
+65
+00:02:43,840 --> 00:02:49,560
+onreal Engine 5 like this and this this
+
+66
+00:02:47,040 --> 00:02:53,360
+tutorial Series has 20 episodes with a
+
+67
+00:02:49,560 --> 00:02:55,560
+total duration of 8 hours 8 hours only
+
+68
+00:02:53,360 --> 00:02:58,200
+to learn a whole new skill that can
+
+69
+00:02:55,560 --> 00:02:59,239
+potentially change your life so I don't
+
+70
+00:02:58,200 --> 00:03:00,560
+understand what you're waiting for
+
+71
+00:02:59,239 --> 00:03:02,440
+because technically Al you can start
+
+72
+00:03:00,560 --> 00:03:04,319
+learning this new skill become better
+
+73
+00:03:02,440 --> 00:03:06,120
+than all of your friends and your peers
+
+74
+00:03:04,319 --> 00:03:08,200
+start advancing in your career and make
+
+75
+00:03:06,120 --> 00:03:10,000
+real money while working at the job that
+
+76
+00:03:08,200 --> 00:03:11,360
+you always loved you remember you always
+
+77
+00:03:10,000 --> 00:03:13,519
+say you want to learn unreal I want to
+
+78
+00:03:11,360 --> 00:03:15,080
+learn unreal this is the time to do it
+
+79
+00:03:13,519 --> 00:03:17,159
+we are going to be releasing a few
+
+80
+00:03:15,080 --> 00:03:18,840
+episode every single day so click on
+
+81
+00:03:17,159 --> 00:03:21,000
+that subscribe button hit on the
+
+82
+00:03:18,840 --> 00:03:23,239
+notification Bell to not miss any of
+
+83
+00:03:21,000 --> 00:03:25,440
+them now it's time to grab that coffee
+
+84
+00:03:23,239 --> 00:03:27,480
+and click on that first episode let's
+
+85
+00:03:25,440 --> 00:03:30,239
+begin what will be the biggest change in
+
+86
+00:03:27,480 --> 00:03:30,239
+your life
+
+(End of file - total 344 lines)

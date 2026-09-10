@@ -1,0 +1,752 @@
+1
+00:00:00,240 --> 00:00:05,200
+Technology is changing our world faster
+
+2
+00:00:02,800 --> 00:00:06,879
+than ever. If you look at the next 5
+
+3
+00:00:05,200 --> 00:00:08,639
+years, you'll see two kinds of people.
+
+4
+00:00:06,879 --> 00:00:10,800
+The ones who learned Unreal Engine and
+
+5
+00:00:08,639 --> 00:00:13,040
+the ones who were left behind. Unreal
+
+6
+00:00:10,800 --> 00:00:15,360
+Engine is the most powerful and
+
+7
+00:00:13,040 --> 00:00:16,960
+versatile software in existence. Because
+
+8
+00:00:15,360 --> 00:00:19,359
+once you learn it, you can shoot
+
+9
+00:00:16,960 --> 00:00:21,920
+Hollywood films and animation, develop
+
+10
+00:00:19,359 --> 00:00:24,519
+video games, create live visuals for
+
+11
+00:00:21,920 --> 00:00:26,800
+music festivals, design architectural
+
+12
+00:00:24,519 --> 00:00:29,199
+visualizations, even make commercials.
+
+13
+00:00:26,800 --> 00:00:31,119
+And the list goes on and on. It's so in
+
+14
+00:00:29,199 --> 00:00:33,280
+demand that instead of you chasing
+
+15
+00:00:31,119 --> 00:00:36,320
+clients or studios, they'll be the ones
+
+16
+00:00:33,280 --> 00:00:38,320
+chasing you. You might be a complete
+
+17
+00:00:36,320 --> 00:00:40,320
+beginner and don't know where to start.
+
+18
+00:00:38,320 --> 00:00:42,559
+You are looking to learn a new skill
+
+19
+00:00:40,320 --> 00:00:44,239
+that is highly valuable and can make you
+
+20
+00:00:42,559 --> 00:00:45,840
+a lot of money. Or perhaps you're more
+
+21
+00:00:44,239 --> 00:00:48,000
+experienced. You've been doing creative
+
+22
+00:00:45,840 --> 00:00:49,920
+work for a while, but you feel limited
+
+23
+00:00:48,000 --> 00:00:52,000
+by the current skills you have, which is
+
+24
+00:00:49,920 --> 00:00:54,399
+taking away great opportunities from
+
+25
+00:00:52,000 --> 00:00:57,120
+you. Or you're someone who's exploring
+
+26
+00:00:54,399 --> 00:00:59,600
+new career paths and wants a skill that
+
+27
+00:00:57,120 --> 00:01:01,520
+opens doors across every industry. You
+
+28
+00:00:59,600 --> 00:01:04,159
+want to learn a new skill fast, but
+
+29
+00:01:01,520 --> 00:01:06,479
+you're overwhelmed by random tutorials.
+
+30
+00:01:04,159 --> 00:01:08,040
+Or you're simply scared of AI and what
+
+31
+00:01:06,479 --> 00:01:10,960
+it could mean for the future of your
+
+32
+00:01:08,040 --> 00:01:13,119
+job. If any of this resonates with you,
+
+33
+00:01:10,960 --> 00:01:15,439
+then we have the answer to solve your
+
+34
+00:01:13,119 --> 00:01:17,439
+problem. That is exactly why we designed
+
+35
+00:01:15,439 --> 00:01:19,280
+the ultimate Unreal Engine course to
+
+36
+00:01:17,439 --> 00:01:22,479
+take you from where you are to where you
+
+37
+00:01:19,280 --> 00:01:24,720
+want to be in just 14 days. Unreal
+
+38
+00:01:22,479 --> 00:01:27,360
+Engine is immensely fast with
+
+39
+00:01:24,720 --> 00:01:30,240
+photorealistic capabilities running in
+
+40
+00:01:27,360 --> 00:01:32,560
+real time, beating out every other 3D
+
+41
+00:01:30,240 --> 00:01:34,479
+software that is out there by miles. And
+
+42
+00:01:32,560 --> 00:01:37,040
+because it's so fast, it allows you to
+
+43
+00:01:34,479 --> 00:01:38,720
+iterate on ideas quickly without ever
+
+44
+00:01:37,040 --> 00:01:40,799
+losing your creative flow. Its
+
+45
+00:01:38,720 --> 00:01:43,520
+cuttingedge features like Lumen
+
+46
+00:01:40,799 --> 00:01:45,840
+rendering engine and Nanite make it the
+
+47
+00:01:43,520 --> 00:01:48,640
+top choice for studios behind these
+
+48
+00:01:45,840 --> 00:01:50,720
+games and these films and animations. A
+
+49
+00:01:48,640 --> 00:01:52,640
+lot of artists are switching to Unreal
+
+50
+00:01:50,720 --> 00:01:54,880
+Engine and for good reason. Unreal
+
+51
+00:01:52,640 --> 00:01:57,439
+Engine lies at the heart of the 3D
+
+52
+00:01:54,880 --> 00:02:00,399
+universe. It is the only 3D software
+
+53
+00:01:57,439 --> 00:02:03,840
+that combines the capabilities of all
+
+54
+00:02:00,399 --> 00:02:05,680
+other 3D softwares into one single tool.
+
+55
+00:02:03,840 --> 00:02:08,319
+Why did we make this course?
+
+56
+00:02:05,680 --> 00:02:10,319
+Universities are slow, outdated, and
+
+57
+00:02:08,319 --> 00:02:12,640
+broken. They take away years of your
+
+58
+00:02:10,319 --> 00:02:15,040
+life. And let's be honest, they put you
+
+59
+00:02:12,640 --> 00:02:17,920
+in debt way before they help you make
+
+60
+00:02:15,040 --> 00:02:19,599
+any money. Schools simply can't keep up
+
+61
+00:02:17,920 --> 00:02:21,520
+with the pace of technology and they
+
+62
+00:02:19,599 --> 00:02:23,200
+leave you with skills that the real
+
+63
+00:02:21,520 --> 00:02:24,800
+world doesn't value. We thought
+
+64
+00:02:23,200 --> 00:02:26,959
+something should be done about that and
+
+65
+00:02:24,800 --> 00:02:29,280
+that is exactly why we made this course.
+
+66
+00:02:26,959 --> 00:02:31,760
+Giving you the most upto-date skills and
+
+67
+00:02:29,280 --> 00:02:34,000
+practical tools that help you instantly
+
+68
+00:02:31,760 --> 00:02:36,080
+level up your abilities. Now let's
+
+69
+00:02:34,000 --> 00:02:38,879
+compare these two for a moment. Uni
+
+70
+00:02:36,080 --> 00:02:42,400
+takes you years to finish. This course
+
+71
+00:02:38,879 --> 00:02:44,640
+14 days. Uni drowns you in hundreds of
+
+72
+00:02:42,400 --> 00:02:47,680
+thousands of dollars in debt. This
+
+73
+00:02:44,640 --> 00:02:50,640
+course is less than a $1,000 investment.
+
+74
+00:02:47,680 --> 00:02:52,959
+Uni gives you outdated academic fluff.
+
+75
+00:02:50,640 --> 00:02:56,480
+We give you practical, up-to-date, and
+
+76
+00:02:52,959 --> 00:02:58,800
+in demand skill. Back in 2018, we had no
+
+77
+00:02:56,480 --> 00:03:01,440
+experience with any 3D software. We only
+
+78
+00:02:58,800 --> 00:03:04,319
+used editing programs like Premier Pro.
+
+79
+00:03:01,440 --> 00:03:06,480
+We had no clients and felt lost, not
+
+80
+00:03:04,319 --> 00:03:08,720
+knowing at all what we should do. We
+
+81
+00:03:06,480 --> 00:03:10,480
+were worried just like you because we
+
+82
+00:03:08,720 --> 00:03:12,640
+didn't want to spend years learning a
+
+83
+00:03:10,480 --> 00:03:14,879
+new skill, a new software that was
+
+84
+00:03:12,640 --> 00:03:16,560
+eventually going to become obsolete.
+
+85
+00:03:14,879 --> 00:03:18,879
+That's when we found Unreal Engine.
+
+86
+00:03:16,560 --> 00:03:21,120
+Through online education and years of
+
+87
+00:03:18,879 --> 00:03:23,680
+trial and error, we taught ourselves
+
+88
+00:03:21,120 --> 00:03:25,599
+Unreal Engine. We spent countless hours
+
+89
+00:03:23,680 --> 00:03:27,440
+researching and experimenting. And
+
+90
+00:03:25,599 --> 00:03:29,360
+because of that, we managed to build bad
+
+91
+00:03:27,440 --> 00:03:31,840
+decisions, which is now doing over seven
+
+92
+00:03:29,360 --> 00:03:34,319
+figures and serves clients around the
+
+93
+00:03:31,840 --> 00:03:36,560
+world. We have developed Fortnite games
+
+94
+00:03:34,319 --> 00:03:39,280
+for multiple clients, crafted visuals
+
+95
+00:03:36,560 --> 00:03:41,599
+for world famous DJs shown live to
+
+96
+00:03:39,280 --> 00:03:43,760
+thousands of fans, created live
+
+97
+00:03:41,599 --> 00:03:46,640
+broadcast graphics for a racing league,
+
+98
+00:03:43,760 --> 00:03:49,280
+and produced VFX and commercials for top
+
+99
+00:03:46,640 --> 00:03:51,760
+brands in hospitality, real estate, and
+
+100
+00:03:49,280 --> 00:03:53,680
+sports, all with Unreal Engine. And by
+
+101
+00:03:51,760 --> 00:03:55,920
+the way, we've already done this before.
+
+102
+00:03:53,680 --> 00:03:58,640
+We've helped millions of people like
+
+103
+00:03:55,920 --> 00:04:01,040
+yourself learn Unreal Engine incredibly
+
+104
+00:03:58,640 --> 00:04:03,360
+fast, more efficiently than any other
+
+105
+00:04:01,040 --> 00:04:05,439
+method out there. Many of these people
+
+106
+00:04:03,360 --> 00:04:07,920
+landed their dream job, while others
+
+107
+00:04:05,439 --> 00:04:10,159
+secured high-paying clients, and built
+
+108
+00:04:07,920 --> 00:04:12,080
+successful careers. In this course,
+
+109
+00:04:10,159 --> 00:04:14,720
+we'll be working together to create a
+
+110
+00:04:12,080 --> 00:04:18,400
+photorealistic cinematic short film set
+
+111
+00:04:14,720 --> 00:04:20,400
+in 1500's feudal Japan. A story of two
+
+112
+00:04:18,400 --> 00:04:23,120
+samurai brothers who are fighting for
+
+113
+00:04:20,400 --> 00:04:25,199
+power. We have dedicated five whole
+
+114
+00:04:23,120 --> 00:04:28,400
+months with a group of incredibly
+
+115
+00:04:25,199 --> 00:04:32,040
+talented 3D artists to custom design 3D
+
+116
+00:04:28,400 --> 00:04:36,080
+characters and assets including
+
+117
+00:04:32,040 --> 00:04:39,040
+samuris, ninja, weapons, the Osaka
+
+118
+00:04:36,080 --> 00:04:41,520
+castle, and more. So you can focus on
+
+119
+00:04:39,040 --> 00:04:44,000
+the learning experience and create a
+
+120
+00:04:41,520 --> 00:04:46,080
+stunning portfolio for yourself. These
+
+121
+00:04:44,000 --> 00:04:48,639
+are thousands of dollars worth of
+
+122
+00:04:46,080 --> 00:04:50,880
+high-end 3D assets just for you. Why
+
+123
+00:04:48,639 --> 00:04:52,960
+bother designing all these stories and
+
+124
+00:04:50,880 --> 00:04:55,520
+assets when we could just teach you the
+
+125
+00:04:52,960 --> 00:04:57,759
+technical skills? Simply because as a
+
+126
+00:04:55,520 --> 00:04:59,759
+student, I always love learning when I
+
+127
+00:04:57,759 --> 00:05:01,919
+know I can create something beautiful at
+
+128
+00:04:59,759 --> 00:05:04,000
+the end of the course. Something that I
+
+129
+00:05:01,919 --> 00:05:06,080
+know I can look forward to even if I
+
+130
+00:05:04,000 --> 00:05:07,919
+felt challenged along the way. This is
+
+131
+00:05:06,080 --> 00:05:09,919
+the course that I wish someone would
+
+132
+00:05:07,919 --> 00:05:11,919
+design for me when I was first starting
+
+133
+00:05:09,919 --> 00:05:14,639
+out. We even got to the extent of
+
+134
+00:05:11,919 --> 00:05:17,120
+capturing our animation using the latest
+
+135
+00:05:14,639 --> 00:05:19,680
+AI motion capture tools. We have also
+
+136
+00:05:17,120 --> 00:05:22,639
+partnered with an amazing music producer
+
+137
+00:05:19,680 --> 00:05:24,560
+to create a bpoke cinematic soundtrack.
+
+138
+00:05:22,639 --> 00:05:26,960
+Inside the course, you'll learn how to
+
+139
+00:05:24,560 --> 00:05:28,639
+build entire environments from scratch
+
+140
+00:05:26,960 --> 00:05:31,199
+using the modeling tools. You will
+
+141
+00:05:28,639 --> 00:05:33,280
+create super realistic metahumans and
+
+142
+00:05:31,199 --> 00:05:35,280
+learn how to animate the body using
+
+143
+00:05:33,280 --> 00:05:37,280
+control rigs and motion capture. We'll
+
+144
+00:05:35,280 --> 00:05:39,759
+even teach you how to use AI tools
+
+145
+00:05:37,280 --> 00:05:42,000
+inside Unreal Engine to create facial
+
+146
+00:05:39,759 --> 00:05:44,479
+animation. We will work with powerful
+
+147
+00:05:42,000 --> 00:05:46,960
+features inside the engine like Niagara
+
+148
+00:05:44,479 --> 00:05:48,960
+particles to simulate leaves or even
+
+149
+00:05:46,960 --> 00:05:51,680
+birds flying in the sky, cloth
+
+150
+00:05:48,960 --> 00:05:54,000
+simulation to make waving flags, chaos
+
+151
+00:05:51,680 --> 00:05:56,800
+physics to blow things up, and just to
+
+152
+00:05:54,000 --> 00:05:58,720
+teach you the latest and super powerful
+
+153
+00:05:56,800 --> 00:06:00,880
+motion design tools inside Unreal
+
+154
+00:05:58,720 --> 00:06:03,039
+Engine. We're going to make together an
+
+155
+00:06:00,880 --> 00:06:05,440
+entire title sequence for the short
+
+156
+00:06:03,039 --> 00:06:08,560
+film. We'll use cloners andectors to
+
+157
+00:06:05,440 --> 00:06:10,960
+animate thousands of 3D objects in real
+
+158
+00:06:08,560 --> 00:06:13,280
+time. Honestly, this is a standalone
+
+159
+00:06:10,960 --> 00:06:15,520
+course on its own. One big concern that
+
+160
+00:06:13,280 --> 00:06:17,800
+artists have in fields like virtual
+
+161
+00:06:15,520 --> 00:06:20,400
+production, gamedev, and arciz is
+
+162
+00:06:17,800 --> 00:06:22,560
+optimization. Getting highquality scenes
+
+163
+00:06:20,400 --> 00:06:24,080
+without sacrificing real-time
+
+164
+00:06:22,560 --> 00:06:26,960
+performance. That's why we have
+
+165
+00:06:24,080 --> 00:06:29,440
+dedicated specific sections exclusively
+
+166
+00:06:26,960 --> 00:06:31,520
+for optimization, including nanite,
+
+167
+00:06:29,440 --> 00:06:33,280
+packed level actors, virtual textures,
+
+168
+00:06:31,520 --> 00:06:35,199
+which drastically improve scene
+
+169
+00:06:33,280 --> 00:06:37,199
+performance and keep everything running
+
+170
+00:06:35,199 --> 00:06:39,520
+smoothly. We are not just teaching you
+
+171
+00:06:37,199 --> 00:06:41,840
+the old school way of making materials.
+
+172
+00:06:39,520 --> 00:06:43,600
+We will use AI to supercharge your
+
+173
+00:06:41,840 --> 00:06:46,240
+workflow. You will create everything
+
+174
+00:06:43,600 --> 00:06:48,960
+from visual art to advanced animated
+
+175
+00:06:46,240 --> 00:06:50,720
+assets faster and smarter than ever
+
+176
+00:06:48,960 --> 00:06:53,039
+before. Learning all of this should
+
+177
+00:06:50,720 --> 00:06:54,880
+naturally take you a really long time.
+
+178
+00:06:53,039 --> 00:06:56,720
+But instead of trying to figure it out
+
+179
+00:06:54,880 --> 00:06:59,039
+on your own, we're going to give you
+
+180
+00:06:56,720 --> 00:07:01,199
+everything condensed in a structured,
+
+181
+00:06:59,039 --> 00:07:05,240
+easy to follow format that will only
+
+182
+00:07:01,199 --> 00:07:05,240
+take you 14 days.
+
+183
+00:07:07,520 --> 00:07:12,880
+This is your last chance. You take the
+
+184
+00:07:10,080 --> 00:07:15,280
+blue pill. You stay where you are. Keep
+
+185
+00:07:12,880 --> 00:07:18,479
+watching others level up and risk being
+
+186
+00:07:15,280 --> 00:07:21,120
+left behind. You take this course, learn
+
+187
+00:07:18,479 --> 00:07:25,400
+a high income skill, and live the life
+
+188
+00:07:21,120 --> 00:07:25,400
+you always dreamt of.
+
